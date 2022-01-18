@@ -1,0 +1,263 @@
+module filcher
+{
+	imports
+	{
+		Base
+	}
+
+
+/************************Items - Tools************************/
+
+    item SFChisel
+	{
+		MaxRange	=	0.9,
+		WeaponSprite	=	Knife,
+		MinAngle	=	0,
+		Type	=	Weapon,
+		MinimumSwingTime	=	2,
+		KnockBackOnNoDeath	=	FALSE,
+		SwingAmountBeforeImpact	=	0.02,
+		Categories	=	Blade,
+		ConditionLowerChanceOneIn	=	30,
+		Weight	=	1,
+		SplatNumber	=	0,
+		PushBackMod	=	0.3,
+		MaxDamage	=	0.6,
+		SubCategory	=	Stab,
+		AimingMod	=	0.8,
+		ConditionMax	=	10,
+		MaxHitCount	=	1,
+		IsAimedHandWeapon	=	TRUE,
+		DoorDamage	=	1,
+		SwingAnim	=	Stab,
+		WeaponWeight	=	1,
+		DisplayName	=	Chisel,
+		MinRange	=	0.61,
+		CloseKillMove = Jaw_Stab,
+		SwingTime	=	2,
+		MinDamage	=	0.2,
+		KnockdownMod	=	0,
+		SplatBloodOnNoDeath	=	TRUE,
+		Icon	=	SFChisel,
+		RunAnim	=	Run_Weapon2,
+        IdleAnim	=	Idle_Weapon2,
+        TreeDamage  =   2,
+        BreakSound  =   PZ_MetalSnap,
+        EnduranceMod = 0.5,
+	}
+
+    item MasonsTrowel
+	{
+		Type				=		Normal,
+		DisplayName			=		Mason's Trowel,
+		Icon				=		SFMasonsTrowel,
+		Weight				=		1.0,
+		MetalValue = 30,
+	}
+
+/************************Literature Items************************/
+
+    item BookMasonry1
+	{
+		NumberOfPages	=	220,
+		Weight	=	0.8,
+		Type	=	Literature,
+		DisplayName	=	Masonry for Beginners,
+		Icon	=	BookBrick,
+        SkillTrained = Masonry,
+        LvlSkillTrained = 1,
+        NumLevelsTrained = 2,
+        ReplaceOnUse    =   BookMasonry1,
+		StaticModel = Book,
+        WorldStaticModel = BookBrown_Ground,
+	}
+
+    item BookMasonry2
+	{
+		NumberOfPages	=	260,
+		Weight	=	0.8,
+		Type	=	Literature,
+		DisplayName	=	Masonry for Intermediates,
+		Icon	=	BookBrick,
+        SkillTrained = Masonry,
+        LvlSkillTrained = 3,
+        NumLevelsTrained = 2,
+        ReplaceOnUse    =   BookMasonry2,
+		StaticModel = Book,
+        WorldStaticModel = BookBrown_Ground,
+	}
+
+    item BookMasonry3
+	{
+		NumberOfPages	=	300,
+		Weight	=	0.8,
+		Type	=	Literature,
+		DisplayName	=	Advanced Masonry,
+		Icon	=	BookBrick,
+        SkillTrained = Masonry,
+        LvlSkillTrained = 5,
+        NumLevelsTrained = 2,
+        ReplaceOnUse    =   BookMasonry3,
+		StaticModel = Book,
+        WorldStaticModel = BookBrown_Ground,
+	}
+
+    item BookMasonry4
+	{
+		NumberOfPages	=	340,
+		Weight	=	0.8,
+		Type	=	Literature,
+		DisplayName	=	Expert Masonry,
+		Icon	=	BookBrick,
+        SkillTrained = Masonry,
+        LvlSkillTrained = 7,
+        NumLevelsTrained = 2,
+        ReplaceOnUse    =   BookMasonry4,
+		StaticModel = Book,
+        WorldStaticModel = BookBrown_Ground,
+	}
+
+    item BookMasonry5
+	{
+		NumberOfPages	=	380,
+		Weight	=	0.8,
+		Type	=	Literature,
+		DisplayName	=	Master Masonry,
+		Icon	=	BookBrick,
+        SkillTrained = Masonry,
+        LvlSkillTrained = 9,
+        NumLevelsTrained = 2,
+        ReplaceOnUse    =   BookMasonry5,
+		StaticModel = Book,
+        WorldStaticModel = BookBrown_Ground,
+	}
+
+    item SFMasonMag
+    {
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Masonry Magazine,
+        Icon	=	SFMasonMag,
+        TeachedRecipes  =   Make Bricks; Make Brick Mold; Make Brick Kiln,
+        ReplaceOnUse    =   SFMasonMag,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+    }
+
+    item SFMetalworkMag5
+    {
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	The Metalwork Magazine Vol.5,
+        Icon	=	SFWeldMag5,
+        TeachedRecipes  =   Make Metal Stairs,
+        ReplaceOnUse    =   SFMetalworkMag5,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+    }
+
+/************************Miscellaneous Items************************/
+
+    	item Bricks
+    	{
+        	Type		=	Normal,
+        	DisplayName	=	Bricks,
+        	Icon		=	SFBricks,
+        	Weight		=	1.0,
+    	}
+
+    	item SFBrickMold
+    	{
+        	Type		=	Normal,
+        	DisplayName	=	Brick Mold,
+        	Icon		=	SFBrickMold,
+        	Weight		=	0.5,
+    	}
+
+    	item SFClay
+    	{
+        	Type		=	Normal,
+        	DisplayName	=	Clay,
+        	Icon		=	SFClay,
+        	Weight		=	0.5,
+    	}
+
+    	item SFClayBag
+    	{
+        	Type		=	Drainable,
+        	DisplayName	=	Clay Bag,
+        	Icon		=	Sandbag,
+        	Weight		=	2.0,
+        	UseDelta	=	0.25,
+		ReplaceOnDeplete	= EmptySandbag,
+		WorldStaticModel = DirtBag_Ground,
+    	}
+
+	item HandTruckBlue
+	{
+		Weight		=	10,
+        	MetalValue 	=	80,
+        	WeightReduction	=	80,
+        	Capacity	=	50,
+		Type		=	Container,
+		DisplayName	=	Hand Truck,
+		Icon		=	HandTruckBlue,
+		StaticModel 	=	HandTruck,
+		baseSpeed	=	0.85,
+        	EquippedNoSprint =	TRUE,
+		AcceptItemFunction =	AcceptItemFunction.HandTruck,
+		RequiresEquippedBothHands = true,
+        	ReplaceInSecondHand = Other_HandTruckBlue holdingbagleft,
+        	ReplaceInPrimaryHand = Other_HandTruckBlue holdingbagright,
+		Tooltip = Tooltip_item_HandTruck,
+		WorldStaticModel = HandtruckBlue_Ground,
+	}
+
+	item HandTruckRed
+	{
+		Weight		=	10,
+        	MetalValue 	=	80,
+        	WeightReduction	=	80,
+        	Capacity	=	50,
+		Type		=	Container,
+		DisplayName	=	Hand Truck,
+		Icon		=	HandTruckRed,
+		StaticModel 	=	HandTruck,
+		baseSpeed	=	0.85,
+        	EquippedNoSprint =	TRUE,
+		AcceptItemFunction =	AcceptItemFunction.HandTruck,
+		RequiresEquippedBothHands = true,
+        	ReplaceInSecondHand = Other_HandTruckRed holdingbagleft,
+        	ReplaceInPrimaryHand = Other_HandTruckRed holdingbagright,
+		Tooltip = Tooltip_item_HandTruck,
+		WorldStaticModel = HandtruckRed_Ground,
+	}
+
+    	item SFMoldedBricks
+    	{
+        	Type		=	Normal,
+        	DisplayName	=	Molded Bricks,
+        	Icon		=	SFMoldedBricks,
+        	Weight		=	1.0,
+    	}
+
+
+    	item SFSealant
+    	{
+        	Type		=	Drainable,
+        	DisplayName	=	Sealant,
+        	Icon		=	SFSealant,
+        	UseDelta	=	0.2,
+        	Weight		=	0.1,
+    	}
+
+    	item SFGlassPanel
+    	{
+        	Type		=	Normal,
+        	DisplayName	=	Glass Panel,
+        	Icon		=	Mirror,
+        	Weight		=	0.5,
+		WorldStaticModel =	Mirror,
+    	}
+
+}

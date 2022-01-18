@@ -1,0 +1,55 @@
+/************************SMOKER************************/
+
+Items_EN = {
+	Recipe_Open_Pack_Cigarettes = "Open Pack of Cigarettes",
+	Recipe_Take_Cigarette_from_Pack = "Take Cigarette from Pack",
+	Recipe_Put_Cigarette_in_Pack = "Put Cigarette in Pack",
+	Recipe_Put_Cigarette_in_EmptyPack = "Put Cigarette in Empty Pack",
+	Recipe_Pack_in_Carton_Cigarettes = "Pack in Carton Cigarettes",
+	Recipe_Unpack_Cigarettes = "Unpack Cigarettes",
+	Recipe_Close_the_full_pack = "Close Pack of Cigarettes",
+	Recipe_Open_the_full_pack = "Open Pack of Cigarettes",
+	Recipe_Dismantle_Cigarette_Butt = "Dismantle Butt",
+	Recipe_Dismantle_Cigarette = "Dismantle Cigarette",
+	Recipe_Dismantle_Homemade_Cigarette = "Dismantle Cigarette"
+	Recipe_Make_homemade_filter_cigarette = "Make a Homemade Filter Cigarette",
+	Recipe_Make_Homemade_Cigarette_Without_Filter = "Make Homemade Cigarette Without Filter",
+	Recipe_Make_Tobacco_Pouch = "Make Tobacco Pouch",
+	Recipe_Put_Pinch_Tobacco = "Put Pinch of Tobacco in the Pouches",
+	Recipe_Put_Small_Handful_Tobacco = "Put Small Handful Tobacco in the Pouches",
+	Recipe_Take_Pinch_Tobacco = "Take Pinch Tobacco",
+	Recipe_Take_Small_Handful_Tobacco = "Take Small Handful Tobacco",
+	Recipe_Divide_into_five_pinches = "Divide into Five Pinches",
+	Recipe_Mix_in_one_handful = "Mix in One Handful",
+	Recipe_Fill_Smoking_Pipe_with_Tobacco = "Fill Smoking Pipe with Tobacco",
+	Recipe_Put_GreenfireTobacco = "Put Small Handful Tobacco in the Pouches",
+	Recipe_Remove_Filter_from_Cigarette_Butt = "Remove Filter from Cigarette Butt",
+	Recipe_Crumple_the_Plastic_Bottle = "Crumple the Plastic Bottle",
+	Recipe_Make_a_Bottle_Cap = "Make a Bottle Cap",
+	Recipe_Burn_hole_in_plastic_bottle = "Burn a Hole in a Crumple Bottle",
+	Recipe_Make_a_hole_in_the_bottle = "Make a Hole in the Crumple Bottle",
+	Recipe_Remove_the_Foil_from_the_Cigarette_Pack = "Remove the Foil from the Cigarette Pack",
+	Recipe_Make_Holes_in_Foil = "Make Holes in Foil",
+	Recipe_Put_pinch_tobacco_in_smoking_device = "Put a Pinch of Tobacco in the Smoking Device",
+	Recipe_Remove_tobacco_from_smoking_device = "Remove a Pinch of Tobacco from the Smoking Device",
+	Recipe_Pull_out_the_chewing_gum = "Pull Out the Chewing Gum",
+	Recipe_Pull_out_blister_pack = "Pull Out Blister Pack",
+
+/************************ For Greenfire ************************/
+	Recipe_Dismantle_Spliff = "Dismantle Spliff",
+	Recipe_Roll_Spliff = "Roll Spliff",
+	Recipe_Load_Bong_with_Smoking_Blend = "Load Bong with Smoking Blend",
+	Recipe_Load_Smoking_Pipe_With_Smoking_Blend = "Load Smoking Pipe With Smoking Blend",
+	Recipe_Unload_Smoking_Blend_from_Smoking_Pipe =  "Unload Smoking Blend from Smoking Pipe",
+	Recipe_Unload_Smoking_Blend_from_Bong = "Unload Smoking Blend from Bong",
+	Recipe_Mix_Tobacco_and_Cannabis = "Mix Tobacco and Cannabis",
+	Recipe_Put_Smoking_Blend_in_smoking_device = "Put Smoking Blend in Smoking Device",
+	Recipe_Remove_Smoking_Blend_from_smoking_device = "Remove Smoking Blend from Smoking Device",
+
+/************************ For HydroCraft************************/
+	Recipe_Remove_tobacco_from_pipe = "Remove Tobacco From Pipe",
+
+/************************ For littering ************************/
+	Recipe_Open_Pack_of_Menthol_Cigarettes = "Open Pack of Cigarettes",
+	Recipe_Open_Pack_of_Lite_Cigarettes = "Open Pack of Cigarettes",
+}

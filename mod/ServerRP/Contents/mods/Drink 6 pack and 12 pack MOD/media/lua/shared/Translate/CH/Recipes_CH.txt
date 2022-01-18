@@ -1,0 +1,23 @@
+Recipe_CH = {
+
+	-- Drink 6 pack and 12 pack MOD
+	-- Translated by Cleave
+
+Recipe_Open_a_pack_of_Beer = "打開 一紮罐裝啤酒(6罐裝)",
+Recipe_Pack_a_Beer = "打包 6罐 罐裝啤酒",
+Recipe_Open_a_pack_of_Beer_bottle = "打開 一打瓶裝啤酒(6瓶裝)",
+Recipe_Pack_a_Beer_bottle = "打包 6瓶 瓶裝啤酒",
+Recipe_Open_a_pack_of_Pop = "打開 一紮汽水(6罐裝)",
+Recipe_Pack_a_Pop = "打包 6罐 罐裝汽水",
+Recipe_Pack_a_Whiskey_bottle = "打包 12瓶波本威士忌",
+Recipe_Open_a_pack_of_Whiskey_bottle = "打開 一箱波本威士忌(12瓶裝)",
+Recipe_Pack_a_Chardonnay_bottle = "打包 12瓶白葡萄酒",
+Recipe_Open_a_pack_of_Chardonnay_bottle = "打開 一箱白葡萄酒(12瓶裝)",
+Recipe_Pack_a_Red_Wine_bottle = "打包 12瓶紅葡萄酒",
+Recipe_Open_a_pack_of_Red_Wine_bottle = "打開 一箱紅葡萄酒(12瓶裝)",
+Recipe_Open_a_pack_of_Orange_Soda = "打開 一箱瓶裝汽水(12瓶裝)",
+Recipe_Open_a_pack_of_Water_Bottle = "打開 一箱瓶裝水(12瓶裝)",
+Recipe_Pack_a_Orange_Soda = "打包 12瓶 瓶裝汽水",
+Recipe_Pack_a_Water_Bottle = "打包 12瓶 瓶裝水",
+
+}

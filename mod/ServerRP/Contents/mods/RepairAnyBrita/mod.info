@@ -1,0 +1,5 @@
+name=Repair Any Brita OPTIONAL
+description= Makes you able to repair Brita's items! Requires ItemTweakerAPI and Brita's Armor pack
+poster=poster.png
+require=ItemTweakerAPI
+id=RepairAnyBrita

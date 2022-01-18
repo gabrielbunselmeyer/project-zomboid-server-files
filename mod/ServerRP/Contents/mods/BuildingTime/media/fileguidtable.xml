@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fileGuidTable>
+	<files>
+		<path>media/clothing/clothingItems/Other_HandTruckBlue.xml</path>
+		<guid>sfbuild0-time-spec-0000-000000000001</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Other_HandTruckRed.xml</path>
+		<guid>sfbuild0-time-spec-0000-000000000002</guid>
+	</files>
+</fileGuidTable>

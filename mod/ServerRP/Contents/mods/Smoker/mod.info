@@ -1,0 +1,8 @@
+name=Smoker
+poster=SmokerPoster.png
+description=EXTENDED VERSION - The mod completely changes the mechanics of cigarettes - the cigarettes will be inside the pack! Can work both independently and with other mods that change cigarettes, in the second case - it can use items and capabilities of other mods.
+id=Smoker
+url=
+modversion=1.62
+pzversion=41.65
+versionMin = 41.56

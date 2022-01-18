@@ -1,0 +1,14 @@
+--- SMOKER ---
+IGUI_ES = {
+IGUI_Empty = "Vacio ...",
+IGUI_One_cigarette = "Un cigarrillo.",
+IGUI_Two_cigarettes = "Dos cigarrillos.",
+IGUI_There_is_some = "Hay algunos ...",
+IGUI_Less_than_half = "Menos de la mitad",
+IGUI_Almost_half_a_pack = "Casi medio paquete ...",
+IGUI_More_than_a_half = "?Mas de la mitad!",
+IGUI_Almost_a_complete_pack = "?Casi un paquete completo!",
+IGUI_Full_pack = "?Paquete completo!",
+IGUI_Refuel_Lighter = "Repostar encendedor",
+IGUI_ContextMenu_Cant_Action = "No se puede completar ... Mueve el articulo al inventario principal y haz clic derecho de nuevo ...",
+} 

@@ -1,0 +1,233 @@
+/********************* Support jiggasGreenfireMod ********************/
+/*********************************************************************/
+module Greenfire
+{
+
+	imports
+	{
+		SM, Base
+	}
+
+/********** Наполнить трубку Маленькой горстью табака из Smoker mod **********/
+	recipe Fill Smoking Pipe with Tobacco
+	{
+		SmokingPipe,
+		SMSmallHandfulTobacco,
+		Result:Greenfire.TobaccoPipe,
+		Time:60.0,
+		OnTest:Greenfire_TestIsValid,
+	}
+
+/********** Наполнить трубку 5 щепотками табака из Smoker mod **********/	
+	recipe Fill Smoking Pipe with Tobacco
+	{
+		SmokingPipe,
+		SMPinchTobacco=5,
+		Result:Greenfire.TobaccoPipe,
+		Time:60.0,
+		OnTest:Greenfire_TestIsValid,
+	}
+
+/**** Наполнить бонг 5 щепотками табака из Smoker mod ****/
+	recipe Load Bong with Tobacco
+	{
+		Bong,
+		SMPinchTobacco=5,
+		Result:Greenfire.TobaccoBong,
+		Time:60.0,
+		OnTest:Greenfire_TestIsValid,
+	}
+
+/**** Наполнить бонг Маленькой горстью табака из Smoker mod ****/
+	recipe Load Bong with Tobacco
+	{
+		Bong,
+		SMSmallHandfulTobacco,
+		Result:Greenfire.TobaccoBong,
+		Time:60.0,
+		OnTest:Greenfire_TestIsValid,
+	}
+
+/**** Положить GreenfireTobacco в кисет ****/
+recipe Put GreenfireTobacco
+	{
+		destroy SMTobaccoPouches,
+		destroy Tobacco,
+		Result:SMTobaccoPouches,
+		Time:50.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnTest:recipe_Put_Small_Handful_Tobacco_TestIsValid,
+		OnCreate:recipe_Put_Small_Handful_Tobacco_OnCreate,
+	}
+
+/**** Сделать самопальную сигарету с фильтром ****/
+recipe Make Homemade Cigarette
+	{
+		RollingPapers=1,
+		SMFilter,
+		SMSmallHandfulTobacco/Tobacco,
+		Result:SMHomemadeCigarette,
+		Time:120.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnTest:Greenfire_TestIsValid,
+	}
+
+recipe Make Homemade Cigarette
+	{
+		SheetPaper2,
+		SMFilter,
+		SMSmallHandfulTobacco/Tobacco,
+		Result:SMHomemadeCigarette,
+		Time:120.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnTest:Greenfire_TestIsValid,
+	}
+
+recipe Make Homemade Cigarette
+	{
+		RollingPapers=1,
+		SMFilter,
+		SMPinchTobacco=5,
+		Result:SMHomemadeCigarette,
+		Time:120.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnTest:Greenfire_TestIsValid,
+	}
+
+/**** Сделать самопальную сигарету без фильтра ****/
+recipe Make Homemade Cigarette Without Filter
+	{
+		RollingPapers=1,
+		SMSmallHandfulTobacco/Tobacco,
+		Result:SMHomemadeCigarette2,
+		Time:120.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnTest:Greenfire_TestIsValid,
+	}
+
+recipe Make Homemade Cigarette Without Filter
+	{
+		RollingPapers=1,
+		SMPinchTobacco=5,
+		Result:SMHomemadeCigarette2,
+		Time:120.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnTest:Greenfire_TestIsValid,
+	}
+
+recipe Make Homemade Cigarette Without Filter
+	{
+		SheetPaper2/ToiletPaper,
+		SMSmallHandfulTobacco/Tobacco,
+		Result:SMHomemadeCigarette2,
+		Time:120.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnTest:Greenfire_TestIsValid,
+	}
+
+/**** Вытащить курительную смесь из косяка GreenFire ****/
+recipe Dismantle Spliff
+	{
+		destroy Spliff,
+		Result:SMSmokingBlend,
+		Time:30.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnTest:Greenfire_TestIsValid,
+	}
+
+/**** Забить растабаченный косяк ****/	
+	recipe Roll Spliff
+	{
+		RollingPapers/SheetPaper2/ToiletPaper,
+		SMSmokingBlend,
+		Result:Spliff,
+		Time:120.0,
+		OnTest:Greenfire_TestIsValid,
+	}
+
+/**** Наполнить бонг растабаченной марихуаной ****/	
+	recipe Load Bong with Smoking Blend
+	{
+		Bong,
+		SMSmokingBlend,
+		Result:SMSmokingBlendBong,
+		Time:60.0,
+		OnTest:Greenfire_TestIsValid,
+	}
+
+/**** Наполнить трубку растабаченной марихуаной ****/	
+	recipe Load Smoking Pipe With Smoking Blend
+	{
+		SmokingPipe,
+		SMSmokingBlend,
+		Result:SMSmokingBlendPipe,
+		Time:60.0,
+		OnTest:Greenfire_TestIsValid,
+	}
+
+/**** Извлечь курительную смесь из трубки****/	
+	recipe Unload Smoking Blend from Smoking Pipe
+	{
+		SMSmokingBlendPipe,
+		Result:SMSmokingBlend,
+		Time:30.0,
+		OnCreate:DumpPipe_OnCreate,
+		OnTest:Greenfire_TestIsValid,
+	}
+
+/**** Извлечь растабаченную марихуану из бонга ****/	
+	recipe Unload Smoking Blend from Bong 
+	{
+		destroy SMSmokingBlendBong,
+		Result:SMSmokingBlend,
+		Time:30.0,
+		OnCreate:DumpBong_OnCreate,
+		OnTest:Greenfire_TestIsValid,
+	}
+
+/**** Растабачить марихуану ("Растабачить" - mix tobacco and marijuana - get a smoking blend) ****/	
+	recipe Mix Tobacco and Cannabis 
+	{
+		CannabisShake,
+		Tobacco/SMSmallHandfulTobacco,
+		Result:SMSmokingBlend=2,
+		Time:30.0,
+		OnTest:Greenfire_TestIsValid,
+	}
+
+/**** Положить курительную смесь в бульбулятор / Put the smoking blend in the smoking device ****/
+recipe Put Smoking Blend in smoking device
+	{
+		destroy SMCrumpledWithFoilCap2, /*** Бутылка с крышкой и отверстиями в фольге ***/
+		destroy SMSmokingBlend, /**** Курительная смесь /  Smoking Blend ****/
+		Result:SMSmokingDeviceWithSmokingBlend, /**** Сухой бульбулятор с курительной смесью / Smoking device from a plastic bottle with Smoking Blend ****/
+		Time:100.0,
+		OnTest:Greenfire_TestIsValid,
+	}
+
+/**** Извлечь курительную смесь из бульбулятора / Remove a smoking blend from the smoking device ****/
+recipe Remove Smoking Blend from smoking device
+	{
+		destroy SMSmokingDeviceWithSmokingBlend, /**** Сухой бульбулятор с курительной смесью / Smoking device from a plastic bottle with Smoking Blend ****/
+		Result:SMCrumpledWithFoilCap2, /*** Сухой бульбулятор - Бутылка с крышкой и отверстиями в фольге / Smoking device from a plastic bottle ***/
+		Time:20.0,
+		OnTest:Greenfire_TestIsValid,
+		OnCreate:recipe_AddSmokingBlend_OnCreate, /**** Курительная смесь /  Smoking Blend ****/
+	}
+}

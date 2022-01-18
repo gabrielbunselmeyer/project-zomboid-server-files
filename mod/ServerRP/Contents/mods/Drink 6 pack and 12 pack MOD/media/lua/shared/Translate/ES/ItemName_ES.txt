@@ -1,0 +1,18 @@
+ItemName_ES = {
+
+	-- I was here (SmokeAnDrink)
+	-- Drink 6 pack and 12 pack MOD
+
+	ItemName_DrinkPackMod.Beer = "Cervezas",
+	ItemName_DrinkPackMod.BeerBottle = "Botellas de cerveza",
+	ItemName_DrinkPackMod.BeerBottlePack = "Paquete de 6 botellas de cerveza",
+	ItemName_DrinkPackMod.BeerPack = "Paquete de 6 latas de cerveza",
+	ItemName_DrinkPackMod.Pop2Pack = "Paquete de 6 gaseosas",
+	ItemName_DrinkPackMod.Pop3Pack = "Paquete de 6 gaseosas",
+	ItemName_DrinkPackMod.PopPack = "Paquete de 6 gaseosas",
+	ItemName_DrinkPackMod.WhiskeyBottledPack = "Paquete de 12 botellas de Bourbon",
+	ItemName_DrinkPackMod.Wine2BottledPack = "Paquete de 12 botellas de vino tinto",
+	ItemName_DrinkPackMod.WineBottledPack = "Paquete de 12 botellas de Chardonnay",
+	ItemName_DrinkPackMod.PopBottlePack = "Paquete de 12 botellas de soda de naranja",
+	ItemName_DrinkPackMod.WaterBottlePack = "Paquete de 12 botellas de agua",
+}

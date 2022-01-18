@@ -1,0 +1,44 @@
+module Base
+{
+	sound RFDSirenAlarm
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_motorolaalarm.wav,
+			distanceMin = 10,
+			distanceMax = 50,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+
+	sound RFDSirenYelp
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_motorolayelp.wav,
+			distanceMin = 10,
+			distanceMax = 70,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+
+	sound RFDSirenWall
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_motorolawall.wav,
+			distanceMin = 10,
+			distanceMax = 70,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+}

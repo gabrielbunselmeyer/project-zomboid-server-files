@@ -1,0 +1,19 @@
+ItemName_CH = {
+
+	-- Drink 6 pack and 12 pack MOD
+	-- Translated by Cleave
+
+ItemName_DrinkPackMod.Beer = "罐裝啤酒",
+ItemName_DrinkPackMod.BeerBottle = "瓶裝啤酒",
+ItemName_DrinkPackMod.BeerBottlePack = "一打瓶裝啤酒(6瓶裝)",
+ItemName_DrinkPackMod.BeerPack = "一紮罐裝啤酒(6罐裝)",
+ItemName_DrinkPackMod.Pop2Pack = "一紮汽水",
+ItemName_DrinkPackMod.Pop3Pack = "一紮汽水",
+ItemName_DrinkPackMod.PopPack = "一紮汽水",
+ItemName_DrinkPackMod.WhiskeyBottledPack = "一箱波本威士忌(12瓶裝)",
+ItemName_DrinkPackMod.Wine2BottledPack = "一箱白葡萄酒(12瓶裝)",
+ItemName_DrinkPackMod.WineBottledPack = "一箱紅葡萄酒(12瓶裝)",
+ItemName_DrinkPackMod.PopBottlePack = "一箱瓶裝汽水(12瓶裝)",
+ItemName_DrinkPackMod.WaterBottlePack = "一箱瓶裝水(12瓶裝)",
+
+}

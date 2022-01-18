@@ -1,0 +1,57 @@
+module Base
+{
+	sound VehicleHornFD
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			/* Not 'event' because it switches between 2D/3D. */
+			file = media/sound/vehicle_hornfd.wav,
+			distanceMin = 10,
+			distanceMax = 300,
+		}
+	}
+
+	sound FireSirenAlarm
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_firealarm.wav,
+			distanceMin = 10,
+			distanceMax = 50,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+
+	sound FireSirenYelp
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_fireyelp.wav,
+			distanceMin = 10,
+			distanceMax = 70,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+
+	sound FireSirenWall
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_firewall.wav,
+			distanceMin = 10,
+			distanceMax = 70,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+}

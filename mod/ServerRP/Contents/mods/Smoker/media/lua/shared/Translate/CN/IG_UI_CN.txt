@@ -1,0 +1,14 @@
+--- SMOKER ---
+IGUI_CN = {
+IGUI_Empty = "空的...",
+IGUI_One_cigarette = "一支香烟。",
+IGUI_Two_cigarettes = "两支香烟。",
+IGUI_There_is_some = "还剩一些...",
+IGUI_Less_than_half = "不到一半。",
+IGUI_Almost_half_a_pack = "接近半包...",
+IGUI_More_than_a_half = "半包多!",
+IGUI_Almost_a_complete_pack = "几乎一整包！",
+IGUI_Full_pack = "整整一包！",
+IGUI_Refuel_Lighter = "需要给打火机灌油",
+IGUI_ContextMenu_Cant_Action = "无法完成...将物品移至主物品栏内并再次右击...",
+}

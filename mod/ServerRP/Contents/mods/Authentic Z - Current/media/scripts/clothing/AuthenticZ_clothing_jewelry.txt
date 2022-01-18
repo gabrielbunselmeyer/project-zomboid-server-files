@@ -1,0 +1,29 @@
+module AuthenticZClothing {
+  imports {
+      Base
+  }
+    item Necklace_B
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Gold B Necklace,
+		ClothingItem = Necklace_B,
+		BodyLocation = Necklace,
+		Icon = Necklace_SilverCrucifix,
+		Weight = 0.1,
+		Cosmetic = TRUE,
+		WorldStaticModel = Necklace_SilverCrucifix_Ground,		
+	}
+    item Necklace_GoldCrucifix
+	{
+	    DisplayCategory = Accessory,	
+		Type = Clothing,
+		DisplayName = Gold Necklace with Crucifix,
+		ClothingItem = Necklace_GoldCrucifix,
+		BodyLocation = Necklace,
+		Icon = Necklace_Crucifix_Gold,
+		Weight = 0.1,
+		Cosmetic = TRUE,
+		WorldStaticModel = Necklace_SilverCrucifix_Ground,			
+	}	
+}

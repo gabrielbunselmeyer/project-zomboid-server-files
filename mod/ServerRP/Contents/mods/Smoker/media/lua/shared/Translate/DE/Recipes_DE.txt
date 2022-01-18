@@ -1,0 +1,55 @@
+/************************SMOKER************************/
+
+Items_DE = {
+	Recipe_Open_Pack_Cigarettes = "Zigarettenpackung öffnen",
+	Recipe_Take_Cigarette_from_Pack = "Zigarette entnehmen",
+	Recipe_Put_Cigarette_in_Pack = "Zigarette hinzufügen",
+	Recipe_Put_Cigarette_in_EmptyPack = "Zigarette in leere Schachtel stecken",
+	Recipe_Pack_in_Carton_Cigarettes = "Schachtel in Stange packen",
+	Recipe_Unpack_Cigarettes = "Schachtelen auspacken",
+	Recipe_Close_the_full_pack = "Zigarettenpackung schließen",
+	Recipe_Open_the_full_pack = "Zigarettenpackung öffnen",
+	Recipe_Dismantle_Cigarette_Butt = "Stümmel zerlegen",
+	Recipe_Dismantle_Cigarette = "Zigarette zerlegen",
+	Recipe_Dismantle_Homemade_Cigarette = "Zigarette zerlegen"
+	Recipe_Make_homemade_filter_cigarette = "Selbstgemachte Filterzigarette herstellen",
+	Recipe_Make_Homemade_Cigarette_Without_Filter = "Selbstgemachte Zigarette herstellen",
+	Recipe_Make_Tobacco_Pouch = "Tabak Beutel herstellen",
+	Recipe_Put_Pinch_Tobacco = "Eine Prise Tabak in den Beutel legen",
+	Recipe_Put_Small_Handful_Tobacco = "Eine Handvoll Tabak in den Beutel legen",
+	Recipe_Take_Pinch_Tobacco = "Eine Prise Tabak entnehmen",
+	Recipe_Take_Small_Handful_Tobacco = "Eine kleine Handvoll Tabak entnehmen",
+	Recipe_Divide_into_five_pinches = "in fünf Prisen trennen",
+	Recipe_Mix_in_one_handful = "Handvoll Tabak zusammenlegen",
+	Recipe_Fill_Smoking_Pipe_with_Tobacco = "Fülle Gebastelten Bong mit Tabak",
+	Recipe_Put_GreenfireTobacco = "Eine Handvoll Tabak in den Beutel legen",
+	Recipe_Remove_Filter_from_Cigarette_Butt = "Zigarettenfilter vom Stümmel entfernen",
+	Recipe_Crumple_the_Plastic_Bottle = "Plastikflasche zerkittern",
+	Recipe_Make_a_Bottle_Cap = "Flaschenkopf herstellen",
+	Recipe_Burn_hole_in_plastic_bottle = "Ein Loch in die Flasche brennen",
+	Recipe_Make_a_hole_in_the_bottle = "Ein Loch in die Zerkitterte Flasche brennen",
+	Recipe_Remove_the_Foil_from_the_Cigarette_Pack = "Folie von Zigarettenschachtel entfernen",
+	Recipe_Make_Holes_in_Foil = "Ein Loch in die Folie drücken",
+	Recipe_Put_pinch_tobacco_in_smoking_device = "Eine Prise Tabak in die Gebastelte Bong füllen",
+	Recipe_Remove_tobacco_from_smoking_device = "Eine Prise Tabak aus der Gebastelten Bong entfernen",
+	Recipe_Pull_out_the_chewing_gum = "Kaugummi entnehmen",
+	Recipe_Pull_out_blister_pack = "Blisterpackung herausziehen",
+
+/************************ For Greenfire ************************/
+	Recipe_Dismantle_Spliff = "Joint auseinandernehmen",
+	Recipe_Roll_Spliff = "Joint drehen",
+	Recipe_Load_Bong_with_Smoking_Blend = "Bong mit Mischung füllen",
+	Recipe_Load_Smoking_Pipe_With_Smoking_Blend = "Pfeife mit Mischung füllen",
+	Recipe_Unload_Smoking_Blend_from_Smoking_Pipe =  "Mischung aus der Pfeife nehmen",
+	Recipe_Unload_Smoking_Blend_from_Bong = "Mischung aus der Bong nehmen",
+	Recipe_Mix_Tobacco_and_Cannabis = "Mische Tabak und Cannabis",
+	Recipe_Put_Smoking_Blend_in_smoking_device = "Mischung in die Gebastelten Bong füllen",
+	Recipe_Remove_Smoking_Blend_from_smoking_device = "Mischung aus der Gebastelten Bong entfernen",
+
+/************************ For HydroCraft************************/
+	Recipe_Remove_tobacco_from_pipe = "Tabak aus der Pfeife nehmen",
+
+/************************ For littering ************************/
+	Recipe_Open_Pack_of_Menthol_Cigarettes = "Öffne Menthol Zigarettenpackung",
+	Recipe_Open_Pack_of_Lite_Cigarettes = "Öffne Light Zigarettenpackung",
+}

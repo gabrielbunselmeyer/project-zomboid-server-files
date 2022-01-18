@@ -1,0 +1,18 @@
+ItemName_RU = {
+
+	-- Drink 6 pack and 12 pack MOD
+	-- Russian translation by Admiral.Slowpoke
+
+	ItemName_DrinkPackMod.Beer = "Ѕанка пива",
+	ItemName_DrinkPackMod.BeerBottle = "Ѕутылка пива",
+	ItemName_DrinkPackMod.BeerBottlePack = "”паковка из 6 бутылок пива",
+	ItemName_DrinkPackMod.BeerPack = "”паковка из 6 банок пива",
+	ItemName_DrinkPackMod.Pop2Pack = "”паковка из 6 банок газировки",
+	ItemName_DrinkPackMod.Pop3Pack = "”паковка из 6 банок газировки",
+	ItemName_DrinkPackMod.PopPack = "”паковка из 6 банок газировки",
+	ItemName_DrinkPackMod.WhiskeyBottledPack = "”паковка из 12 бутылок виски",
+	ItemName_DrinkPackMod.Wine2BottledPack = "”паковка из 12 бутылок красного вина",
+	ItemName_DrinkPackMod.WineBottledPack = "”паковка из 12 бутылок шардонне",
+	ItemName_DrinkPackMod.PopBottlePack = "”паковка из 12 бутылок газировки,
+	ItemName_DrinkPackMod.WaterBottlePack = "”паковка из 12 бутылок воды",
+}

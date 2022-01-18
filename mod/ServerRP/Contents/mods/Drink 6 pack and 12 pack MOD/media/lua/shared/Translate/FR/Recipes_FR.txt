@@ -1,0 +1,23 @@
+﻿Recipe_EN = {
+
+	-- Drink 6 pack and 12 pack MOD
+	-- Traduit en français par Bobitec
+
+	Recipe_Open_a_pack_of_Beer = "Ouvrir un paquet de bières",
+	Recipe_Pack_a_Beer = "Emballé des bières",
+	Recipe_Open_a_pack_of_Beer_bottle = "Ouvrir un paquet de bouteilles de bières",
+	Recipe_Pack_a_Beer_bottle = "Emballé des bouteilles de bières",
+	Recipe_Open_a_pack_of_Pop = "Ouvrir un paquet de canettes",
+	Recipe_Pack_a_Pop = "Emballé des canettes",
+	Recipe_Pack_a_Whiskey_bottle = "Emballé des bouteilles de whisky",
+	Recipe_Open_a_pack_of_Whiskey_bottle = "Ouvrir un paquet de bouteilles de whisky",
+	Recipe_Pack_a_Chardonnay_bottle = "Emballé des bouteilles de Chardonnay",
+	Recipe_Open_a_pack_of_Chardonnay_bottle = "Ouvrir un paquet de bouteilles de Chardonnay",
+	Recipe_Pack_a_Red_Wine_bottle = "Emballé des bouteilles de vin rouge",
+	Recipe_Open_a_pack_of_Red_Wine_bottle = "Ouvrir un paquet de bouteilles de vin rouge",
+	Recipe_Open_a_pack_of_Orange_Soda = "Ouvrir un paquet de bouteilles de soda a l'orange",
+	Recipe_Open_a_pack_of_Water_Bottle = "Ouvrir un paquet de bouteilles d'eau",
+	Recipe_Pack_a_Orange_Soda = "Emballé des bouteilles de soda a l'orange",
+	Recipe_Pack_a_Water_Bottle = "Emballé des bouteilles d'eau",
+
+}

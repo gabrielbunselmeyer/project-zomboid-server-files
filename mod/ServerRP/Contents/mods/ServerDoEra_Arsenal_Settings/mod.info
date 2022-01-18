@@ -1,0 +1,5 @@
+name=ServerDoEra_Arsenal_Settings
+id=ServerDoEra_Arsenal_Settings
+poster=preview.png
+description=Settings override for my server.
+require=Arsenal(26)GunFighter

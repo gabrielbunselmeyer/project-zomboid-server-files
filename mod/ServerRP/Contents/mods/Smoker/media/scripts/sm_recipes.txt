@@ -1,0 +1,887 @@
+module SM
+{
+	imports
+	{
+		farming, Base
+	}
+
+/*************RECIPES*******************/
+
+recipe Pull out the chewing gum
+	{
+		SMNicorette,
+		Result:SMGum,
+		Time:30.0,
+		Sound:sm_blister,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+	}
+
+recipe Pull out blister pack
+	{
+		SMNicoretteBox,
+		Result:SMNicorette,
+		Time:30.0,
+		Sound:sm_blister,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+	}
+
+recipe Open Pack Cigarettes
+	{
+		destroy Cigarettes,
+		Result:SMPack,
+		Time:30.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnCreate:recipe_OpenPackCigarettes,
+		StopOnWalk:false,
+	}
+
+recipe Close the full pack
+	{
+		destroy SMPack,
+		Result:SMFullPack,
+		Time:30.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnTest:recipe_CloseFullPackCigarettes_TestIsValid,
+		OnCreate:recipe_CloseFullPackCigarettes,
+		StopOnWalk:false,
+	}
+
+recipe Open the full pack
+	{
+		destroy SMFullPack,
+		Result:SMPack,
+		Time:30.0,
+		NeedToBeLearn:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnCreate:recipe_Open_full_pack,
+		CanBeDoneFromFloor:false,
+		StopOnWalk:false,
+	}
+
+recipe Take Cigarette from Pack
+	{
+		SMPack,
+		Result:SMCigarette,
+		Time:30.0,
+		NeedToBeLearn:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		CanBeDoneFromFloor:false,
+		OnTest:recipe_Take_Cigarette_from_Pack_TestIsValid,
+		OnCreate:recipe_TakeCigaretteFromPack_OnCreate,
+		StopOnWalk:false,
+	}
+
+recipe Put Cigarette in Pack
+	{
+		destroy SMCigarette,
+		destroy SMPack,
+		Result:SMPack,
+		Time:30.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnTest:recipe_PutCigaretteInPack_TestIsValid,
+		OnCreate:recipe_PutCigaretteInPack,
+		StopOnWalk:false,
+	}
+
+recipe Put Cigarette in EmptyPack
+	{
+		destroy SMCigarette,
+		destroy SMEmptyPack,
+		Result:SMPack,
+		Time:10.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:true,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnCreate:recipe_PutCigaretteInEmptyPack_OnCreate,
+		StopOnWalk:false,
+	}
+
+/******* Вытащить табак из фабричной сигареты + добавить в инвентарь фильтр *******/
+/**** Remove tobacco from a factory cigarette + add a filter to your inventory ****/
+recipe Dismantle Cigarette
+	{
+		destroy SMCigarette,
+		Result:SMSmallHandfulTobacco,
+		Time:30.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnCreate:recipe_Remove_Tobacco_From_Cigarette_OnCreate,
+	}
+
+/************** Light Cigarettes *************/
+recipe Close the full pack
+	{
+		destroy SMPackLight,
+		Result:SMFullPackLight,
+		Time:30.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnTest:recipe_CloseFullPackCigarettesLight_TestIsValid,
+		OnCreate:recipe_CloseFullPackCigarettes,
+		StopOnWalk:false,
+	}
+
+recipe Open the full pack
+	{
+		destroy SMFullPackLight,
+		Result:SMPackLight,
+		Time:30.0,
+		NeedToBeLearn:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnCreate:recipe_Open_full_pack,
+		CanBeDoneFromFloor:false,
+		StopOnWalk:false,
+	}
+
+recipe Take Cigarette from Pack
+	{
+		SMPackLight,
+		Result:SMCigaretteLight,
+		Time:30.0,
+		NeedToBeLearn:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		CanBeDoneFromFloor:false,
+		OnTest:recipe_Take_Cigarette_from_PackLight_TestIsValid,
+		StopOnWalk:false,
+	}
+
+recipe Put Cigarette in Pack
+	{
+		destroy SMCigaretteLight,
+		destroy SMPackLight,
+		Result:SMPackLight,
+		Time:30.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnTest:recipe_PutCigaretteInPackLight_TestIsValid,
+		OnCreate:recipe_PutCigaretteInPackLight,
+		StopOnWalk:false,
+	}
+
+recipe Put Cigarette in EmptyPack
+	{
+		destroy SMCigaretteLight,
+		destroy SMEmptyPackLight,
+		Result:SMPackLight,
+		Time:30.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnCreate:recipe_PutCigaretteInEmptyPack_OnCreate,
+		StopOnWalk:false,
+	}
+
+/*********** Вытащить табак из Легкой сигареты + добавить в инвентарь фильтр **********/
+/**** Remove the tobacco from the Light Cigarette + add a filter to your inventory ****/
+recipe Dismantle Cigarette
+	{
+		destroy SMCigaretteLight,
+		Result:SMSmallHandfulTobacco,
+		Time:30.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnCreate:recipe_Remove_Tobacco_From_Cigarette_OnCreate,
+	}
+
+/************** Mentol Cigarettes *************/
+recipe Close the full pack
+	{
+		destroy SMPackMenthol,
+		Result:SMFullPackMenthol,
+		Time:30.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnTest:recipe_CloseFullPackCigarettesMenthol_TestIsValid,
+		OnCreate:recipe_CloseFullPackCigarettes,
+		StopOnWalk:false,
+	}
+
+recipe Open the full pack
+	{
+		destroy SMFullPackMenthol,
+		Result:SMPackMenthol,
+		Time:30.0,
+		NeedToBeLearn:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnCreate:recipe_Open_full_pack,
+		CanBeDoneFromFloor:false,
+		StopOnWalk:false,
+	}
+
+recipe Take Cigarette from Pack
+	{
+		SMPackMenthol,
+		Result:SMPCigaretteMenthol,
+		Time:30.0,
+		NeedToBeLearn:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		CanBeDoneFromFloor:false,
+		OnTest:recipe_Take_Cigarette_from_PackMenthol_TestIsValid,
+		StopOnWalk:false,
+	}
+
+recipe Put Cigarette in Pack
+	{
+		destroy SMPCigaretteMenthol,
+		destroy SMPackMenthol,
+		Result:SMPackMenthol,
+		Time:30.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnTest:recipe_PutCigaretteInPackMenthol_TestIsValid,
+		OnCreate:recipe_PutCigaretteInPackMenthol,
+		StopOnWalk:false,
+	}
+
+recipe Put Cigarette in EmptyPack
+	{
+		destroy SMEmptyPackMenthol,
+		destroy SMPCigaretteMenthol,
+		Result:SMPackMenthol,
+		Time:30.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnCreate:recipe_PutCigaretteInEmptyPack_OnCreate,
+		StopOnWalk:false,
+	}
+
+/****** Вытащить табак из Ментоловой сигареты + добавить в инвентарь фильтр ******/
+/*** Remove the tobacco from the Menthol cigarette + add a filter to your inventory ***/
+recipe Dismantle Cigarette
+	{
+		destroy SMPCigaretteMenthol,
+		Result:SMSmallHandfulTobacco,
+		Time:30.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnCreate:recipe_Remove_Tobacco_From_Cigarette_OnCreate,
+	}
+
+/************** Gold Cigarettes *************/
+recipe Close the full pack
+	{
+		destroy SMPackGold,
+		Result:SMFullPackGold,
+		Time:30.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnTest:recipe_CloseFullPackCigarettesGold_TestIsValid,
+		OnCreate:recipe_CloseFullPackCigarettes,
+		StopOnWalk:false,
+	}
+
+recipe Open the full pack
+	{
+		destroy SMFullPackGold,
+		Result:SMPackGold,
+		Time:30.0,
+		NeedToBeLearn:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnCreate:recipe_Open_full_pack,
+		CanBeDoneFromFloor:false,
+		StopOnWalk:false,
+	}
+
+recipe Take Cigarette from Pack
+	{
+		SMPackGold,
+		Result:SMPCigaretteGold,
+		Time:30.0,
+		NeedToBeLearn:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		CanBeDoneFromFloor:false,
+		OnTest:recipe_Take_Cigarette_from_PackGold_TestIsValid,
+		StopOnWalk:false,
+	}
+
+recipe Put Cigarette in Pack
+	{
+		destroy SMPCigaretteGold,
+		destroy SMPackGold,
+		Result:SMPackGold,
+		Time:30.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnTest:recipe_PutCigaretteInPackGold_TestIsValid,
+		OnCreate:recipe_PutCigaretteInPackGold,
+		StopOnWalk:false,
+	}
+
+recipe Put Cigarette in EmptyPack
+	{
+		destroy SMEmptyPackGold,
+		destroy SMPCigaretteGold,
+		Result:SMPackGold,
+		Time:30.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnCreate:recipe_PutCigaretteInEmptyPack_OnCreate,
+		StopOnWalk:false,
+	}
+
+/****** Вытащить табак из Золотой сигареты + добавить в инвентарь фильтр ******/
+/*** Remove the tobacco from the Gold cigarette + add a filter to your inventory ***/
+recipe Dismantle Cigarette
+	{
+		destroy SMPCigaretteGold,
+		Result:SMSmallHandfulTobacco,
+		Time:30.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnCreate:recipe_Remove_Tobacco_From_Cigarette_OnCreate,
+	}
+
+/****************** Обычные Сигареты / Regular Cigarettes ******************/
+recipe Pack in Carton Cigarettes
+	{
+		DuctTape/Scotchtape/Glue/Woodglue,
+		Newspaper/Book/ComicBook/Notebook/Journal/HottieZ/EngineerMagazine1/EngineerMagazine2/SmithingMag1/SmithingMag2/SmithingMag3/SmithingMag4/HerbalistMag/FarmingMag1/BookTailoring1/BookTailoring2/BookTailoring3/BookTailoring4/BookTailoring5/BookElectrician1/BookElectrician2/BookElectrician3/BookElectrician4/BookElectrician5/BookFarming1/BookFarming2/BookFarming3/BookFarming4/BookFarming5/BookForaging1/BookForaging2/BookForaging3/BookForaging4/BookForaging5/BookBlacksmith1/BookBlacksmith2/BookBlacksmith3/BookBlacksmith4/BookBlacksmith5/BookMetalWelding1/BookMetalWelding2/BookMetalWelding3/BookMetalWelding4/BookMetalWelding5/BookCarpentry2/BookCarpentry3/BookCarpentry4/BookCarpentry5/BookFirstAid1/BookFirstAid2/BookFirstAid3/BookFirstAid4/BookFirstAid5/BookTrapping1/BookTrapping2/BookTrapping3/BookTrapping4/BookTrapping5/BookFishing1/BookFishing2/BookFishing3/BookFishing4/BookFishing5/BookCarpentry1/Magazine/WestpointMap/MarchRidgeMap/MuldraughMap/RosewoodMap/RiversideMap/FishingMag1/FishingMag2/ElectronicsMag1/ElectronicsMag2/ElectronicsMag3/ElectronicsMag4/ElectronicsMag5/MechanicMag2/MetalworkMag4/HuntingMag1/HuntingMag2/HuntingMag3/CookingMag1/CookingMag2/BookMechanic1/BookMechanic2/BookMechanic3/BookMechanic4/MetalworkMag1/MetalworkMag2/MetalworkMag3/MetalworkMag4,
+		destroy SMFullPack=10,
+		Result:SMCartonCigarettes,
+		Time:200.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:true,
+		OnGiveXP:NoXP_OnGiveXP,
+	}
+
+recipe Pack in Carton Cigarettes
+	{
+		DuctTape/Scotchtape/Glue/Woodglue,
+		SMEmptyPack=5,
+		destroy SMFullPack=10,
+		Result:SMCartonCigarettes,
+		Time:200.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:true,
+		OnGiveXP:NoXP_OnGiveXP,
+	}
+
+recipe Unpack Cigarettes
+	{
+		destroy SMCartonCigarettes,
+		Result:SMFullPack=10,
+		Time:60.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+	}
+
+/****************** Легкие Сигареты / Light Cigarettes ******************/
+recipe Pack in Carton Cigarettes
+	{
+		DuctTape/Scotchtape/Glue/Woodglue,
+		Newspaper/Book/ComicBook/Notebook/Journal/HottieZ/EngineerMagazine1/EngineerMagazine2/SmithingMag1/SmithingMag2/SmithingMag3/SmithingMag4/HerbalistMag/FarmingMag1/BookTailoring1/BookTailoring2/BookTailoring3/BookTailoring4/BookTailoring5/BookElectrician1/BookElectrician2/BookElectrician3/BookElectrician4/BookElectrician5/BookFarming1/BookFarming2/BookFarming3/BookFarming4/BookFarming5/BookForaging1/BookForaging2/BookForaging3/BookForaging4/BookForaging5/BookBlacksmith1/BookBlacksmith2/BookBlacksmith3/BookBlacksmith4/BookBlacksmith5/BookMetalWelding1/BookMetalWelding2/BookMetalWelding3/BookMetalWelding4/BookMetalWelding5/BookCarpentry2/BookCarpentry3/BookCarpentry4/BookCarpentry5/BookFirstAid1/BookFirstAid2/BookFirstAid3/BookFirstAid4/BookFirstAid5/BookTrapping1/BookTrapping2/BookTrapping3/BookTrapping4/BookTrapping5/BookFishing1/BookFishing2/BookFishing3/BookFishing4/BookFishing5/BookCarpentry1/Magazine/WestpointMap/MarchRidgeMap/MuldraughMap/RosewoodMap/RiversideMap/FishingMag1/FishingMag2/ElectronicsMag1/ElectronicsMag2/ElectronicsMag3/ElectronicsMag4/ElectronicsMag5/MechanicMag2/MetalworkMag4/HuntingMag1/HuntingMag2/HuntingMag3/CookingMag1/CookingMag2/BookMechanic1/BookMechanic2/BookMechanic3/BookMechanic4/MetalworkMag1/MetalworkMag2/MetalworkMag3/MetalworkMag4,
+		destroy SMFullPackLight=10,
+		Result:SMCartonCigarettesLight,
+		Time:200.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:true,
+		OnGiveXP:NoXP_OnGiveXP,
+	}
+
+recipe Pack in Carton Cigarettes
+	{
+		DuctTape/Scotchtape/Glue/Woodglue,
+		SMEmptyPack=5,
+		destroy SMFullPackLight=10,
+		Result:SMCartonCigarettesLight,
+		Time:200.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:true,
+		OnGiveXP:NoXP_OnGiveXP,
+	}
+
+recipe Unpack Cigarettes
+	{
+		destroy SMCartonCigarettesLight,
+		Result:SMFullPackLight=10,
+		Time:60.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+	}
+
+/****************** Ментоловые Сигареты / Menthol Cigarettes ******************/
+recipe Pack in Carton Cigarettes
+	{
+		DuctTape/Scotchtape/Glue/Woodglue,
+		Newspaper/Book/ComicBook/Notebook/Journal/HottieZ/EngineerMagazine1/EngineerMagazine2/SmithingMag1/SmithingMag2/SmithingMag3/SmithingMag4/HerbalistMag/FarmingMag1/BookTailoring1/BookTailoring2/BookTailoring3/BookTailoring4/BookTailoring5/BookElectrician1/BookElectrician2/BookElectrician3/BookElectrician4/BookElectrician5/BookFarming1/BookFarming2/BookFarming3/BookFarming4/BookFarming5/BookForaging1/BookForaging2/BookForaging3/BookForaging4/BookForaging5/BookBlacksmith1/BookBlacksmith2/BookBlacksmith3/BookBlacksmith4/BookBlacksmith5/BookMetalWelding1/BookMetalWelding2/BookMetalWelding3/BookMetalWelding4/BookMetalWelding5/BookCarpentry2/BookCarpentry3/BookCarpentry4/BookCarpentry5/BookFirstAid1/BookFirstAid2/BookFirstAid3/BookFirstAid4/BookFirstAid5/BookTrapping1/BookTrapping2/BookTrapping3/BookTrapping4/BookTrapping5/BookFishing1/BookFishing2/BookFishing3/BookFishing4/BookFishing5/BookCarpentry1/Magazine/WestpointMap/MarchRidgeMap/MuldraughMap/RosewoodMap/RiversideMap/FishingMag1/FishingMag2/ElectronicsMag1/ElectronicsMag2/ElectronicsMag3/ElectronicsMag4/ElectronicsMag5/MechanicMag2/MetalworkMag4/HuntingMag1/HuntingMag2/HuntingMag3/CookingMag1/CookingMag2/BookMechanic1/BookMechanic2/BookMechanic3/BookMechanic4/MetalworkMag1/MetalworkMag2/MetalworkMag3/MetalworkMag4,
+		destroy SMFullPackMenthol=10,
+		Result:SMCartonCigarettesMenthol,
+		Time:200.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:true,
+		OnGiveXP:NoXP_OnGiveXP,
+	}
+
+recipe Pack in Carton Cigarettes
+	{
+		DuctTape/Scotchtape/Glue/Woodglue,
+		SMEmptyPack=5,
+		destroy SMFullPackMenthol=10,
+		Result:SMCartonCigarettesMenthol,
+		Time:200.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:true,
+		OnGiveXP:NoXP_OnGiveXP,
+	}
+
+recipe Unpack Cigarettes
+	{
+		destroy SMCartonCigarettesMenthol,
+		Result:SMFullPackMenthol=10,
+		Time:60.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+	}
+
+/****************** Золотые Сигареты / Gold Cigarettes ******************/
+recipe Pack in Carton Cigarettes
+	{
+		DuctTape/Scotchtape/Glue/Woodglue,
+		Newspaper/Book/ComicBook/Notebook/Journal/HottieZ/EngineerMagazine1/EngineerMagazine2/SmithingMag1/SmithingMag2/SmithingMag3/SmithingMag4/HerbalistMag/FarmingMag1/BookTailoring1/BookTailoring2/BookTailoring3/BookTailoring4/BookTailoring5/BookElectrician1/BookElectrician2/BookElectrician3/BookElectrician4/BookElectrician5/BookFarming1/BookFarming2/BookFarming3/BookFarming4/BookFarming5/BookForaging1/BookForaging2/BookForaging3/BookForaging4/BookForaging5/BookBlacksmith1/BookBlacksmith2/BookBlacksmith3/BookBlacksmith4/BookBlacksmith5/BookMetalWelding1/BookMetalWelding2/BookMetalWelding3/BookMetalWelding4/BookMetalWelding5/BookCarpentry2/BookCarpentry3/BookCarpentry4/BookCarpentry5/BookFirstAid1/BookFirstAid2/BookFirstAid3/BookFirstAid4/BookFirstAid5/BookTrapping1/BookTrapping2/BookTrapping3/BookTrapping4/BookTrapping5/BookFishing1/BookFishing2/BookFishing3/BookFishing4/BookFishing5/BookCarpentry1/Magazine/WestpointMap/MarchRidgeMap/MuldraughMap/RosewoodMap/RiversideMap/FishingMag1/FishingMag2/ElectronicsMag1/ElectronicsMag2/ElectronicsMag3/ElectronicsMag4/ElectronicsMag5/MechanicMag2/MetalworkMag4/HuntingMag1/HuntingMag2/HuntingMag3/CookingMag1/CookingMag2/BookMechanic1/BookMechanic2/BookMechanic3/BookMechanic4/MetalworkMag1/MetalworkMag2/MetalworkMag3/MetalworkMag4,
+		destroy SMFullPackGold=10,
+		Result:SMCartonCigarettesGold,
+		Time:200.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:true,
+		OnGiveXP:NoXP_OnGiveXP,
+	}
+
+recipe Pack in Carton Cigarettes
+	{
+		DuctTape/Scotchtape/Glue/Woodglue,
+		SMEmptyPack=5,
+		destroy SMFullPackGold=10,
+		Result:SMCartonCigarettesGold,
+		Time:200.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:true,
+		OnGiveXP:NoXP_OnGiveXP,
+	}
+
+recipe Unpack Cigarettes
+	{
+		destroy SMCartonCigarettesGold,
+		Result:SMFullPackGold=10,
+		Time:60.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+	}
+
+/**** Изготовление спрея для растений / Making a plant spray ****/
+recipe Make Flies Cure
+	{
+		GardeningSprayEmpty,
+		Water=3,
+		SMCigarette=5,
+		Result:GardeningSprayCigarettes,
+		Time:40.0,
+		NeedToBeLearn:false,
+		OnGiveXP:NoXP_OnGiveXP,
+	}
+
+recipe Make Flies Cure
+	{
+		GardeningSprayEmpty,
+		Water=3,
+		SMHomemadeCigarette=5,
+		Result:GardeningSprayCigarettes,
+		Time:40.0,
+		NeedToBeLearn:false,
+		OnGiveXP:NoXP_OnGiveXP,
+	}
+
+recipe Make Flies Cure
+	{
+		GardeningSprayEmpty,
+		Water=3,
+		SMHomemadeCigarette2=5,
+		Result:GardeningSprayCigarettes,
+		Time:40.0,
+		NeedToBeLearn:false,
+		OnGiveXP:NoXP_OnGiveXP,
+	}
+
+recipe Make Flies Cure
+	{
+		GardeningSprayEmpty,
+		Water=3,
+		SMPileTobacco,
+		Result:GardeningSprayCigarettes,
+		Time:40.0,
+		NeedToBeLearn:false,
+		OnGiveXP:NoXP_OnGiveXP,
+	}
+
+recipe Make Flies Cure
+	{
+		GardeningSprayEmpty,
+		Water=3,
+		SMButt2=25,
+		Result:GardeningSprayCigarettes,
+		Time:40.0,
+		NeedToBeLearn:false,
+		OnGiveXP:NoXP_OnGiveXP,
+	}
+
+/******************* Извлечение табака, фильтров из окурков, изготовление кисета, трубки и сигарет *******************/
+/************* Extraction of tobacco, filters from cigarette butts, making a pouch, pipes and cigarettes *************/
+
+/**** Изготовление кисета / Making a pouch ****/
+recipe Make Tobacco Pouch
+	{
+		keep Scissors/Scalpel/FlintKnife/KitchenKnife/HuntingKnife,
+		keep Needle,
+		String/Thread/Twine,
+		LeatherStrips=2,
+		Result:SMTobaccoPouches,
+		Time:3000.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		SkillRequired:Tailoring=1,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnCreate:Make_Tobacco_Pouch_OnCreate,
+	}
+
+/************************ Взаимодействие с табаком и кисетом ************************/
+/************************ Interaction with tobacco and pouch *************************/
+
+/**** Положить щепотку табака в кисет / Put a pinch of tobacco in a pouch ****/
+recipe Put Pinch Tobacco
+	{
+		destroy SMTobaccoPouches,
+		destroy SMPinchTobacco,
+		Result:SMTobaccoPouches,
+		Time:50.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnTest:recipe_Put_Pinch_Tobacco_TestIsValid,
+		OnCreate:recipe_Put_Pinch_Tobacco_OnCreate,
+	}
+
+/**** Положить маленькую горстку табака в кисет / Put a small handful of tobacco in a pouch ****/
+recipe Put Small Handful Tobacco
+	{
+		destroy SMTobaccoPouches,
+		destroy SMSmallHandfulTobacco,
+		Result:SMTobaccoPouches,
+		Time:50.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnTest:recipe_Put_Small_Handful_Tobacco_TestIsValid,
+		OnCreate:recipe_Put_Small_Handful_Tobacco_OnCreate,
+	}
+
+/**** Взять щепотку табака из кисета / Take a pinch of tobacco from the pouch ****/
+recipe Take Pinch Tobacco
+	{
+		destroy SMTobaccoPouches,
+		Result:SMTobaccoPouches,
+		Time:50.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnTest:recipe_Take_Pinch_Tobacco_TestIsValid,
+		OnCreate:recipe_Take_Pinch_Tobacco_OnCreate,
+	}
+
+/**** Взять маленькую горстку табака из кисета / Take a small handful of tobacco from a pouch ****/
+recipe Take Small Handful Tobacco
+	{
+		destroy SMTobaccoPouches,
+		Result:SMTobaccoPouches,
+		Time:50.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnTest:recipe_Take_Small_Handful_Tobacco_TestIsValid,
+		OnCreate:recipe_Take_Small_Handful_Tobacco_OnCreate,
+	}
+
+/**** Разделить маленькую горстку табака на 5 щепоток / Divide a small handful of tobacco into 5 pinches ****/
+recipe Divide into five pinches
+	{
+		destroy SMSmallHandfulTobacco,
+		Result:SMPinchTobacco=5,
+		Time:100.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+	}
+
+/**** Смешать 5 щепоток в горстку табака / Mix 5 pinches into a handful of tobacco ****/
+recipe Mix in one handful
+	{
+		destroy SMPinchTobacco=5,
+		Result:SMSmallHandfulTobacco,
+		Time:10.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+	}
+
+/******************* Взаимодействие с табаком, фильтрами, окурками и самопальными сигаретами *******************/
+/******************** Interaction with tobacco, filters, cigarette butts and homemade cigarettes *******************/
+
+/**** Оторвать фильтр от из окурка / Tear off the filter from the butt ****/
+recipe Remove Filter from Cigarette Butt
+	{
+		destroy SMButt,
+		Result:SMButt2,
+		Time:30.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnCreate:recipe_Remove_Filter_From_Butt_OnCreate,
+	}
+
+/**** Вытащить фильтр и табак из окурка с фильтром / Remove the filter and tobacco from the filter stub ****/
+recipe Dismantle Cigarette Butt
+	{
+		destroy SMButt,
+		Result:SMFilter,
+		Time:30.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnCreate:recipe_Remove_Tobacco_From_Butt_OnCreate,
+	}
+
+/**** Вытащить табак из окурка без фильтра / Get the tobacco out of the stub without filter ****/
+recipe Dismantle Cigarette Butt
+	{
+		destroy SMButt2,
+		Result:SMPinchTobacco,
+		Time:30.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+	}
+
+/**** Вытащить табак из самопальной сигареты + добавить в инвентарь фильтр ****/
+recipe Dismantle Homemade Cigarette
+	{
+		destroy SMHomemadeCigarette,
+		Result:SMSmallHandfulTobacco,
+		Time:30.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnCreate:recipe_Remove_Tobacco_From_Homemade_Cigarette_OnCreate,
+	}
+
+/**** Вытащить табак из самопальной сигареты без фильтра ****/
+recipe Dismantle Homemade Cigarette
+	{
+		destroy SMHomemadeCigarette2,
+		Result:SMSmallHandfulTobacco,
+		Time:30.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+	}
+
+/**** Сделать самопальную сигарету с фильтром ****/
+recipe Make homemade filter cigarette
+	{
+		SheetPaper2/ToiletPaper,
+		SMFilter,
+		SMSmallHandfulTobacco,
+		Result:SMHomemadeCigarette,
+		Time:120.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+	}
+
+/**** Сделать самопальную сигарету с фильтром ****/
+recipe Make homemade filter cigarette
+	{
+		SheetPaper2/ToiletPaper,
+		SMFilter,
+		SMPinchTobacco=5,
+		Result:SMHomemadeCigarette,
+		Time:120.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+	}
+
+/**** Сделать самопальную сигарету без фильтра ****/
+recipe Make Homemade Cigarette Without Filter
+	{
+		SheetPaper2/ToiletPaper,
+		SMPinchTobacco=5,
+		Result:SMHomemadeCigarette2,
+		Time:120.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+	}
+
+/**** Сделать самопальную сигарету без фильтра ****/
+recipe Make Homemade Cigarette Without Filter
+	{
+		SheetPaper2/ToiletPaper,
+		SMSmallHandfulTobacco,
+		Result:SMHomemadeCigarette2,
+		Time:120.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+	}
+
+/******************** Сухой Бульбулятор / Smoking device from a plastic bottle *******************/
+/*********************** Сделать сухой бульбик / Make a bottle for smoking ***********************/
+
+/**** Смять пластиковую бутылку / Crumple the plastic bottle ****/
+/**** Ванильные предметы / Vanilla items ****/
+recipe Crumple the Plastic Bottle
+	{
+		WaterBottleEmpty/PopBottleEmpty,
+		Result:SMCrumpledBottle, /** Смятая бутылка / Crumpled bottle **/
+		Time:200.0,
+		Sound:plastic_bottle_crumple,
+		OnTest:recipe_Vannila_TestIsValid,
+	}
+
+/**** Смять пластиковую бутылку / Crumple the plastic bottle ****/
+/**** При игре с Гидрокрафтом / When playing with Hydrocraft ****/	
+recipe Crumple the Plastic Bottle
+	{
+		WaterBottleEmpty/PopBottleEmpty/HCWaterbottleclean,
+		Result:SMCrumpledBottle, /** Смятая бутылка / Crumpled bottle **/
+		Time:200.0,
+		Sound:plastic_bottle_crumple,
+		OnTest:recipe_Hydro_TestIsValid,
+	}
+
+/**** Сделать отверстие в смятой пластиковой бутылке / Make a hole in a crumpled plastic bottle ****/
+/**** Ванильные предметы / Vanilla items ****/
+recipe Make a hole in the bottle
+	{
+		SMCrumpledBottle, /** Смятая бутылка / Crumpled bottle **/
+		keep HuntingKnife/FlintKnife/ButterKnife/BreadKnife/KitchenKnife/Scalpel/Scissors/Screwdriver/Nails/Corkscrew/SharpedStone,
+		Result:SMCrumpledBottle2, /**** Смятая бутылка с отверстием / Crumpled bottle with a hole ****/
+		Time:100.0,
+		OnTest:recipe_Vannila_TestIsValid,
+	}
+
+/**** Для игры с Гидрокрафтом / For playing with Hydrocraft ****/
+/**** Сделать отверстие в смятой пластиковой бутылке / Make a hole in a crumpled plastic bottle ****/
+recipe Make a hole in the bottle
+	{
+		SMCrumpledBottle, /** Смятая бутылка / Crumpled bottle **/
+		keep Nails/FlintKnife/ButterKnife/BreadKnife/Scissors/Corkscrew/Screwdriver/HuntingKnife/KitchenKnife/Scalpel/SharpedStone/HCKnifeiron/HCKnifesteel/HCCombatknife,
+		Result:SMCrumpledBottle2, /**** Смятая бутылка с отверстием / Crumpled bottle with a hole ****/
+		Time:100.0,
+		OnTest:recipe_Hydro_TestIsValid,
+	}
+
+/**** Прожечь отверстие в смятой пластиковой бутылке / Burn a hole in a crumpled plastic bottle ****/
+recipe Burn hole in plastic bottle
+	{
+		SMCrumpledBottle, /** Смятая бутылка / Crumpled bottle **/
+		Base.Lighter/Base.Matches/SM.Matches,
+		Result:SMCrumpledBottle2, /**** Смятая бутылка с отверстием / Crumpled bottle with a hole ****/
+		Time:100.0,
+	}
+
+/**** Извлечь фольгу из сигаретной пачки / Remove the foil from the cigarette pack ****/
+/**** Without Littering ***/
+recipe Remove the Foil from the Cigarette Pack
+	{
+		destroy SMEmptyPack/SMEmptyPackLight/SMEmptyPackMenthol/SMEmptyPackGold,
+		Result:SМFoil,
+		Time:50.0,
+	}
+
+/**** With Littering ***/
+recipe Remove the Foil from the Cigarette Pack
+	{
+		destroy ZSMPEmptyPackLite/ZSMPEmptyPackMent,
+		Result:SМFoil,
+		Time:50.0,
+		OnTest:recipe_Littering_TestIsValid,
+	}
+
+/**** Сделать крышку из ванильной алюминиевой фольги / Make a vanilla aluminum foil lid ****/
+recipe Make a Bottle Cap
+	{
+		Aluminum/SМFoil,
+		destroy SMCrumpledBottle2, /**** Смятая бутылка с отверстием ****/
+		Result:SMCrumpledWithFoilCap, /*** Бутылка с крышкой без отверстий в фольге ***/
+		Time:100.0,
+	}
+
+/**** Сухой бульбулятор / Smoking device from a plastic bottle ****/
+/**** Сделать отверстия в фольге / Make holes in foil ****/
+/**** Для ванильной игры / For a vanilla game ****/
+recipe Make Holes in Foil
+	{
+		destroy SMCrumpledWithFoilCap, /*** Бутылка с крышкой без отверстий в фольге ***/
+		keep Nails/Needle/SutureNeedle/KnittingNeedles/SutureNeedleHolder/Corkscrew/Scissors/HuntingKnife/KitchenKnife,
+		Result:SMCrumpledWithFoilCap2, /*** Сухой бульбулятор - Бутылка с крышкой и отверстиями в фольге / Smoking device from a plastic bottle ***/
+		Time:100.0,
+		OnTest:recipe_Vannila_TestIsValid,
+		OnCreate:recipe_MakeHolesFoil_OnCreate,
+	}
+
+/******* Сделать отверстия в фольге / Make holes in foil *******/
+/**** Для игры с Гидрокрафтом / For playing with Hydrocraft ****/
+recipe Make Holes in Foil
+	{
+		destroy SMCrumpledWithFoilCap, /*** Бутылка с крышкой без отверстий в фольге ***/
+		keep Nails/Needle/SutureNeedle/HCBoneneedle/KnittingNeedles/SutureNeedleHolder/Corkscrew/Scissors/HuntingKnife/KitchenKnife/HCKnifeiron/HCKnifesteel/HCCombatknife,
+		Result:SMCrumpledWithFoilCap2, /*** Сухой бульбулятор - Бутылка с крышкой и отверстиями в фольге / Smoking device from a plastic bottle ***/
+		Time:100.0,
+		OnTest:recipe_Hydro_TestIsValid,
+		OnCreate:recipe_MakeHolesFoil_OnCreate,
+	}
+
+/**** Положить щепотку табака в бульбулятор / Put a pinch of tobacco in the smoking device ****/
+recipe Put pinch tobacco in smoking device
+	{
+		destroy SMCrumpledWithFoilCap2, /*** Бутылка с крышкой и отверстиями в фольге ***/
+		destroy SMPinchTobacco, /**** Щепотка табака /  Pinch tobacco ****/
+		Result:SMSmokingDeviceWithPinchTobacco, /**** Сухой бульбулятор с табаком / Smoking device from a plastic bottle with tobacco ****/
+		Time:100.0,
+		OnCreate:recipe_SMPutPinchTobbacoToBulbulaytor_OnCreate,
+	}
+
+	/**** Извлечь щепотку табака из бульбулятора / Remove a pinch of tobacco from the smoking device ****/
+recipe Remove tobacco from smoking device
+	{
+		destroy SMSmokingDeviceWithPinchTobacco, /**** Сухой бульбулятор с табаком / Smoking device from a plastic bottle with tobacco ****/
+		Result:SMCrumpledWithFoilCap2, /*** Сухой бульбулятор - Бутылка с крышкой и отверстиями в фольге / Smoking device from a plastic bottle ***/
+		Time:20.0,
+		OnCreate:recipe_Remove_Tobacco_From_Bulbulaytor_OnCreate, /**** Щепотка табака /  Pinch tobacco ****/
+	}
+}

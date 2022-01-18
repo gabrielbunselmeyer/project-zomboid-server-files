@@ -1,0 +1,87 @@
+module filcher
+{
+	imports
+	{
+		Base
+	}
+
+
+/************************Recipes - Carpentry************************/
+
+      recipe Make Bucket of Concrete
+      {
+        destroy BucketEmpty/BucketWaterFull,
+        Water=5,
+        ConcretePowder,
+
+        Result:BucketConcreteFull,
+        Time:150.0,
+        Category:Carpentry,
+      }
+
+    recipe Make Brick Mold
+	{
+	   Plank,
+	   Nails,
+	   keep Saw,
+	   keep Hammer,
+
+	   Result:filcher.SFBrickMold,
+	   SkillRequired:Woodwork=2,
+	   Sound:PZ_Hammer,
+	   Time:60.0,
+	   Category:Carpentry,
+      	   NeedToBeLearn:true,
+	}
+
+    recipe Make Bricks
+	{
+	   filcher.SFClay=2,
+	   keep filcher.SFBrickMold,
+           Water=2,
+
+	   Result:filcher.SFMoldedBricks,
+	   SkillRequired:Woodwork=2,
+	   Time:80.0,
+	   Category:Carpentry,
+      	   NeedToBeLearn:true,
+	}
+
+    recipe Put Clay in Bag
+	{
+	   destroy EmptySandbag,
+	   destroy filcher.SFClay=4,
+
+	   Result:filcher.SFClayBag,
+	   Sound:PZ_PutInBag,
+	   Time:20.0,
+	}
+
+    recipe Take Clay from Bag
+	{
+	   filcher.SFClayBag=1,
+
+	   Result:filcher.SFClay,
+	   Sound:PZ_PutInBag,
+	   Time:20.0,
+	}
+
+/************************Recipes - Miscellaneous************************/
+
+   recipe Make Chisel
+   {
+      IronIngot=40,
+      keep Hammer/BallPeenHammer,
+      keep Tongs,
+
+      NearItem:Anvil,
+      Result:filcher.SFChisel,
+      Time:150.0,
+      Category:Smithing,
+      SkillRequired:MetalWelding=4,
+      OnGiveXP:Give20MWXP,
+      OnCreate:BSNewItem_OnCreate,
+      NeedToBeLearn:true,
+   }
+
+}

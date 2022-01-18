@@ -1,0 +1,20 @@
+IG_UI_EN = {
+    
+IGUI_VehicleName92crownvicRosewood = "1992 Ford Crown Vic Rosewood PD",
+IGUI_VehicleName92crownvicRiverside = "1992 Ford Crown Vic Riverside PD",
+IGUI_VehicleName92crownvicIvy = "1992 Ford Crown Vic Lake Ivy PD",
+IGUI_VehicleName92crownvicFrankfort = "1992 Ford Crown Vic Frankfort PD",
+IGUI_VehicleName92crownvicGrapeseed = "1992 Ford Crown Vic Grapeseed PD",
+IGUI_VehicleName92crownvicMarchRidge = "1992 Ford Crown Vic March Ridge PD",
+IGUI_VehicleName92crownvicBedFalls = "1992 Ford Crown Vic Bedford Falls PD"
+IGUI_VehicleName73falconDixie = "73 Ford Falcon Dixie PD"
+IGUI_VehicleName80f350ambulanceRosewood = "1980 Ford F350 Rosewood EMS"
+IGUI_VehicleName85crownvicDixie = "1985 Ford LTD Dixie PD"
+IGUI_VehicleName86econolineambulanceBlackwood = "1986 Ford Econoline Blackwood EMS 1"
+IGUI_VehicleName86econolineambulanceGrapeseed = "1986 Ford Econoline Grapeseed EMS"
+IGUI_VehicleName86econolineambulanceWestPoint = "1986 Ford Econoline West Point Fire & Rescue"
+IGUI_VehicleName86econolineBlackwood = "1986 Ford Econoline Blackwood EMS 2"
+IGUI_VehicleName86econolineMarchRidge = "1986 Ford Econoline March Ridge Community EMS"
+IGUI_VehicleName91crxDARE = "1991 Honda CRX DARE Showcar"
+IGUI_VehicleName91crxWestPoint = "1991 Honda CRX West Point Police"
+}

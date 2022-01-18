@@ -1,0 +1,44 @@
+module Base
+{
+	sound MassSirenAlarm
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_massalarm.wav,
+			distanceMin = 10,
+			distanceMax = 50,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+
+	sound MassSirenYelp
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_massyelp.wav,
+			distanceMin = 10,
+			distanceMax = 70,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+
+	sound MassSirenWall
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_masswall.wav,
+			distanceMin = 10,
+			distanceMax = 70,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+}

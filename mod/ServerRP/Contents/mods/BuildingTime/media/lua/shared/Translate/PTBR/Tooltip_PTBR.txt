@@ -1,0 +1,12 @@
+Tooltip_PTBR = {
+	-- Item tooltip
+
+	-- Crafting tooltip
+	Tooltip_craft_ConcreteFloorDesc = "Um piso de concreto simples ",
+	Tooltip_craft_BrickFenceDesc	= "Uma cerca de tijolos ",
+	Tooltip_craft_BrickOvenDesc	= "Usado para queimar tijolos ",
+	Tooltip_craft_DisplayCounterDesc	= "Exponha sua última colheita ",
+
+	-- Item tooltip
+	Tooltip_item_HandTruck = "Não é possível lutar com item em mãos.<br>Carrega somente itens grandes.",
+}

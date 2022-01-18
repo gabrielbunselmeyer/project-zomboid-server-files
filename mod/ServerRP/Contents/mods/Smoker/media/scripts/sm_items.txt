@@ -1,0 +1,703 @@
+module Base
+{
+
+/************************ Smoker/Modify Base Cigarettes ************************/
+	item Cigarettes
+	{
+		Count	=	1,
+		Weight	=	0.05,
+		Type	=	Normal,
+		DisplayName	=	Cigarettes,
+		Icon	=	SMPackClosed,
+		StaticModel = Cigarette,
+		WorldStaticModel = SMCigaretteClosePack,
+		CantBeFrozen = TRUE,
+	}
+
+/************************ Smoker/Modify Base Lighter************************/
+	item Lighter
+	{
+		LightDistance	=	2,
+		Weight	=	0.06,
+		Type	=	Drainable,
+		UseWhileEquipped	=	TRUE,
+		TorchCone	=	FALSE,
+		LightStrength	=	0.4,
+		DisplayName	=	Lighter,
+		ActivatedItem	=	TRUE,
+		Icon	=	Lighter,
+		MetalValue = 1,
+		cantBeConsolided = TRUE,
+		StaticModel = Zippo,
+		WorldStaticModel = ZippoGround,
+		ticksPerEquipUse = 440,
+		ReplaceOnDeplete = SM.SMEmptyLighter,
+	}
+}
+
+module SM
+{
+	imports
+	{
+		Base
+	}
+
+/************************ Smoker/Nicotine gum ************************/
+	item SMNicorette
+	{
+		Type	=	Drainable,
+		Weight		=	0.004,
+		UseWhileEquipped	=	FALSE,
+		cantBeConsolided = TRUE,
+		DisplayName	=	Nicotine gum packaging,
+		Icon		=	SMNicorette,
+		StaticModel = PillBottle,
+		WorldStaticModel = PainKillers_Ground,
+		UseDelta    =   0.0666,
+		Tooltip		=	Tooltip_Pills_Nicorette,
+	}
+
+	item SMNicoretteBox
+	{
+		Type	=	Drainable,
+		Weight		=	0.18,
+		UseWhileEquipped	=	FALSE,
+		cantBeConsolided = FALSE,
+		DisplayName	=	Nicorette,
+		Icon		=	SMNicoretteBox,
+		StaticModel = Nicorette_box,
+		WorldStaticModel = Nicorette_box,
+		UseDelta    =   0.2,
+	}
+
+	item SMGum
+	{
+		Type				=	Food,
+		HungerChange		=	-1,
+		StressChange		=	-9,
+		UnhappyChange		=	-6,
+		Carbohydrates 		= 	0.5,
+        Proteins 			= 	0,
+        Lipids 				= 	0.03,
+        Calories 			= 	36,
+		Weight				=	0.001,
+		UseWhileEquipped	=	FALSE,
+		CantBeFrozen		=	FALSE,
+		OnEat				=	OnEat_Nicorette,
+		DisplayName			=	Nicotine Gum,
+		Tooltip				=	Tooltip_Pills_Nicorette,
+		Icon				=	SMGum,
+	}
+/********************* Smoker Accessories **********************/
+	item Ashtray
+	{
+		Weight				=	1,
+		Type				=	Container,
+		Capacity			=	1,
+		WeightReduction		=	0,
+		CanHaveHoles		=	false,
+		UseWhileEquipped	=	FALSE,
+		DisplayName			=	Ashtray,
+		Icon				=	SMAshtray,
+		WorldStaticModel	=	SMAshtray,
+	}
+
+
+/************************ Smoker Trash ************************/	
+/**** Aluminium Foil ****/
+	item ChocolateFoil
+	{
+		Weight				=	0.01,
+		Type				=	Normal,
+		DisplayName			=	Chocolate Foil,
+		Icon				=	SMChocolateFoil,
+	}
+
+/**** Cigarette foil ****/
+/**** Сигаретная фольга ****/
+	item SМFoil
+	{
+		Weight			=	0.001,
+		Type			=	Normal,
+		DisplayName		=	Cigarette Foil,
+		Icon			=	SMCigaretteFoil,
+	}
+
+/************************ Smoker Empty Lighter ************************/
+	item SMEmptyLighter
+	{
+		Type		=	Normal,
+		UseWhileEquipped	=	FALSE,
+		DisplayName	=	Empty Lighter,
+		Icon		=	Lighter,
+		StaticModel = Zippo,
+		WorldStaticModel = ZippoGround,
+		MetalValue = 1,
+		Weight		=	0.05,
+		
+	}
+
+/************************ Smoker Matches ************************/
+	item Matches
+	{
+		Weight	=	0.005,
+		Type	=	Drainable,
+		UseWhileEquipped	=	FALSE,
+		UseDelta    =   0.022,
+		DisplayName	=	Matchbox,
+		Icon	=	SMMatches,
+		cantBeConsolided = FALSE,
+		ReplaceOnDeplete = SM.EmptyMatchbox,
+	}
+	
+	item EmptyMatchbox
+	{
+		Weight	=	0.0005,
+		Type	=	Normal,
+		DisplayName	=	Empty Matchbox,
+		Icon	=	SMEmptyMatches,
+	}
+
+/************************ Smoke Crumpled Bottle ************************/
+/**** Crumpled bottle ****/
+/**** Смятая бутылка ****/
+	item SMCrumpledBottle
+	{
+		Weight	=	0.1,
+		Type	=	Normal,
+		DisplayName	=	Crumpled Bottle,
+		Icon	=	SMCrumpledBottle,
+	}
+
+/**** Crumpled bottle with a hole ****/
+/**** Смятая бутылка с отверстием ****/
+	item SMCrumpledBottle2
+	{
+		Weight	=	0.1,
+		Type	=	Normal,
+		DisplayName	=	Plastic bottle with hole,
+		Icon	=	SMCrumpledBottle,
+	}
+
+/*** Bottle with cap without holes in foil ***/	
+/*** Бутылка с крышкой без отверстий в фольге ***/
+	item SMCrumpledWithFoilCap
+	{
+		Weight	=	0.1,
+		Type	=	Normal,
+		DisplayName	=	Crumpled Bottle With Foil Cap,
+		Icon	=	SMCrumpledBottle,
+	}
+
+/*** Сухой бульбулятор ***/
+/*** Smoking device from a plastic bottle ***/
+/*** Бутылка с крышкой и отверстиями в фольге ***/
+	item SMCrumpledWithFoilCap2
+	{
+		Weight	=	0.1,
+		Type	=	Normal,
+		DisplayName	=	Smoking device from plastic bottle,
+		Icon	=	SMCrumpledBottle,
+	}
+
+/*** Сухой бульбулятор с щепоткой табака ***/
+/*** Smoking device with a pinch of tobacco ***/
+	item SMSmokingDeviceWithPinchTobacco
+	{
+		Count	=	1,
+		HungerChange	=	0,
+		Weight	=	0.1,
+		RequireInHandOrInventory = Base.Lighter/Base.Matches/SM.Matches,
+		Type	=	Food,
+		DisplayName	=	Smoking device from plastic bottle,
+		StressChange	=	-4,
+		UnhappyChange	=	-4,
+		Icon	=	SMCrumpledBottle,
+		CustomContextMenu = Smoke,
+		CantBeFrozen = TRUE,
+		OnEat = OnSmoke_Bulbulyator,
+		EatType = Cigarettes,
+		CustomEatSound = ,
+		ReplaceOnUse = SM.SMCrumpledWithFoilCap2,
+	}
+
+/***************** Cigarettes Normal ******************/
+	item SMCigarette
+	{
+		Count	=	1,
+		HungerChange	=	0,
+		Weight	=	0.001,
+		RequireInHandOrInventory = Base.Lighter/Base.Matches/SM.Matches,
+		Type	=	Food,
+		DisplayName	=	Filter Cigarette,
+		StressChange	=	-5,
+		UnhappyChange	=	-5,
+		Icon	=	SMCigarette,
+		CustomContextMenu = Smoke,
+		CantBeFrozen = TRUE,
+		OnEat = OnEat_Cigarettes,
+		StaticModel = Cigarette,
+		EatType = Cigarettes,
+		CustomEatSound = ,
+		WorldStaticModel = SMCigarette,
+		ReplaceOnUse = SM.SMButt,
+	}
+
+/***************** Самодельная Сигарета с фильтром ******************/	
+	item SMHomemadeCigarette
+	{
+		Count	=	1,
+		HungerChange	=	0,
+		Weight	=	0.001,
+		RequireInHandOrInventory = Base.Lighter/Base.Matches/SM.Matches,
+		Type	=	Food,
+		DisplayName	=	Homemade Filter Cigarette,
+		StressChange	=	-5,
+		UnhappyChange	=	-4,
+		Icon	=	SMHomemadeCigarette,
+		CustomContextMenu = Smoke,
+		CantBeFrozen = TRUE,
+		OnEat = OnEat_Cigarettes,
+		StaticModel = Cigarette,
+		EatType = Cigarettes,
+		CustomEatSound = ,
+		WorldStaticModel = SMCigarette,
+		ReplaceOnUse = SM.CarbonizedFilter,
+	}
+
+/***************** Самодельная Сигарета без фильтра ******************/	
+	item SMHomemadeCigarette2
+	{
+		Count	=	1,
+		HungerChange	=	0,
+		Weight	=	0.001,
+		RequireInHandOrInventory = Base.Lighter/Base.Matches/SM.Matches,
+		Type	=	Food,
+		DisplayName	=	Homemade Cigarette,
+		StressChange	=	-3,
+		UnhappyChange	=	-2,
+		Icon	=	SMHomemadeCigarette,
+		CustomContextMenu = Smoke,
+		CantBeFrozen = TRUE,
+		OnEat = OnEat_Cigarettes,
+		StaticModel = Cigarette,
+		EatType = Cigarettes,
+		CustomEatSound = ,
+		WorldStaticModel = SMCigarette,
+		ReplaceOnUse = SM.SMButt2,
+	}
+
+/***************** Пачка сигарет ******************/	
+	item SMPack
+	{
+		Type		=	Drainable,
+		UseDelta	=	0.05,
+		UseWhileEquipped	=	FALSE,
+		ReplaceOnDeplete = SM.SMEmptyPack,
+		DisplayName	=	Open Pack of Cigarettes,
+		Icon		=	SMPack,
+		WorldStaticModel = SMCigaretteOpenPack,
+		Weight		=	0.05,
+	}
+
+/***************** Полная ***ЗАКРЫТАЯ*** Пачка сигарет ******************/	
+	item SMFullPack
+	{
+		Type		=	Normal,
+		DisplayName	=	Closed full pack,
+		Icon		=	SMPackClosed,
+		WorldStaticModel = SMCigaretteClosePack,
+		Weight		=	0.05,
+	}
+
+/***************** Пустая Пачка сигарет ******************/		
+	item SMEmptyPack
+	{
+		Type		=	Normal,
+		DisplayName	=	Empty Pack of Cigarettes,
+		Icon		=	SMEmptyPack,
+		WorldStaticModel = SMCigaretteEmptyPack,
+		Weight		=	0.0025,
+	}
+
+/***************** Блок сигарет ******************/		
+	item SMCartonCigarettes
+	{
+		Type		=	Normal,
+		DisplayName	=	Carton Cigarettes,
+		Icon		=	SMCartonСigarettes,
+		WorldStaticModel = SMCarton_Red,
+		Weight		=	0.180,
+	}
+
+/***************** Light Cigarettes ******************/
+	item SMCigaretteLight
+	{
+		Count						=	1,
+		HungerChange				=	0,
+		Weight						=	0.001,
+		RequireInHandOrInventory	=	Base.Lighter/Base.Matches/SM.Matches,
+		Type						=	Food,
+		DisplayName					=	Light cigarette,
+		StressChange				=	-5,
+		UnhappyChange				=	-5,
+		Icon						=	SMCigarette,,
+		CustomContextMenu 			= 	Smoke,
+		CantBeFrozen				=	TRUE,
+		OnEat						=	OnEat_Cigarettes,
+		StaticModel					=	Cigarette,
+		EatType						=	Cigarettes,
+		CustomEatSound = ,
+		WorldStaticModel = SMCigarette,
+		ReplaceOnUse				=	SM.SMButt,
+	}
+
+	item SMPackLight
+	{
+		Type		=	Drainable,
+		UseDelta	=	0.05,
+		UseWhileEquipped	=	FALSE,
+		ReplaceOnDeplete = SM.SMEmptyPackLight,
+		DisplayName	=	Pack of Light Cigarettes,
+		Icon		=	SMPackLight,
+		WorldStaticModel = SMCigaretteOpenPack_Light,
+		Weight		=	0.05,
+	}
+
+	item SMFullPackLight
+	{
+		Type		=	Normal,
+		DisplayName	=	Closed Pack of Light Cigarettes,
+		Icon		=	SMClosedPackLight,
+		WorldStaticModel = SMCigarettePackLight,
+		Weight		=	0.05,
+	}
+
+	item SMEmptyPackLight
+	{
+		Type		=	Normal,
+		DisplayName	=	Empty Pack of Light Cigarettes,
+		Icon		=	SMEmptyPackLight,
+		WorldStaticModel = SMCigaretteEmptyPack_Light,
+		Weight		=	0.0025,
+	}
+
+	item SMCartonCigarettesLight
+	{
+		Type		=	Normal,
+		DisplayName	=	Light Cigarette Carton,
+		Icon		=	SMCartonLight,
+		WorldStaticModel = SMCarton_Light,
+		Weight		=	0.180,
+	}
+
+/***************** Menthol Cigarettes ******************/
+	item SMPCigaretteMenthol
+	{
+		Count						=	1,
+		HungerChange				=	0,
+		Weight						=	0.001,
+		RequireInHandOrInventory	=	Base.Lighter/Base.Matches/SM.Matches,
+		Type						=	Food,
+		DisplayName					=	Cigarette With Menthol,
+		StressChange				=	-5,
+		UnhappyChange				=	-7,
+		Icon						=	SMCigarette,
+		CustomContextMenu 			= 	Smoke,
+		CantBeFrozen				=	TRUE,
+		OnEat						=	OnEat_Cigarettes,
+		StaticModel					=	Cigarette,
+		WorldStaticModel			=	SmokerCigarette,
+		EatType						=	Cigarettes,
+		CustomEatSound = ,
+		WorldStaticModel			=	SMCigarette,
+		ReplaceOnUse				=	SM.SMButt,
+	}
+
+	item SMPackMenthol
+	{
+		Type		=	Drainable,
+		UseDelta	=	0.05,
+		UseWhileEquipped	=	FALSE,
+		ReplaceOnDeplete = SM.SMEmptyPackMenthol,
+		DisplayName	=	Pack of Menthol Cigarettes,
+		Icon		=	SMPackMenthol,
+		WorldStaticModel = SMCigaretteOpenPack_Menhthol,
+		Weight		=	0.05,
+	}
+
+	item SMFullPackMenthol
+	{
+		Type		=	Normal,
+		DisplayName	=	Closed Pack of Menthol Cigarettes,
+		Icon		=	SMClosedPackMenthol,
+		WorldStaticModel = SMCigarettePackMenthol,
+		Weight		=	0.05,
+	}
+
+	item SMEmptyPackMenthol
+	{
+		Type		=	Normal,
+		DisplayName	=	Empty Pack of Menthol Cigarettes,
+		Icon		=	SMEmptyPackMenthol,
+		WorldStaticModel = SMCigaretteEmptyPack_Menhthol,
+		Weight		=	0.0025,
+	}
+
+	item SMCartonCigarettesMenthol
+	{
+		Type		=	Normal,
+		DisplayName	=	Menthol Cigarette Carton,
+		Icon		=	SMCartonMenthol,
+		WorldStaticModel = SMCarton_Menthol,
+		Weight		=	0.180,
+	}
+
+/***************** Gold Cigarettes ******************/
+	item SMPCigaretteGold
+	{
+		Count						=	1,
+		HungerChange				=	0,
+		Weight						=	0.001,
+		RequireInHandOrInventory	=	Base.Lighter/Base.Matches/SM.Matches,
+		Type						=	Food,
+		DisplayName					=	Cigarette Gold,
+		StressChange				=	-5,
+		UnhappyChange				=	-10,
+		Icon						=	SMCigarette,
+		CustomContextMenu 			= 	Smoke,
+		CantBeFrozen				=	TRUE,
+		OnEat						=	OnEat_Cigarettes,
+		CustomEatSound = ,
+		StaticModel					=	Cigarette,
+		WorldStaticModel			=	SMCigarette,
+		EatType						=	Cigarettes,
+		ReplaceOnUse				=	SM.SMButt,
+	}
+
+	item SMPackGold
+	{
+		Type		=	Drainable,
+		UseDelta	=	0.05,
+		UseWhileEquipped	=	FALSE,
+		ReplaceOnDeplete = SM.SMEmptyPackGold,
+		DisplayName	=	Pack of Gold Cigarettes,
+		Icon		=	SMPackGold,
+		WorldStaticModel = SMCigaretteOpenPack_Gold,
+		Weight		=	0.05,
+	}
+
+	item SMFullPackGold
+	{
+		Type		=	Normal,
+		DisplayName	=	Closed Pack of Gold Cigarettes,
+		Icon		=	SMClosedPackGold,
+		WorldStaticModel = SMCigarettePackGold,
+		Weight		=	0.05,
+	}
+
+	item SMEmptyPackGold
+	{
+		Type		=	Normal,
+		DisplayName	=	Empty Pack of Gold Cigarettes,
+		Icon		=	SMEmptyPackGold,
+		WorldStaticModel = SMCigaretteEmptyPackGold,
+		Weight		=	0.0025,
+	}
+
+	item SMCartonCigarettesGold
+	{
+		Type		=	Normal,
+		DisplayName	=	Gold Cigarette Carton,
+		Icon		=	SMCartonGold,
+		WorldStaticModel = SMCarton_Gold,
+		Weight		=	0.180,
+	}
+
+
+/******************* Окурки и фильтры *******************/
+/***** Сигаретный окурок с фильтром *****/
+	item SMButt
+	{
+		HungerChange	=	0,
+		Weight	=	0.0002,
+		RequireInHandOrInventory = Base.Lighter/Base.Matches/SM.Matches,
+		Type	=	Food,
+		DisplayName	=	Butt,
+		StressChange	=	-1,
+		UnhappyChange	=	3,
+		Icon	=	SMButt,
+		CustomContextMenu = Smoke,
+		CantBeFrozen = TRUE,
+		OnEat = OnEat_Cigarettes,
+		EatType = Cigarettes,
+		CustomEatSound = ,
+		WorldStaticModel = SMbutt,
+		ReplaceOnUse = SM.CarbonizedFilter,
+	}
+
+/***** Сигаретный окурок без фильтра *****/
+	item SMButt2
+	{
+		HungerChange	=	0,
+		Weight	=	0.00015,
+		RequireInHandOrInventory = Base.Lighter/Base.Matches/SM.Matches,
+		Type	=	Food,
+		DisplayName	=	Butt,
+		StressChange	=	-1,
+		UnhappyChange	=	-1,
+		Icon	=	SMButt2,
+		CustomContextMenu = Smoke,
+		CantBeFrozen = TRUE,
+		OnEat = OnEat_Cigarettes,
+		EatType = Cigarettes,
+		CustomEatSound = ,
+		WorldStaticModel = SMbutt,
+	}
+
+	item CarbonizedFilter
+	{
+		Type		=	Normal,
+		DisplayName	=	Carbonized Filter,
+		Icon		=	CarbonizedFilter,
+		Weight		=	0.0001,
+		WorldStaticModel = SMbutt,
+	}
+
+	item SMFilter
+	{
+		Type		=	Normal,
+		DisplayName	=	Cigarette Filter,
+		Icon		=	SMFilter,
+		Weight		=	0.001,
+		WorldStaticModel = SMbutt,
+	}
+
+/******************* Табак *******************/
+/**** Кисет для табака ****/
+	item SMTobaccoPouches
+	{
+		Type		=	Drainable,
+		UseDelta	=	0.0,
+		DisplayName	=	Tobacco Pouch,
+		Icon		=	SMTobaccoPouches,
+		Weight		=	0.01,
+	}
+
+/**** Щепотка табака ****/
+	item SMPinchTobacco
+	{
+		Type		=	Normal,
+		DisplayName	=	Pinch of tobacco,
+		Icon		=	SMPinchTobacco,
+		Weight		=	0.001,
+	}
+
+/**** Маленькая горстка табака ****/
+	item SMSmallHandfulTobacco
+	{
+		Type		=	Normal,
+		DisplayName	=	Small Handful of Tobacco,
+		Icon		=	SMSmallHandfulTobacco,
+		Weight		=	0.005,
+	}
+
+/**** Горстка табака ****/
+	item SMHandfulTobacco
+	{
+		Type		=	Normal,
+		DisplayName	=	Handful of Tobacco,
+		Icon		=	SMHandfulTobacco,
+		Weight		=	0.01,
+	}
+
+/**** Куча табака ****/
+	item SMPileTobacco
+	{
+		Type		=	Normal,
+		DisplayName	=	Pile of Tobacco,
+		Icon		=	SMPileTobacco,
+		Weight		=	0.02,
+	}
+
+/**** Большая куча табака****/
+	item SMBigPileTobacco
+	{
+		Type		=	Normal,
+		DisplayName	=	Big Pile of Tobacco,
+		Icon		=	SMBigPileTobacco,
+		Weight		=	0.04,
+	}
+
+/******************* For GreenFire Mod *******************/
+/**** Курительная смесь ****/
+	item SMSmokingBlend
+	{
+		Type		=	Normal,
+		DisplayName	=	Smoking Blend,
+		Icon		=	SMSmokingBlend,
+		Weight		=	0.005,
+	}
+
+/**** Бонг с курительной смесью ****/
+	item SMSmokingBlendBong
+	{
+		Weight				=	0.7,
+		Type				=	Food,
+		DisplayName			=	Bong with Smoking Blend,
+		Icon				=	BongSmoker,
+		BoredomChange			=	-8,
+		UnhappyChange			=	-8,
+		StressChange			=	-12,
+		RequireInHandOrInventory	=	Base.Lighter/Base.Matches/SM.Matches,
+		CustomContextMenu		=	Smoke,
+		CantBeFrozen			=	TRUE,
+		Tooltip				=	Tooltip_Painkillers,
+		OnEat				=	OnSmoke_Cannabis,
+		ReplaceOnUse			=	Greenfire.Bong,
+		CustomEatSound			=	GF_LightUp,
+	}
+
+/**** Трубка GreenFire с курительной смесью ****/
+	item SMSmokingBlendPipe
+	{
+		Weight	=	0.1,
+		Type	=	Food,
+		DisplayName	=	Smoking Pipe filled with Smoking Blend,
+		Icon	=	SmokingPipe,
+		BoredomChange	=	-8,
+		UnhappyChange	=	-8,
+		StressChange	=	-12,
+		RequireInHandOrInventory	=	Base.Lighter/Base.Matches/SM.Matches,
+		CustomContextMenu	=	Smoke,
+		CantBeFrozen	=	TRUE,
+		OnEat	=	OnSmoke_Cannabis,
+		Tooltip	=	Tooltip_Painkillers,
+		ReplaceOnUse	=	Greenfire.SmokingPipe,
+		CustomEatSound	=	GF_LightUp,
+	}
+
+/*** Сухой бульбулятор с курительной смесью ***/
+/*** Smoking device with a Smoking Blend ***/
+	item SMSmokingDeviceWithSmokingBlend
+	{
+		Count	=	1,
+		HungerChange	=	0,
+		Weight	=	0.1,
+		RequireInHandOrInventory = Base.Lighter/Base.Matches/SM.Matches,
+		Type	=	Food,
+		DisplayName	=	Smoking Device with Smoking Blend,
+		BoredomChange	=	-8,
+		UnhappyChange	=	-8,
+		StressChange	=	-12,
+		Icon	=	SMCrumpledBottle,
+		Tooltip	=	Tooltip_Painkillers,
+		CustomContextMenu = Smoke,
+		CantBeFrozen = TRUE,
+		OnEat	=	OnSmoke_Bulbulyator,
+		Tooltip	=	Tooltip_Painkillers,
+		EatType = Cigarettes,
+		CustomEatSound = ,
+		ReplaceOnUse = SM.SMCrumpledWithFoilCap2,
+	}
+}

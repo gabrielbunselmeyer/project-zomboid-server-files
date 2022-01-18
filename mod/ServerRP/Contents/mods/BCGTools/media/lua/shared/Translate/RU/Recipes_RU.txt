@@ -1,0 +1,6 @@
+Recipes_RU = {
+
+	Recipe_Attach_Survival_Knife_to_Spear = "Приделать нож выживания к копью",
+	Recipe_Attach_Cheap_Survival_Knife_to_Spear = "Приделать дешевый нож выживания к копью",
+
+}

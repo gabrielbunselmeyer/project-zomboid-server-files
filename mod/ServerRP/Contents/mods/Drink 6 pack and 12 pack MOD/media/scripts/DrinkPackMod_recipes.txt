@@ -1,0 +1,174 @@
+
+/*** Drink 6 pack and 12 pack MOD add item ***/
+
+/*** 2022-01-04 Version 2.04 ***/
+
+module DrinkPackMod
+
+	{
+	imports
+	{
+	Base
+	}
+	
+recipe Pack a Beer
+    {
+	BeerCan=6,
+	Result:BeerPack,
+	Sound:PZ_PutInBag,
+	Time:3.0,
+	}
+
+recipe Open a pack of Beer
+	{
+	BeerPack,
+	Result:BeerCan=6,
+	Sound:PZ_PutInBag,
+	Time:3.0,
+	}
+
+recipe Pack a Beer bottle
+    {
+	BeerBottle=6,
+	Result:BeerBottlePack,
+	Sound:PZ_PutInBag,
+	Time:3.0,
+	}
+
+recipe Open a pack of Beer bottle
+	{
+	BeerBottlePack,
+	Result:BeerBottle=6,
+	Sound:PZ_PutInBag,
+	Time:3.0,
+	}
+
+recipe Pack a Pop
+    {
+	Pop=6,
+	Result:PopPack,
+	Sound:PZ_PutInBag,
+	Time:3.0,
+	}
+
+recipe Open a pack of Pop
+	{
+	PopPack,
+	Result:Pop=6,
+	Sound:PZ_PutInBag,
+	Time:3.0,
+	}
+
+recipe Pack a Pop
+    {
+	Pop2=6,
+	Result:Pop2Pack,
+	Sound:PZ_PutInBag,
+	Time:3.0,
+	}
+
+recipe Open a pack of Pop
+	{
+	Pop2Pack,
+	Result:Pop2=6,
+	Sound:PZ_PutInBag,
+	Time:3.0,
+	}
+
+recipe Pack a Pop
+    {
+	Pop3=6,
+	Result:Pop3Pack,
+	Sound:PZ_PutInBag,
+	Time:3.0,
+	}
+
+recipe Open a pack of Pop
+	{
+	Pop3Pack,
+	Result:Pop3=6,
+	Sound:PZ_PutInBag,
+	Time:3.0,
+	}
+
+recipe Pack a Whiskey bottle
+    {
+	WhiskeyFull=12,
+	Result:WhiskeyBottledPack,
+	Sound:PZ_PutInBag,
+	Time:3.0,
+	}
+
+recipe Open a pack of Whiskey bottle
+	{
+	WhiskeyBottledPack,
+	Result:WhiskeyFull=12,
+	Sound:PZ_PutInBag,
+	Time:3.0,
+	}
+
+recipe Pack a Chardonnay bottle
+    {
+	Wine=12,
+	Result:WineBottledPack,
+	Sound:PZ_PutInBag,
+	Time:3.0,
+	}
+
+recipe Open a pack of Chardonnay bottle
+	{
+	WineBottledPack,
+	Result:Wine=12,
+	Sound:PZ_PutInBag,
+	Time:3.0,
+	}
+
+recipe Pack a Red Wine bottle
+    {
+	Wine2=12,
+	Result:Wine2BottledPack,
+	Sound:PZ_PutInBag,
+	Time:3.0,
+	}
+
+recipe Open a pack of Red Wine bottle
+	{
+	Wine2BottledPack,
+	Result:Wine2=12,
+	Sound:PZ_PutInBag,
+	Time:3.0,
+	}
+
+recipe Pack a Orange Soda
+    {
+	PopBottle=12,
+	Result:PopBottlePack,
+	Sound:PZ_PutInBag,
+	Time:3.0,
+	}
+
+recipe Open a pack of Orange Soda
+	{
+	PopBottlePack,
+	Result:PopBottle=12,
+	Sound:PZ_PutInBag,
+	Time:3.0,
+	}
+
+/***recipe Pack a Water Bottle
+	/***{
+	/***WaterBottleFull=120,
+	/***Result:WaterBottlePack,
+	/***Sound:PZ_PutInBag,
+	/***Time:3.0,
+	/***}
+
+/***recipe Open a pack of Water Bottle
+	/***{
+	/***WaterBottlePack,
+	/***Result:WaterBottleFull=12,
+	/***Sound:PZ_PutInBag,
+	/***Time:3.0,
+	/***}
+
+}

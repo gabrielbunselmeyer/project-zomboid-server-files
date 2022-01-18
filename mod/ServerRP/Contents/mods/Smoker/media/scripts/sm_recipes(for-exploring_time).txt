@@ -1,0 +1,51 @@
+/********************* Support ExploringTime ********************/
+/****************************************************************/
+module Base
+{
+	recipe Light Gas Lantern
+	{
+		destroy filcher.GasLantern,
+		SM.Matches,
+		Result:filcher.GasLanternLit,
+		Time:30.0,
+		OnTest:SMLanternLight_TestIsValid,
+		OnTest:ExploringTime_TestIsValid,
+		OnCreate:LanternLight_Create,
+	}
+
+	recipe Light Torch
+	{
+		destroy TorchChairLeg,
+		SM.Matches,
+		Result:TorchChairLegLit,
+		Time:30.0,
+		OnTest:ExploringTime_TestIsValid,
+	}
+
+	recipe Light Torch
+	{
+		destroy TorchBranch,
+		SM.Matches,
+		Result:TorchBranchLit,
+		Time:30.0,
+		OnTest:ExploringTime_TestIsValid,
+	}
+
+	recipe Light Torch
+	{
+		destroy TorchPlank,
+		SM.Matches,
+		Result:TorchPlankLit,
+		Time:30.0,
+		OnTest:ExploringTime_TestIsValid,
+	}
+
+	recipe Light Torch
+	{
+		destroy TorchTableLeg,
+		SM.Matches,
+		Result:TorchTableLegLit,
+		Time:30.0,
+		OnTest:ExploringTime_TestIsValid,
+	}
+}

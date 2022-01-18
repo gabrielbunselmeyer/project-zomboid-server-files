@@ -1,0 +1,19 @@
+ItemName_IT = {
+
+	-- Drink 6 pack and 12 pack MOD
+	-- Italian translation by CalidusGamer 
+
+	ItemName_DrinkPackMod.Beer = "Birra",
+	ItemName_DrinkPackMod.BeerBottle = "Bottiglia di birra",
+	ItemName_DrinkPackMod.BeerBottlePack = "6 confezzioni di bottiglie di birra",
+	ItemName_DrinkPackMod.BeerPack = "6 confezzioni di birra",
+	ItemName_DrinkPackMod.Pop2Pack = "6 confezzioni di bibita gassata",
+	ItemName_DrinkPackMod.Pop3Pack = "6 confezzioni di bibita gassata",
+	ItemName_DrinkPackMod.PopPack = "6 confezzioni di bibita gassata",
+	ItemName_DrinkPackMod.WhiskeyBottledPack = "12 confezzioni di Whiskey",
+	ItemName_DrinkPackMod.Wine2BottledPack = "12 confezzioni di Chardonnay",
+	ItemName_DrinkPackMod.WineBottledPack = "12 confezzioni di vino rosso",
+	ItemName_DrinkPackMod.PopBottlePack = "12 confezzioni di soda all'arancia",
+	ItemName_DrinkPackMod.WaterBottlePack = "12 confezzioni di bottiglie d'acqua",
+
+}

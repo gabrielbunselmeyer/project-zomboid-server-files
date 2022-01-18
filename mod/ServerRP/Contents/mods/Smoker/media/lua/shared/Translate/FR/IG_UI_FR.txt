@@ -1,0 +1,14 @@
+--- SMOKER ---
+IGUI_FR = {
+IGUI_Empty = "Vide...",
+IGUI_One_cigarette = "Une cigarette.",
+IGUI_Two_cigarettes = "Deux cigarettes.",
+IGUI_There_is_some = "Il y en a quelques unes...",
+IGUI_Less_than_half = "Moins de la moitie.",
+IGUI_Almost_half_a_pack = "Presque la moitie du paquet...",
+IGUI_More_than_a_half = "Plus de la moitie!",
+IGUI_Almost_a_complete_pack = "Preque un paquet entier!",
+IGUI_Full_pack = "Un paquet entier!",
+IGUI_Refuel_Lighter = "Recharger le briquet",
+IGUI_ContextMenu_Cant_Action = "Impossible... Deplacez l'objet vers l'inventaire principal et faites clic droit...",
+}

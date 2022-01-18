@@ -1,0 +1,12 @@
+Tooltip_EN = {
+	-- Item tooltip
+
+	-- Crafting tooltip
+	Tooltip_craft_ConcreteFloorDesc = "A basic floor made from concrete ",
+	Tooltip_craft_BrickFenceDesc	= "Provides limited protection from the horde ",
+	Tooltip_craft_BrickOvenDesc	= "Used to fire bricks ",
+	Tooltip_craft_DisplayCounterDesc	= "Display your latest harvest ",
+
+	-- Item tooltip
+	Tooltip_item_HandTruck = "Can't fight while equipped in a hand.<br>Can only carry large items.",
+}

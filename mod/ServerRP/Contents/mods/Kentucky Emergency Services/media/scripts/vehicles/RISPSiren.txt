@@ -1,0 +1,44 @@
+module Base
+{
+	sound RISPSirenAlarm
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_rispalarm.wav,
+			distanceMin = 10,
+			distanceMax = 50,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+
+	sound RISPSirenYelp
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_rispyelp.wav,
+			distanceMin = 10,
+			distanceMax = 70,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+
+	sound RISPSirenWall
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_rispwall.wav,
+			distanceMin = 10,
+			distanceMax = 70,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+}

@@ -1,0 +1,8 @@
+name=Spongie's Clothing Vanilla Edits
+id=SpnClothVanilla
+authors=Spongie
+icon=icon.png
+tags=Build 41;Clothing/Armor;Items;Models;Pop Culture;Realistic
+description=Optional mod that edits vanilla clothing for openable jackets etc.
+require=SpnCloth,ItemTweakerAPI
+poster=poster.png

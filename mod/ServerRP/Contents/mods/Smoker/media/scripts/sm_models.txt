@@ -1,0 +1,136 @@
+module Base
+{
+    model Nicorette_box
+    {
+        mesh = WorldItems/nicorette_box,
+		texture = WorldItems/Nicorette_box,
+        scale = 0.4,
+    }
+    model PainKillers_Ground
+    {
+        mesh = WorldItems/PainKillers,
+        scale = 0.4,
+    }
+	model SMCigarette
+	{
+		mesh = WorldItems/cigaretta,
+        texture = WorldItems/sm_cigaretta,
+        scale = 0.005
+	}
+	model SMCigaretteOpenPack
+	{
+		mesh = WorldItems/packopen,
+        texture = WorldItems/open_pack_red,
+        scale = 0.0125,
+	}
+	model SMCigaretteEmptyPack
+	{
+		mesh = WorldItems/eмpty_pack,
+        texture = WorldItems/cigpackred_empty,
+        scale = 0.0125,
+	}
+	model SMCigaretteClosePack
+	{
+		mesh = WorldItems/pack,
+        texture = WorldItems/cigpackred,
+        scale = 0.0125,
+	}
+	model SMCigarettePackGold
+	{
+		mesh = WorldItems/pack,
+        texture = WorldItems/cigpackgold,
+        scale = 0.0125,
+	}
+	model SMCigaretteEmptyPackGold
+	{
+		mesh = WorldItems/eмpty_pack,
+        texture = WorldItems/cigpackgold_empty,
+        scale = 0.0125,
+	}
+	model SMCigaretteOpenPack_Gold
+	{
+		mesh = WorldItems/packopen,
+        texture = WorldItems/open_pack_gold,
+        scale = 0.0125,
+	}
+	model SMCigarettePackMenthol
+	{
+		mesh = WorldItems/pack,
+        texture = WorldItems/cigpackmenthol,
+        scale = 0.0125,
+	}
+	model SMCigaretteOpenPack_Menhthol
+	{
+		mesh = WorldItems/packopen,
+        texture = WorldItems/open_pack_green,
+        scale = 0.0125,
+	}
+	model SMCigaretteEmptyPack_Menhthol
+	{
+		mesh = WorldItems/eмpty_pack,
+        texture = WorldItems/cigpackgreen_empty,
+        scale = 0.0125,
+	}
+	model SMCigarettePackLight
+	{
+		mesh = WorldItems/pack,
+        texture = WorldItems/cigpacklight,
+        scale = 0.0125,
+	}
+	model SMCigaretteOpenPack_Light
+	{
+		mesh = WorldItems/packopen,
+        texture = WorldItems/open_pack_light,
+        scale = 0.0125,
+	}
+	model SMCigaretteEmptyPack_Light
+	{
+		mesh = WorldItems/eмpty_pack,
+        texture = WorldItems/cigpacklight_empty,
+        scale = 0.0125,
+	}
+	model SMCarton_Red
+	{
+		mesh = WorldItems/carton,
+        texture = WorldItems/carton_red,
+        scale = 0.01,
+	}
+	model SMCarton_Menthol
+	{
+		mesh = WorldItems/carton,
+        texture = WorldItems/carton_green,
+        scale = 0.01,
+	}
+	model SMCarton_Light
+	{
+		mesh = WorldItems/carton,
+        texture = WorldItems/carton_light,
+        scale = 0.01,
+	}
+	model SMCarton_Gold
+	{
+		mesh = WorldItems/carton,
+        texture = WorldItems/carton_gold,
+        scale = 0.01,
+	}
+	model SMAshtray
+	{
+		mesh = WorldItems/ashtray,
+        texture = WorldItems/ashtray,
+        scale = 0.025,
+	}
+	
+	model SMAshtray
+	{
+		mesh = WorldItems/ashtray,
+        texture = WorldItems/ashtray,
+        scale = 0.025,
+	}
+
+	model SMbutt
+	{
+		mesh = WorldItems/butt,
+        texture = WorldItems/sm_cigaretta,
+        scale = 0.5,
+	}
+}

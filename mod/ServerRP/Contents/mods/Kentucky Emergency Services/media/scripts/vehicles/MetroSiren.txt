@@ -1,0 +1,44 @@
+module Base
+{
+	sound MetroSirenAlarm
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_metroalarm.wav,
+			distanceMin = 10,
+			distanceMax = 50,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+
+	sound MetroSirenYelp
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_metroyelp.wav,
+			distanceMin = 10,
+			distanceMax = 70,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+
+	sound MetroSirenWall
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			file = media/sound/vehicle_metrowall.wav,
+			distanceMin = 10,
+			distanceMax = 70,
+			reverbMaxRange = 10,
+			reverbFactor = 0,
+		}
+	}
+}

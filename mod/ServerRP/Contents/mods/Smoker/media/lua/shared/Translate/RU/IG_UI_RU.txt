@@ -1,0 +1,15 @@
+--- SMOKER ---
+IGUI_RU = {
+IGUI_Empty = "Пустая...",
+IGUI_One_cigarette = "Одна сигарета.",
+IGUI_Two_cigarettes = "Две сигареты.",
+IGUI_There_is_some = "Есть немного...",
+IGUI_Less_than_half = "Меньше половины.",
+IGUI_Almost_half_a_pack = "Почти пол пачки...",
+IGUI_More_than_a_half = "Больше половины.",
+IGUI_Almost_a_complete_pack = "Почти полная!",
+IGUI_Full_pack = "Полная пачка!",
+IGUI_Refuel_Lighter = "Заправить зажигалку",
+IGUI_ContextMenu_Cant_Action = "Не могу выполнить... Переместите предмет в основной инвентарь и повторите правый клик...",
+IGUI_The_foil_burned_out = "Фольга прогорела...",
+}

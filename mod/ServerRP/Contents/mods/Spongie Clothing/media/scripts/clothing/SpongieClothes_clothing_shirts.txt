@@ -1,0 +1,56 @@
+module Spongie {
+	
+    item TShirt_Compression
+    {
+        Type = Clothing,
+        DisplayName = Compression Shirt,
+        ClothingItem = TShirt_Spandex,
+        BodyLocation = TankTop,
+        Icon = TShirt_Compression,
+        BloodLocation = Shirt;Neck,
+		
+        ScratchDefense = 5,
+        Insulation = 0.75,
+        WindResistance = 0.25,
+        WaterResistance = 0.65,
+        FabricType = Cotton,
+		
+        WorldStaticModel = TShirt_Ground,
+    }
+	
+    item TShirt_CompressionLong
+    {
+        Type = Clothing,
+        DisplayName = Long Sleeve Compression Shirt,
+        ClothingItem = TShirt_SpandexLong,
+        BodyLocation = TankTop,
+        Icon = TShirt_CompressionLong,
+        BloodLocation = ShirtLongSleeves;Neck,
+		
+        ScratchDefense = 5,
+        Insulation = 0.75,
+        WindResistance = 0.25,
+        WaterResistance = 0.65,
+        FabricType = Cotton,
+		
+        WorldStaticModel = Shirt_Ground,
+    }
+	
+	item Jumper_TurtleVest
+    {
+        Type = Clothing,
+        DisplayName = Polo Neck Sweater Vest,
+        ClothingItem = Jumper_TurtleVest,
+        BodyLocation = Tshirt,
+        Icon = Jumper_TurtleVest,
+        BloodLocation = JumperNoSleeves;Neck,
+		
+        ScratchDefense = 10,
+        Insulation = 0.5,
+        WindResistance = 0.1,
+        FabricType = Cotton,
+		
+        WorldStaticModel = TShirt_Ground,
+    }
+	
+}

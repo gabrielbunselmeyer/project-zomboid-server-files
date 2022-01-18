@@ -1,0 +1,14 @@
+--- SMOKER ---
+IGUI_JP = {
+IGUI_Empty = "空",
+IGUI_One_cigarette = "1本",
+IGUI_Two_cigarettes = "2本",
+IGUI_There_is_some = "残り僅か",
+IGUI_Less_than_half = "半分以下",
+IGUI_Almost_half_a_pack = "約半分",
+IGUI_More_than_a_half = "半分以上",
+IGUI_Almost_a_complete_pack = "ほぼ満タン",
+IGUI_Full_pack = "満タン",
+IGUI_Refuel_Lighter = "ライターに給油",
+IGUI_ContextMenu_Cant_Action = "操作を完了できませんでした。アイテムをメインイベントリに移動後、再度右クリックを押してください。",
+}

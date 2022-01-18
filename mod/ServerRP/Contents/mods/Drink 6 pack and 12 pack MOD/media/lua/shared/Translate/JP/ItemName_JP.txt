@@ -1,0 +1,18 @@
+﻿ItemName_JP = {
+
+	-- Drink 6 pack and 12 pack MOD
+	-- 2021-09-24 Version 2.02
+
+	ItemName_DrinkPackMod.Beer = "ビール(缶)",
+	ItemName_DrinkPackMod.BeerBottle = "ビール(瓶)",
+	ItemName_DrinkPackMod.BeerBottlePack = "ビール(瓶)(6本パック)",
+	ItemName_DrinkPackMod.BeerPack = "ビール(缶)(6本パック)",
+	ItemName_DrinkPackMod.PopPack = "清涼飲料水-ダイエットポップ(6本パック)",
+	ItemName_DrinkPackMod.Pop2Pack = "清涼飲料水-ポップ(6本パック)",
+	ItemName_DrinkPackMod.Pop3Pack = "清涼飲料水-フリーズ(6本パック)",
+	ItemName_DrinkPackMod.WhiskeyBottledPack = "ウィスキーボトル(12本パック)",
+	ItemName_DrinkPackMod.Wine2BottledPack = "ワイン(レッド)(12本パック)",
+	ItemName_DrinkPackMod.WineBottledPack = "ワイン(シャルドネ)(12本パック)",
+	ItemName_DrinkPackMod.PopBottlePack = "オレンジソーダ(12本パック)",
+	ItemName_DrinkPackMod.WaterBottlePack = "ボトル(水入り)(12本パック",
+}

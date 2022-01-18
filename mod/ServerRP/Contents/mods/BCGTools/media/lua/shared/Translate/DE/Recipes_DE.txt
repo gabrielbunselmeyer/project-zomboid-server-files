@@ -1,0 +1,6 @@
+Recipes_DE = {
+
+	Recipe_Attach_Survival_Knife_to_Spear = "Überlebensmesser an Speer anbringen",
+	Recipe_Attach_Cheap_Survival_Knife_to_Spear = "Günstiges Überlebensmesser an Speer anbringen",
+
+}

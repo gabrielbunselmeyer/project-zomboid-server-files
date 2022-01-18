@@ -1,0 +1,17 @@
+module Base
+{
+
+	model HandtruckBlue_Ground
+	{
+		mesh = WorldItems/HandTruckGround,
+		texture = Other/HandTruckBlue,
+		scale = 0.01,
+	}
+
+	model HandtruckRed_Ground
+	{
+		mesh = WorldItems/HandTruckGround,
+		texture = Other/HandTruckRed,
+		scale = 0.01,
+	}
+}

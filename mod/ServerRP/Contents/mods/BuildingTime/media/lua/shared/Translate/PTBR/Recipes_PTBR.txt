@@ -1,0 +1,9 @@
+Recipes_PTBR = {
+  Recipe_Make_Bucket_of_Concrete = "Balde de Cimento",
+  Recipe_Make_Brick_Mold = "Criar Molde de Tijolo",
+  Recipe_Make_Bricks = "Modelar Tijolos",
+  Recipe_Make_Chisel = "Criar Cinzel",
+  Recipe_Make_Mash_Hammer = "Criar Malho",
+  Recipe_Put_Clay_in_Bag = "Colocar Argila no Saco",
+  Recipe_Take_Clay_from_Bag = "Retirar Argila do Saco",
+}

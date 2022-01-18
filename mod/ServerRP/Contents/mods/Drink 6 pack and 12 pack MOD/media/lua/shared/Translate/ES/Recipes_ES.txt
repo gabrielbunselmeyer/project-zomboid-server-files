@@ -1,0 +1,23 @@
+Recipe_ES = {
+
+	-- I was here (SmokeAnDrink)
+	-- Drink 6 pack and 12 pack MOD
+
+	Recipe_Open_a_pack_of_Beer = "Abrir paquete de cervezas",
+	Recipe_Pack_a_Beer = "Empaquetar cervezas",
+	Recipe_Open_a_pack_of_Beer_bottle = "Abrir paquete botellas de cerveza",
+	Recipe_Pack_a_Beer_bottle = "Empaquetar botellas de cerveza",
+	Recipe_Open_a_pack_of_Pop = "Abrir paquete de gaseosas",
+	Recipe_Pack_a_Pop = "Empaquetar gaseosas",
+	Recipe_Pack_a_Whiskey_bottle = "Empaquetar botella de Bourbon",
+	Recipe_Open_a_pack_of_Whiskey_bottle = "Abrir paquete botellas de Bourbon",
+	Recipe_Pack_a_Chardonnay_bottle = "Empaquetar Chardonnay",
+	Recipe_Open_a_pack_of_Chardonnay_bottle = "Abrir paquete botellas de Chardonnay",
+	Recipe_Pack_a_Red_Wine_bottle = "Empaquetar botellas de vino tinto",
+	Recipe_Open_a_pack_of_Red_Wine_bottle = "Abrir paquete botellas de vino tinto",
+	Recipe_Open_a_pack_of_Orange_Soda = "Abrir paquete refrescos de naranja",
+	Recipe_Open_a_pack_of_Water_Bottle = "Abrir paquete botellas de agua",
+	Recipe_Pack_a_Orange_Soda = "Empaquetar refrescos de naranja",
+	Recipe_Pack_a_Water_Bottle = "Empaquetar botellas de agua",
+
+}

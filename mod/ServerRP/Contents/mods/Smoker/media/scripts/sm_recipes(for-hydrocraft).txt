@@ -1,0 +1,104 @@
+/********************* Support HydroCraft Mod ********************/
+/*********************************************************************/
+module Hydrocraft
+{
+	imports
+	{
+		SM, Base
+	}
+
+/*************Распотрошить окурок HydroCraft ***********/
+/************* Gut HydroCraft Stub ***********/
+recipe Dismantle Cigarette Butt
+	{
+		HCCigarettebutt,
+		Result:SMFilter,
+		Time:30.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnCreate:recipe_Remove_Tobacco_From_Butt_OnCreate,
+		OnTest:recipe_Hydro_TestIsValid,
+	}
+
+/********** Наполнить Глинянную трубку горстью табака из Smoker mod **********/
+/********** Fill the Clay Pipe with a handful of tobacco from Smoker mod *********/
+	recipe Fill Smoking Pipe with Tobacco
+	{
+		HCClaypipesmoking,
+		SMSmallHandfulTobacco/Tobacco,
+		Result:Hydrocraft.HCPipetobacco,
+		Time:60.0,
+		OnTest:recipe_Hydro_TestIsValid,
+	}
+
+/********** Извлечение табака Smoker mod из Глянянной трубки Hydrocraft **********/
+/********** Extracting Smoker mod tobacco from Hydrocraft Lustrous Pipe **********/
+	recipe Remove tobacco from pipe
+	{
+		HCPipetobacco,
+		Result:Hydrocraft.HCClaypipesmoking,
+		OnCreate:recipe_Remove_Tobacco_OnCreate,
+		Time:60.0,
+		OnTest:recipe_Hydro_TestIsValid,
+	}
+
+/********** Наполнить Кукурузную трубку горстью табака из Smoker mod **********/
+/********** Fill the Corn Pipe with a handful of Smoker mod tobacco **********/
+	recipe Fill Smoking Pipe with Tobacco
+	{
+		HCCorncobpipe,
+		SMSmallHandfulTobacco/Tobacco,
+		Result:Hydrocraft.HCCorncobpipetobacco,
+		Time:60.0,
+		OnTest:recipe_Hydro_TestIsValid,
+	}
+
+/********** Наполнить Кукурузную трубку 5 щепотками табака из Smoker mod **********/
+/********** Fill the Corn Pipe with 5 pinches of tobacco from Smoker mod **********/
+	recipe Fill Smoking Pipe with Tobacco
+	{
+		HCCorncobpipe,
+		SMPinchTobacco=5,
+		Result:Hydrocraft.HCCorncobpipetobacco,
+		Time:60.0,
+		OnTest:recipe_Hydro_TestIsValid,
+	}
+
+/********** Наполнить Глинянную трубку 5 щепотками табака из Smoker mod **********/	
+/********* Fill the Clay Pipe with 5 pinches of tobacco from Smoker mod **********/
+	recipe Fill Smoking Pipe with Tobacco
+	{
+		HCClaypipesmoking,
+		SMPinchTobacco=5,
+		Result:Hydrocraft.HCPipetobacco,
+		Time:60.0,
+		OnTest:recipe_Hydro_TestIsValid,
+	}
+
+/********** Извлечение табака Кукурузной трубки Hydrocraft **********/
+/************* Extracting Tobacco Corn Pipe Hydrocraft **************/
+	recipe Remove tobacco from pipe
+	{
+		HCCorncobpipetobacco,
+		Result:Hydrocraft.HCCorncobpipe,
+		OnCreate:recipe_Remove_Tobacco_OnCreate,
+		Time:60.0,
+		OnTest:recipe_Hydro_TestIsValid,
+	}
+
+/******* Упаковка сигаретных пачек в блок *******/
+/******* Packing cigarette packs in a block *******/
+recipe Pack in Carton Cigarettes
+	{
+		DuctTape/Scotchtape/Glue/Woodglue/HCSuperglue/HCGluejar/HCWoodgluejar/HCElectrictape/HCMaskingtape/HCRubbercement/HCPackingtape,
+		HCAdultmagazine/HCAdultmagazine2/HCAdultmagazine3/HCAdultmagazine4/HCAdultmagazine5/HCAdultmagazine6/HCMagazinemetalworking1/HCMagazinemetalworking2/HCMagazinemetalworking3/HCMagazinemetalworking4/HCMagazinemetalworking5/HCMagazinemetalworking6/HCMagazinemetalworking7/HCMagazinefarming1/HCMagazineelectronics01/HCMagazineelectronics02/HCMagazineelectronics03/HCMagazinespopularmachines01/HCMagazinexmas/HCSportsmagazine/HCSportsmagazine2/HCBook/HCBookphone/HCBookalgebra/HCBookastronomy/HCBookalmanac/HCBookamericanhistory/HCBookanimalhusbandry/HCBookbedtime/HCBookcalculus/HCBookceltic/HCBookchemistry/HCBookboneworking/HCBookdictionary/HCBookencyclopedia/HCBookenglish/HCBookentomology/HCBookfairytale/HCBookfrench/HCBookgenealogy/HCBookgeometry/HCBookgerman/HCBookitalian/HCBookmath/HCBookmedical/HCBookmusic/HCBookpaleontology/HCBookpoetry/HCBookscrap/HCBookspanish/HCBookthesaurus/HCBooktreeguide/HCBookstrigonometry/HCBookvet/HCBookworldhistory/HCBookanatomy/HCBookarthistory/HCBookbible/HCBookbirdgude/HCBookbiology/HCBookcommunications/HCBookeconomics/HCBookfishguide/HCBookflowerguide/HCBookgeology/HCBookgemcutting/HCBookjewelry/HCBookgreekmyths/HCBookhealth/HCBooklaw/HCBookliterature/HCBookmammalguide/HCBooknorsemyths/HCBookoceanography/HCBookphilosophy/HCBookphysics/HCBookpoliticalscience/HCBookreptileguide/HCBookrobotics/HCBookscience/HCBooksociology/HCBookworldatlas/HCBookamphibianguide/HCBookapiculture/HCBookplumbing/HCBookelectrical/HCBookcomputerprograming/HCBookbattery/HCBookanthropology/HCBookarchery/HCBookpottery/HCBookglassworking/HCBookcopperworking/HCBooktinworking/HCBookbronzeworking/HCBookalloys/HCBookmetalurgy/HCBookironworking/HCBookleadworking/HCBooksteelworking/HCBookcoalworking/HCBooksilverworking/HCBookgoldworking/HCBookaluminumworking/HCBooktitaniumworking/HCBooklithiumworking/HCBookrubberworking/HCBookcandlemaking/HCBooksoapmaking/HCBookbasketry/HCBookmasonry/HCBookstoneworking/HCBookhunting/HCBookleatherworking/HCBooktailoring/HCBookhatter/HCBookcobbling/HCBookarmorcrafting/HCBookherbalism/HCBooksericulture/HCBookfungiguide/HCBookpharmacology/HCBookwelding/HCBookwire/HCBookmagnets/HCBookindustrial/HCBookgunsmithing/HCBookrocketry/HCBookjunk/HCBookauto/HCBookbicycle/HCBookanarchist/HCBookanarchisthmtd/HCBookanarchistammonal/HCBookanarchistpn02/HCBookrussian/HCBookkorean/HCBookjapanese/HCBookchinese/HCBookportuguise/HCBookhindi/HCBookarabic/HCBookgreek/HCBookfinnish/HCBookhebrew/HCBookpolish/HCBookzulu/HCBookegyptian/HCBookczech/HCBookdutch/HCBookkoran/HCBooktora/HCBooklocksmithing/HCBookmicrobiology/HCBookgardening/HCBooksculpting/HCBookastrology/HCBookcalligraphy/HCBookarcheology/HCBookradio/HCBookecology/HCBookorganicchemistry/HCBooksailing/HCBookexplosives/HCBookbiodiesel/HCBookdistillery/HCBookphotography/HCBookmycology/HCBooktaxidermy/HCBookcryptozoology/HCBookpapermaking/HCBooktoys/HCBookplastics,
+		destroy SMFullPack=10,
+		Result:SMCartonCigarettes,
+		Time:200.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:true,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnTest:recipe_Hydro_TestIsValid,
+	}
+}

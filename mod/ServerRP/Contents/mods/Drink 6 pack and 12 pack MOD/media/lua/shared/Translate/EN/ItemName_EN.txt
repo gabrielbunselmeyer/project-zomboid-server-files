@@ -1,0 +1,17 @@
+﻿ItemName_EN = {
+
+	-- Drink 6 pack and 12 pack MOD
+
+	ItemName_DrinkPackMod.Beer = "Beer",
+	ItemName_DrinkPackMod.BeerBottle = "Beer Bottle",
+	ItemName_DrinkPackMod.BeerBottlePack = "6 Pack of Beer Bottled",
+	ItemName_DrinkPackMod.BeerPack = "6 Pack of Beer",
+	ItemName_DrinkPackMod.Pop2Pack = "6 Pack of Pop",
+	ItemName_DrinkPackMod.Pop3Pack = "6 Pack of Pop",
+	ItemName_DrinkPackMod.PopPack = "6 Pack of Pop",
+	ItemName_DrinkPackMod.WhiskeyBottledPack = "12 Pack of Whiskey Bottled",
+	ItemName_DrinkPackMod.Wine2BottledPack = "12 Pack of Red Wine",
+	ItemName_DrinkPackMod.WineBottledPack = "12 Pack of Chardonnay",
+	ItemName_DrinkPackMod.PopBottlePack = "12 Pack of Orange Soda",
+	ItemName_DrinkPackMod.WaterBottlePack = "12 Pack of Water Bottle",
+}

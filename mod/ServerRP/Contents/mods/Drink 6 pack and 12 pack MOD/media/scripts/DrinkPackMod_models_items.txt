@@ -1,0 +1,89 @@
+
+/*** Drink 6 pack and 12 pack MOD ***/
+/*** 2022-01-04 Version 2.04 ***/
+
+module Base
+	{
+
+	model Beer_Bottle_Pack
+	{
+
+        mesh = WorldItems/Beer_Bottled_Pack,
+        texture = WorldItems/Beer_Bottled_Pack,
+        scale = 0.4,
+
+	}
+
+	model Beer_Can_Pack
+	{
+
+        mesh = WorldItems/Beer_Can_Pack,
+        texture = WorldItems/Beer_Can_Pack,
+        scale = 0.2,
+
+	}
+
+	model Diet_Pop_Pack
+	{
+
+        mesh = WorldItems/Diet_Pop_Pack,
+        texture = WorldItems/Diet_Pop_Pack,
+        scale = 0.2,
+
+	}
+
+	model Fizz_Pop_Pack
+	{
+
+        mesh = WorldItems/Fizz_Pop_Pack,
+        texture = WorldItems/Fizz_Pop_Pack,
+        scale = 0.2,
+
+	}
+
+	model Pop_Pack
+	{
+
+        mesh = WorldItems/Pop_Pack,
+        texture = WorldItems/Pop_Pack,
+        scale = 0.2,
+
+	}
+
+	model Whiskey_Bottled_Pack
+	{
+
+        mesh = WorldItems/Whiskey_Bottled_Pack,
+        texture = WorldItems/Whiskey_Bottled_Pack,
+        scale = 0.4,
+
+	}
+
+	model Wine_Bottled_Pack_1
+	{
+
+        mesh = WorldItems/Wine_Bottled_Pack,
+        texture = WorldItems/Wine_Bottled_Pack_1,
+        scale = 0.4,
+
+	}
+
+	model Wine_Bottled_Pack_2
+	{
+
+        mesh = WorldItems/Wine_Bottled_Pack,
+        texture = WorldItems/Wine_Bottled_Pack_2,
+        scale = 0.4,
+
+	}
+
+	model Pop_Bottle
+	{
+
+        mesh = WorldItems/Pop_Bottle,
+        texture = WorldItems/Pop_Bottle,
+        scale = 1.8,
+
+	}
+
+}

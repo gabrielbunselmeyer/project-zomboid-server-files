@@ -1,0 +1,106 @@
+
+/*** Drink 6 pack and 12 pack MOD add item ***/
+
+/*** 2022-01-04 Version 2.04 ***/
+
+module DrinkPackMod
+{
+	imports
+	{
+		Base
+	}
+
+item BeerPack
+	{
+		DisplayName				=	6 Pack of Beer,
+		Weight					=	1.8,
+		Icon					=	BeerPack,
+		DisplayCategory 			=	Item,
+		WorldStaticModel			=	Beer_Can_Pack,
+
+	}
+
+item BeerBottlePack
+	{
+		DisplayName				=	6 Pack of Beer Bottled,
+		Weight					=	2.4,
+		Icon					=	BeerBottledPack,
+		DisplayCategory 			=	Item,
+		WorldStaticModel			=	Beer_Bottle_Pack,
+	}
+
+
+item PopPack
+	{
+		DisplayName				=	6 Pack of Pop,
+		Weight					=	1.8,
+		Icon					=	DietPopPack,
+		DisplayCategory 			=	Item,
+		WorldStaticModel			=	Diet_Pop_Pack,
+	}
+
+item Pop2Pack
+	{
+		DisplayName				=	6 Pack of Pop,
+		Weight					=	1.8,
+		Icon					=	PopPack,
+		DisplayCategory 			=	Item,
+		WorldStaticModel			=	Pop_Pack,
+	}
+
+item Pop3Pack
+	{
+		DisplayName				=	6 Pack of Pop,
+		Weight					=	1.8,
+		Icon					=	FizzPopPack,
+		DisplayCategory 			=	Item,
+		WorldStaticModel			=	Fizz_Pop_Pack,
+	}
+
+item WhiskeyBottledPack
+	{
+		DisplayName				=	12 Pack of Whiskey Bottled,
+		Weight					=	8.4,
+		Icon					=	WhiskeyBottledPack,
+		DisplayCategory 			=	Item,
+		WorldStaticModel			=	Whiskey_Bottled_Pack,
+	}
+
+item WineBottledPack
+	{
+		DisplayName				=	12 Pack of Chardonnay,
+		Weight					=	12.0,
+		Icon					=	WineBottledPack1,
+		DisplayCategory 			=	Item,
+		WorldStaticModel			=	Wine_Bottled_Pack_1,
+	}
+
+item Wine2BottledPack
+	{
+		DisplayName				=	12 Pack of Red Wine,
+		Weight					=	12.0,
+		Icon					=	WineBottledPack2,
+		DisplayCategory 			=	Item,
+		WorldStaticModel			=	Wine_Bottled_Pack_2,
+	}
+
+item PopBottlePack
+	{
+		DisplayName				=	12 Pack of Orange Soda,
+		Weight					=	9.6,
+		Icon					=	PopBottlePack,
+		DisplayCategory 			=	Item,
+		WorldStaticModel			=	Pop_Bottle,
+	}
+
+
+/***item WaterBottlePack
+	/***{
+		/***DisplayName				=	12 Pack of Water Bottle,
+		/***Weight					=	9.6,
+		/***Icon					=	WaterBottlePack,
+		/***DisplayCategory 			=	Item,
+	/***}
+
+}
+

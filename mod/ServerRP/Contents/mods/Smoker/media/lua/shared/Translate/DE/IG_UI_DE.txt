@@ -1,0 +1,15 @@
+--- SMOKER ---
+IGUI_DE = {
+	IGUI_Empty = "Leer...",
+	IGUI_One_cigarette = "Eine Zigarette.",
+	IGUI_Two_cigarettes = "Zwei Zigaretten.",
+	IGUI_There_is_some = "sind einige...",
+	IGUI_Less_than_half = "weniger als die Hälfte.",
+	IGUI_Almost_half_a_pack = "knapp die Hälfte...",
+	IGUI_More_than_a_half = "mehr als die Hälfte!",
+	IGUI_Almost_a_complete_pack = "knapp die komplette Schachtel!",
+	IGUI_Full_pack = "wow eine volle Schachtel!",
+	IGUI_Refuel_Lighter = "Feuerzeug nachfüllen",
+	IGUI_ContextMenu_Cant_Action = "Kann nicht vervollständigt werden... bewege das Item ins Hauptinventar und versuche es erneut...",
+	IGUI_The_foil_burned_out = "Die Folie ist ausgebrannt...",
+}

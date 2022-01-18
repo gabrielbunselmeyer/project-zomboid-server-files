@@ -1,0 +1,44 @@
+module Smoker
+{
+	sound sm_smoking
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/sm_smoking.ogg,
+			distanceMin = 0,
+			distanceMax = 0,
+			reverbMaxRange = 0,
+			reverbFactor = 0,
+			volume = 0,
+		}
+	}
+
+	sound plastic_bottle_crumple
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/plastic_bottle_crumple.ogg,
+			distanceMin = 8,
+			distanceMax = 18,
+			reverbMaxRange = 0,
+			reverbFactor = 0,
+			volume = 0.8,
+		}
+	}
+
+	sound sm_blister
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/sm_blister.ogg,
+			distanceMin = 0,
+			distanceMax = 0,
+			reverbMaxRange = 0,
+			reverbFactor = 0,
+			volume = 0.7,
+		}
+	}
+}

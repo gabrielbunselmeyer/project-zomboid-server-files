@@ -1,0 +1,22 @@
+﻿Recipe_JP = {
+
+	-- Drink 6 pack and 12 pack MOD
+	-- 2021-09-24 Version 2.02
+
+	Recipe_Open_a_pack_of_Beer = "ビール(缶)のパックを開ける",
+	Recipe_Pack_a_Beer = "ビール(缶)をパック詰めにする",
+	Recipe_Open_a_pack_of_Beer_bottle = "ビール(瓶)のパックを開ける",
+	Recipe_Pack_a_Beer_bottle = "ビール(瓶)をパック詰めにする",
+	Recipe_Open_a_pack_of_Pop = "清涼飲料水のパックを開ける",
+	Recipe_Pack_a_Pop = "清涼飲料水をパック詰めにする",
+	Recipe_Pack_a_Whiskey_bottle = "ウィスキーをパック詰めにする",
+	Recipe_Open_a_pack_of_Whiskey_bottle = "ウィスキーのパックを開ける",
+	Recipe_Pack_a_Chardonnay_bottle = "ワイン(シャルドネ)をケースに詰める",
+	Recipe_Open_a_pack_of_Chardonnay_bottle = "ワイン(シャルドネ)のケースを開ける",
+	Recipe_Pack_a_Red_Wine_bottle = "ワイン(赤)をケースに詰める",
+	Recipe_Open_a_pack_of_Red_Wine_bottle = "ワイン(赤)のケースを開ける",
+	Recipe_Open_a_pack_of_Orange_Soda = "オレンジソーダのパックを開ける",
+	Recipe_Open_a_pack_of_Water_Bottle = "ボトル(水入り)のパックを開ける",
+	Recipe_Pack_a_Orange_Soda = "オレンジソーダをパック詰めにする",
+	Recipe_Pack_a_Water_Bottle = "ボトル(水入り)をパック詰めにする",
+}

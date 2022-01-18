@@ -1,0 +1,23 @@
+Recipe_RU = {
+
+	-- Drink 6 pack and 12 pack MOD
+	-- Russian translation by Admiral.Slowpoke
+
+	Recipe_Open_a_pack_of_Beer = "ќткрыть упаковку пива",
+	Recipe_Pack_a_Beer = "”паковать пиво",
+	Recipe_Open_a_pack_of_Beer_bottle = "ќткрыть упаковку бутылок с пивом",
+	Recipe_Pack_a_Beer_bottle = "”паковать пиво",
+	Recipe_Open_a_pack_of_Pop = "ќткрыть упаковку газировки",
+	Recipe_Pack_a_Pop = "”паковать газировку",
+	Recipe_Pack_a_Whiskey_bottle = "”паковать виски",
+	Recipe_Open_a_pack_of_Whiskey_bottle = "ќткрыть упаковку с виски",
+	Recipe_Pack_a_Chardonnay_bottle = "”паковать вино",
+	Recipe_Open_a_pack_of_Chardonnay_bottle = "ќткрыть упаковку вина",
+	Recipe_Pack_a_Red_Wine_bottle = "”паковать вино",
+	Recipe_Open_a_pack_of_Red_Wine_bottle = "ќткрыть упаковку вина",
+	Recipe_Open_a_pack_of_Orange_Soda = "ќткрыть упаковку газировки,
+	Recipe_Open_a_pack_of_Water_Bottle = "ќткрыть упаковку воды",
+	Recipe_Pack_a_Orange_Soda = "”паковать газировку",
+	Recipe_Pack_a_Water_Bottle = "”паковать воду",
+
+}

@@ -1,0 +1,7 @@
+name=Soul Filcher's Building Time
+id=BuildingTime
+description=More masonry and metalwork build options.
+poster=poster.png
+require=ProfessionFrameworkB41Patch
+pack=sfbuild
+tiledef=sfbuild 1985

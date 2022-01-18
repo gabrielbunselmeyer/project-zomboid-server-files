@@ -1,0 +1,43 @@
+module Spongie {
+	imports {
+      Base
+	}
+    item Shorts_Spandex
+    {
+        Type = Clothing,
+        DisplayName = Compression Shorts,
+        ClothingItem = Shorts_Spandex,
+        BodyLocation = UnderwearBottom,
+        Icon = BoxersBlacksilky,
+		Weight = 0.1,
+        BloodLocation = ShortsShort,
+		
+        ScratchDefense = 5,
+        Insulation = 0.75,
+        WindResistance = 0.25,
+        WaterResistance = 0.65,
+		
+        FabricType = Cotton,
+		
+		WorldStaticModel = Boxers_Silk_Black,
+    }
+    item Shorts_SpandexLong
+	{
+		Type = Clothing,
+		DisplayName = Compression Leggings,
+		ClothingItem = Shorts_SpandexLong,
+		BodyLocation = UnderwearBottom,
+		Icon = PantyhoseOpaque,
+		Weight = 0.1,
+        BloodLocation = Trousers,
+		
+        ScratchDefense = 5,
+        Insulation = 0.75,
+        WindResistance = 0.25,
+        WaterResistance = 0.65,
+		
+        FabricType = Cotton,
+		
+		WorldStaticModel = TightsBlack_Ground,
+	}
+}

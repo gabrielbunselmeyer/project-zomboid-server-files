@@ -1,0 +1,15 @@
+Items_PTBR = {
+  DisplayNameBrick_Mold = "Molde de Tijolo",
+  DisplayNameBricks = "Tijolos",
+  DisplayNameChisel = "Cinzel",
+  DisplayNameClay = "Argila",
+  DisplayNameClay_Bag = "Saco de Argila",
+  DisplayNameGlass_Panel = "Vidro",
+  DisplayNameHand_Truck = "Carrinho de Mão",
+  DisplayNameMallet = "Malho",
+  DisplayNameMasonry_Magazine = "Como Fazer Tijolos",
+  DisplayNameMasons_Trowel = "Colher de Pedreiro",
+  DisplayNameMolded_Bricks = "Tijolos Modelados",
+  DisplayNameSealant = "Selante",
+  DisplayNameThe_Metalwork_Magazine_Vol.5 = "Trabalhando com Metal, V",
+}

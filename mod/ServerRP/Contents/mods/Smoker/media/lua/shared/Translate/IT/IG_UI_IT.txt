@@ -1,0 +1,14 @@
+--- FUMATORE ---
+IGUI_IT = {
+IGUI_Empty = "Vuoto ...",
+IGUI_One_cigarette = "Una sigaretta.",
+IGUI_Two_cigarettes = "Due sigarette.",
+IGUI_There_is_some = "Ce n'e di ...",
+IGUI_Less_than_half = "Meno della meta.",
+IGUI_Almost_half_a_pack = "Quasi mezzo pacchetto ...",
+IGUI_More_than_a_half = "Piu della meta!",
+IGUI_Almost_a_complete_pack = "Quasi un pacchetto completo!",
+IGUI_Full_pack = "Pacchetto completo!",
+IGUI_Refuel_Lighter = "Refuel Lighter",
+IGUI_ContextMenu_Cant_Action = "Impossibile completare ... Sposta l'elemento nell'inventario principale e fai nuovamente clic con il tasto destro ..."
+} 

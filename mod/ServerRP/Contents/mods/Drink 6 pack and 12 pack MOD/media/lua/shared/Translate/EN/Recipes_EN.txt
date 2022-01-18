@@ -1,0 +1,22 @@
+﻿Recipe_EN = {
+
+	-- Drink 6 pack and 12 pack MOD
+
+	Recipe_Open_a_pack_of_Beer = "Open a pack of Beer",
+	Recipe_Pack_a_Beer = "Pack a Beer",
+	Recipe_Open_a_pack_of_Beer_bottle = "Open a pack of Beer bottle",
+	Recipe_Pack_a_Beer_bottle = "Pack a Beer bottle",
+	Recipe_Open_a_pack_of_Pop = "Open a pack of Pop",
+	Recipe_Pack_a_Pop = "Pack a Pop",
+	Recipe_Pack_a_Whiskey_bottle = "Pack a Whiskey bottle",
+	Recipe_Open_a_pack_of_Whiskey_bottle = "Open a pack of Whiskey bottle",
+	Recipe_Pack_a_Chardonnay_bottle = "Pack a Chardonnay bottle",
+	Recipe_Open_a_pack_of_Chardonnay_bottle = "Open a pack of Chardonnay bottle",
+	Recipe_Pack_a_Red_Wine_bottle = "Pack a Red Wine bottle",
+	Recipe_Open_a_pack_of_Red_Wine_bottle = "Open a pack of Red Wine bottle",
+	Recipe_Open_a_pack_of_Orange_Soda = "Open a pack of Orange Soda",
+	Recipe_Open_a_pack_of_Water_Bottle = "Open a pack of Water Bottle",
+	Recipe_Pack_a_Orange_Soda = "Pack a Orange Soda",
+	Recipe_Pack_a_Water_Bottle = "Pack a Water Bottle",
+
+}

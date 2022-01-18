@@ -1,0 +1,58 @@
+/********** Support Littering **************/
+/*******************************************/
+module SM
+{
+	imports
+	{
+		littering, Base
+	}
+
+/**** Распотрошить окурок / Gut a cigarette butt ****/
+recipe Dismantle Cigarette Butt
+	{
+		destroy CigaretteButt/CigaretteButtL/CigaretteButtM,
+		Result:SMFilter,
+		Time:30.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnCreate:recipe_Remove_Tobacco_From_Butt_OnCreate,
+		OnTest:recipe_Littering_TestIsValid,
+	}
+
+/**** Оторвать фильтр от из окурка / Tear off the filter from the butt ****/
+recipe Remove Filter from Cigarette Butt
+	{
+		destroy ZSMPCigaretteButtLite/ZSMPCigaretteButtMent, /*** for Litternig Smoker Path maybe. Requires additional verification in the game. I'm not sure if it's correct. ***/
+		Result:SMButt2, /*** Окурок без фильтра ***/
+		Time:30.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnCreate:recipe_Remove_Filter_From_Butt_OnCreate,
+		OnTest:recipe_Littering_TestIsValid,
+	}
+	
+/**** Оторвать фильтр от из окурка / Tear off the filter from the butt ****/
+recipe Remove Filter from Cigarette Butt
+	{
+		destroy CigaretteButt/CigaretteButtL/CigaretteButtM, /*** Litternig окурки.  Litternig Butts ***/
+		Result:SMButt2, /*** Окурок без фильтра ***/
+		Time:30.0,
+		NeedToBeLearn:false,
+		CanBeDoneFromFloor:false,
+		OnGiveXP:NoXP_OnGiveXP,
+		OnCreate:recipe_Remove_Filter_From_Butt_OnCreate,
+		OnTest:recipe_Littering_TestIsValid,
+	}	
+
+/**** Смять пластиковую бутылку/Crumple the plastic bottle ****/
+/**** При игре с Littering / When playing with Littering ****/
+recipe Crumple the Plastic Bottle
+	{
+		ColaBottleEmpty/Soda05Empty/Soda06Empty/Soda12Empty/Soda10Empty/Soda04Empty/Soda07Empty/Soda03Empty/Soda08Empty/Soda09Empty/Soda02Empty/Soda11Empty,
+		Result:SMCrumpledBottle,
+		Time:100.0,
+		OnTest:recipe_Littering_TestIsValid,
+	}
+}

@@ -1,0 +1,4 @@
+/************************SMOKER************************/
+ItemName_CN = {
+ItemName_Base.Cigarettes = "香烟(未检查)",
+}

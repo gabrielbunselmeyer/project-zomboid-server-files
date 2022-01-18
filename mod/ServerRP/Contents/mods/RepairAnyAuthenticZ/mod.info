@@ -1,0 +1,5 @@
+name=Repair Any Authentic Z OPTIONAL
+description= Makes you able to repair Authentic Z items! Requires ItemTweakerAPI and Authentic Z by Authentic Peach.
+poster=poster.png
+require=ItemTweakerAPI
+id=RepairAnyAuthenticZ

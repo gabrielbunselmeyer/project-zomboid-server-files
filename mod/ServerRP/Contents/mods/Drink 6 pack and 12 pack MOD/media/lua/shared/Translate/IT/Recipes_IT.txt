@@ -1,0 +1,23 @@
+Recipe_IT = {
+
+	-- Drink 6 pack and 12 pack MOD
+	-- Italian translation by CalidusGamer
+
+	Recipe_Open_a_pack_of_Beer = "Apri una confezzione di birre",
+	Recipe_Pack_a_Beer = "confezziona le birre",
+	Recipe_Open_a_pack_of_Beer_bottle = "Apri una confezzione di bottiglie di birra",
+	Recipe_Pack_a_Beer_bottle = "confezziona le bottiglie di birra",
+	Recipe_Open_a_pack_of_Pop = "Apri una confezzione di bibete gassate",
+	Recipe_Pack_a_Pop = "confezziona le bibite gassate",
+	Recipe_Pack_a_Whiskey_bottle = "confezziona le bottiglie di Whiskey",
+	Recipe_Open_a_pack_of_Whiskey_bottle = "Apri una confezzione di Whiskey",
+	Recipe_Pack_a_Chardonnay_bottle = "confezziona le bottiglie di Chardonnay",
+	Recipe_Open_a_pack_of_Chardonnay_bottle = "Apri una confezzione di Chardonnay",
+	Recipe_Pack_a_Red_Wine_bottle = "confezziona le bottiglie di Vino Rosso",
+	Recipe_Open_a_pack_of_Red_Wine_bottle = "Apri una confezzione di Vino Rosso",
+	Recipe_Open_a_pack_of_Orange_Soda = "Apri una confezzione di soda all'arancia",
+	Recipe_Open_a_pack_of_Water_Bottle = "Apri una confezzione di bottiglie d'acqua",
+	Recipe_Pack_a_Orange_Soda = "confezziona le sode all'arancia",
+	Recipe_Pack_a_Water_Bottle = "confezziona le bottiglie d'acqua",
+
+}

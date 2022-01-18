@@ -1,0 +1,18 @@
+﻿ItemName_FR = {
+
+	-- Drink 6 pack and 12 pack MOD
+	-- Traduit en français par Bobitec
+
+	ItemName_DrinkPackMod.Beer = "Bière",
+	ItemName_DrinkPackMod.BeerBottle = "Bouteille de bière",
+	ItemName_DrinkPackMod.BeerBottlePack = "Paquet de 6 bouteilles de bières",
+	ItemName_DrinkPackMod.BeerPack = "Paquet de 6 bières",
+	ItemName_DrinkPackMod.Pop2Pack = "Paquet de 6 canettes",
+	ItemName_DrinkPackMod.Pop3Pack = "Paquet de 6 canettes",
+	ItemName_DrinkPackMod.PopPack = "Paquet de 6 canettes",
+	ItemName_DrinkPackMod.WhiskeyBottledPack = "Paquet de 12 bouteilles de whisky",
+	ItemName_DrinkPackMod.Wine2BottledPack = "Paquet de 12 bouteilles de Chardonnay",
+	ItemName_DrinkPackMod.WineBottledPack = "Paquet de 12 bouteilles de vin rouge",
+	ItemName_DrinkPackMod.PopBottlePack = "Paquet de 12 bouteilles de soda a l'orange",
+	ItemName_DrinkPackMod.WaterBottlePack = "Paquet de 12 bouteilles d'eau",
+}

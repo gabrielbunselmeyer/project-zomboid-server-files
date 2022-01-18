@@ -1,0 +1,3 @@
+Tooltip_DE = {
+    Tooltip_Pills_Nicorette = "Veringert das verlangen nach Zigaretten",
+}

@@ -1,0 +1,55 @@
+/************************FUMADOR************************ /
+
+Items_ES = {
+Recipe_Open_Pack_Cigarettes = "Paquete abierto de cigarrillos",
+Recipe_Take_Cigarette_from_Pack = "Sacar el cigarrillo del paquete",
+Recipe_Put_Cigarette_in_Pack = "Pon el cigarrillo en el paquete",
+Recipe_Put_Cigarette_in_EmptyPack = "Ponga el cigarrillo en el paquete vacio",
+Recipe_Pack_in_Carton_Cigarettes = "Paquete en caja de cigarrillos",
+Recipe_Unpack_Cigarettes = "Desempacar cigarrillos",
+Recipe_Close_the_full_pack = "Cerrar paquete de cigarrillos",
+Recipe_Open_the_full_pack = "Paquete abierto de cigarrillos",
+Recipe_Dismantle_Cigarette_Butt = "Desmontar trasero",
+Recipe_Dismantle_Cigarette = "Desmantelar cigarrillo",
+Recipe_Dismantle_Homemade_Cigarette = "Desmantelar cigarrillo"
+Recipe_Make_homemade_filter_cigarette = "Haga un cigarrillo con filtro casero",
+Recipe_Make_Homemade_Cigarette_Without_Filter = "Hacer un cigarrillo casero sin filtro",
+Recipe_Make_Tobacco_Pouch = "Hacer bolsa de tabaco",
+Recipe_Put_Pinch_Tobacco = "Ponga una pizca de tabaco en las bolsas",
+Recipe_Put_Small_Handful_Tobacco = "Pon un punado de tabaco en las bolsas",
+Recipe_Take_Pinch_Tobacco = "Toma una pizca de tabaco",
+Recipe_Take_Small_Handful_Tobacco = "Tome un punado de tabaco",
+Recipe_Divide_into_five_pinches = "Dividir en cinco pellizcos",
+Recipe_Mix_in_one_handful = "Mezclar en un punado",
+Recipe_Fill_Smoking_Pipe_with_Tobacco = "Llene la pipa de fumar con tabaco",
+Recipe_Put_GreenfireTobacco = "Pon un punado de tabaco en las bolsas",
+Recipe_Remove_Filter_from_Cigarette_Butt = "Eliminar filtro de colilla",
+Recipe_Crumple_the_Plastic_Bottle = "Arrugar la botella de plastico",
+Recipe_Make_a_Bottle_Cap = "Hacer una tapa de botella",
+Recipe_Burn_hole_in_plastic_bottle = "Quema un agujero en una botella arrugada",
+Recipe_Make_a_hole_in_the_bottle = "Hacer un agujero en la botella arrugada",
+Recipe_Remove_the_Foil_from_the_Cigarette_Pack = "Retire el papel de aluminio del paquete de cigarrillos",
+Recipe_Make_Holes_in_Foil = "Hacer agujeros en papel de aluminio",
+Recipe_Put_pinch_tobacco_in_smoking_device = "Ponga una pizca de tabaco en el dispositivo para fumar",
+Recipe_Remove_tobacco_from_smoking_device = "Retire una pizca de tabaco del dispositivo para fumar",
+Recipe_Pull_out_the_chewing_gum = "Saca el chicle",
+Recipe_Pull_out_blister_pack = "Saque la placa blíster",
+
+/ ************************ Para Greenfire ********************** * /
+Recipe_Dismantle_Spliff = "Desmantelar empalme",
+Recipe_Roll_Spliff = "Roll Spliff",
+Recipe_Load_Bong_with_Smoking_Blend = "Cargar bong con mezcla para fumar",
+Recipe_Load_Smoking_Pipe_With_Smoking_Blend = "Cargue la pipa de fumar con la mezcla de fumar",
+Recipe_Unload_Smoking_Blend_from_Smoking_Pipe = "Descargar la mezcla para fumar de la pipa",
+Recipe_Unload_Smoking_Blend_from_Bong = "Descargar la mezcla para fumar del bong",
+Recipe_Mix_Tobacco_and_Cannabis = "Mezclar tabaco y cannabis",
+Recipe_Put_Smoking_Blend_in_smoking_device = "Ponga la mezcla para fumar en el dispositivo para fumar",
+Recipe_Remove_Smoking_Blend_from_smoking_device = "Eliminar la mezcla para fumar del dispositivo para fumar",
+
+/ ************************ Para HydroCraft ********************** * /
+Recipe_Remove_tobacco_from_pipe = "Eliminar el tabaco de la pipa",
+
+/ ************************ Para tirar basura ********************** * /
+Recipe_Open_Pack_of_Menthol_Cigarettes = "Paquete abierto de cigarrillos",
+Recipe_Open_Pack_of_Lite_Cigarettes = "Paquete abierto de cigarrillos",
+}

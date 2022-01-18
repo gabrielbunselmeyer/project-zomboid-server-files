@@ -1,0 +1,105 @@
+
+
+
+
+-------------------
+
+v.1.08dev3
+2021-01-05
+
+Добавлена возможность поднимать заполненную тележку через контекстное меню инвентаря.
+
+
+
+-------------------
+
+v.1.08dev2
+2021-01-05
+
+Удалены все переходы между анимациями.
+
+Removed all transitions between animations.
+
+-------------------
+
+v.1.08dev1
+2021-01-03
+
+Переделана логика активации анимации.
+
+Reworked the animation activation logic.
+
+-------------------
+
+v.1.07
+
+Добавлен испанский перевод (спасибо Siowar).
+
+Added Spanish translation (thanks Siowar).
+
+-------------------
+
+v1.06
+
+Исправлен баг с дублированием тележки.
+Исправлен эксплойт связанный со строительством (теперь, если игрок держит в руках тележку, меню строительства будет заблокировано).
+Уменьшен объем тележек до 49 единиц (ранее игрок не мог достать полностью заполненную тележку из багажника).
+
+Fixed bug with duplicate cart.
+Fixed exploit related to construction (now, if the player is holding a cart, the construction menu will be blocked).
+Reduced the capacity of carts to 49 units (previously, the player could not get a fully filled cart from the trunk).
+
+-------------------
+
+v.1.05.2
+
+41.54 bugfix.
+
+-------------------
+
+v.1.05.1
+
+41.52 hotfix.
+
+-------------------
+
+v.1.05
+
+Мод обновлен под PZ версии 41.51:
+- больше не требуется вручную подкидывать файлы с анимацией в папку с игрой;
+- актуализирован спавн предметов.
+Исправлена ошибка связанная с нажатием клавиш в главном меню игры.
+
+Mod updated for PZ version 41.51:
+- you no longer need to manually add files with animation to the game folder;
+- items spawn has been updated.
+Fixed a bug related to pressing keys in the main menu of the game.
+-------------------
+
+v.1.04
+
+Исправлена ошибка связанная с дублированием тележки.
+
+Fixed bug related to duplicate cart.
+
+-------------------
+
+v.1.03
+
+Fixed a code that could theoretically lead to errors.
+
+-------------------
+
+v.1.02
+
+Fixed a bug with emotions.
+
+-------------------
+
+v.1.01
+
+Minor improvements and bug fixes.
+
+-------------------
+
+v.1.0
