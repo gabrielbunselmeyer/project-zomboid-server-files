@@ -1,0 +1,3 @@
+ContextMenu_EN = {
+	ContextMenu_VehicleHotwireSkill = "You need keys or<br>Electrical level 4 and<br>Mechanics level 6<br>to hotwire",
+}

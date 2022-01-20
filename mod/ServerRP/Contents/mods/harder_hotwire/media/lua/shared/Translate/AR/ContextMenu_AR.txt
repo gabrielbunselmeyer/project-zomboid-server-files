@@ -1,0 +1,3 @@
+ContextMenu_ES = {
+	ContextMenu_VehicleHotwireSkill = "Necesitas las llaves o<br>Electrónica Lv4 y<br>Mecánica Lv6<br>para hacer un puente",
+}
