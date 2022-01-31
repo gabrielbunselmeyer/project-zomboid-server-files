@@ -1,0 +1,1514 @@
+module Base
+{
+	/****************************** TOOLS ******************************/	
+	
+	item PZCF_HobbyPaints
+	{
+		Weight = 0.3,
+		Type = Drainable,
+        UseDelta = 0.5,
+        UseWhileEquipped = FALSE,		
+		DisplayName = Hobby Painting Set,
+		Icon = PZCF_hobby_paints,
+	}
+	
+	item PZCF_SolderingIron
+	{
+		Weight = 0.2,
+		Type = Drainable,
+        UseDelta = 0.25,
+        UseWhileEquipped = FALSE,		
+		DisplayName = Butane Soldering Pen,
+		Icon = PZCF_butane_soldering_pen,
+	}
+	
+	item PZCF_SolderWire
+	{
+		Weight = 0.3,
+		Type = Drainable,
+        UseDelta = 0.2,
+        UseWhileEquipped = FALSE,		
+		DisplayName = Solder Wire,
+		cantBeConsolided = TRUE,
+		Icon = PZCF_solder_wire,
+	}
+	
+	item PZCF_Hobby_Trees
+	{
+		Weight = 0.2,
+		Type = Normal,
+		DisplayName = Hobby Terrain - Miniature Trees,
+		Icon = PZCF_hobby_trees,
+	}
+	
+	item PZCF_Hobby_Flock
+	{
+		Weight = 0.3,
+		Type = Normal,
+		DisplayName = Hobby Terrain - Scenic Grass Flock,
+		Icon = PZCF_hobby_flock,
+	}
+
+	item PZCF_HobbyMagazine1
+	{
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Hobby Magazine Vol. 1,
+        Icon	=	PZCF_hobby_mag1,
+        TeachedRecipes  =   Build Model Railroad Benchwork,
+        ReplaceOnUse    =   PZCF_HobbyMagazine1,
+        StaticModel = Magazine,
+	}
+	
+	item PZCF_HobbyMagazine2
+	{
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Hobby Magazine Vol. 2,
+        Icon	=	PZCF_hobby_mag2,
+        TeachedRecipes  =   Build Model Railroad Layout,
+        ReplaceOnUse    =   PZCF_HobbyMagazine2,
+        StaticModel = Magazine,
+	}
+	
+	item PZCF_HobbyMagazine3
+	{
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Hobby Magazine Vol. 3,
+        Icon	=	PZCF_hobby_mag3,
+        TeachedRecipes  =   Build Model Railroad Controller,
+        ReplaceOnUse    =   PZCF_HobbyMagazine3,
+        StaticModel = Magazine,
+	}
+	
+	item PZCF_HobbyMagazineDiecast
+	{
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	FastPace Diecast Catalog,
+		Map = media/ui/LootableMaps/PZCF_diecastcatalog.png,
+        Icon	=	PZCF_diecastcatalog,
+	}
+	
+	/****************************** MODEL RAILROADING ******************************/	
+
+	item PZCF_TrainLayout
+	{
+		Weight = 40.0,
+		Type = Moveable,
+		DisplayCategory = Item,		
+		WorldObjectSprite =	PZCF_hobbies_1_103,
+		DisplayName = Model Railroad Layout,
+		Icon = PZCF_trainlayout,
+	}
+	
+	item PZCF_TrainBenchwork
+	{
+		Weight = 20.0,
+		Type = Normal,
+		DisplayCategory = Item,		
+		DisplayName = Model Railroad Benchwork,
+		Icon = PZCF_train_benchwork,
+	}	
+	
+	item PZCF_TrainStructure
+	{
+		Weight = 0.2,
+		Type = Normal,
+		DisplayName = Model Railroad Structure,
+		Icon = PZCF_train_structure,
+	}
+
+	item PZCF_TrainSet
+	{
+		Weight = 1.0,
+		Type = Normal,
+		DisplayName = Model Railroad Train Set,
+		Icon = PZCF_train_set,
+	}
+	
+	item PZCF_TrainTracks
+	{
+		Weight = 0.5,
+		Type = Normal,
+		DisplayName = Model Railroad Train Tracks,
+		Icon = PZCF_train_tracks,
+	}
+	
+	item PZCF_TrainController
+	{
+		Weight = 2.0,
+		Type = Normal,
+		DisplayName = Model Railroad Controller,
+		Icon = PZCF_train_controller,
+	}
+	
+	/****************************** FINISHED MODEL KITS ******************************/
+
+	item PZCF_ModelAirliner
+	{
+		Weight	=	0.2,
+		Type	=	Moveable,
+		WorldObjectSprite =	PZCF_hobbies_1_81,
+		DisplayName	=	Model - Airliner,
+		Icon	=	PZCF_model_airliner,
+	}	
+
+	item PZCF_ModelAmbulance
+	{
+		Weight	=	0.2,
+		Type	=	Moveable,
+		WorldObjectSprite =	PZCF_hobbies_1_45,
+		DisplayName	=	Model - Ambulance,
+		Icon	=	PZCF_model_ambulance,
+	}
+	
+	item PZCF_ModelAPC
+	{
+		Weight	=	0.2,
+		Type	=	Moveable,
+		WorldObjectSprite =	PZCF_hobbies_1_37,
+		DisplayName	=	Model - Armored Personnel Carrier,
+		Icon	=	PZCF_model_apc,
+	}
+	
+	item PZCF_ModelAttackHelicopter
+	{
+		Weight	=	0.2,
+		Type	=	Moveable,
+		WorldObjectSprite =	PZCF_hobbies_1_77,
+		DisplayName	=	Model - Attack Helicopter,
+		Icon	=	PZCF_model_attackheli,
+	}
+	
+	item PZCF_ModelBattleship
+	{
+		Weight	=	0.2,
+		Type	=	Moveable,
+		WorldObjectSprite =	PZCF_hobbies_1_13,
+		DisplayName	=	Model - Battleship,
+		Icon	=	PZCF_model_battleship,
+	}	
+	
+	item PZCF_ModelBiplane
+	{
+		Weight	=	0.2,
+		Type	=	Moveable,
+		WorldObjectSprite =	PZCF_hobbies_1_85,
+		DisplayName	=	Model - Biplane,
+		Icon	=	PZCF_model_biplane,
+	}
+
+	item PZCF_ModelDieselLocomotive
+	{
+		Weight	=	0.2,
+		Type	=	Moveable,
+		WorldObjectSprite =	PZCF_hobbies_1_9,
+		DisplayName	=	Model - Diesel Locomotive,
+		Icon	=	PZCF_model_dieselloco,
+	}	
+	
+	item PZCF_ModelElectricLocomotive
+	{
+		Weight	=	0.2,
+		Type	=	Moveable,
+		WorldObjectSprite =	PZCF_hobbies_1_5,
+		DisplayName	=	Model - Electric Locomotive,
+		Icon	=	PZCF_model_electricloco,
+	}
+	
+	item PZCF_ModelFireTruck
+	{
+		Weight	=	0.2,
+		Type	=	Moveable,
+		WorldObjectSprite =	PZCF_hobbies_1_69,
+		DisplayName	=	Model - Fire Truck,
+		Icon	=	PZCF_model_firetruck,
+	}	
+	
+	item PZCF_ModelJetFighter
+	{
+		Weight	=	0.2,
+		Type	=	Moveable,
+		WorldObjectSprite =	PZCF_hobbies_1_89,
+		DisplayName	=	Model - Jet Fighter,
+		Icon	=	PZCF_model_jetfighter,
+	}
+	
+	item PZCF_ModelMilitaryJeep
+	{
+		Weight	=	0.2,
+		Type	=	Moveable,
+		WorldObjectSprite =	PZCF_hobbies_1_41,
+		DisplayName	=	Model - Military Jeep,
+		Icon	=	PZCF_model_jeep,
+	}
+
+	item PZCF_ModelPoliceCar
+	{
+		Weight	=	0.2,
+		Type	=	Moveable,
+		WorldObjectSprite =	PZCF_hobbies_1_61,
+		DisplayName	=	Model - Police Car,
+		Icon	=	PZCF_model_policecar,
+	}	
+	
+	item PZCF_ModelSAMLauncher
+	{
+		Weight	=	0.2,
+		Type	=	Moveable,
+		WorldObjectSprite =	PZCF_hobbies_1_33,
+		DisplayName	=	Model - SAM Luancher,
+		Icon	=	PZCF_model_sam,
+	}	
+	
+	item PZCF_ModelSailingShip
+	{
+		Weight	=	0.2,
+		Type	=	Moveable,
+		WorldObjectSprite =	PZCF_hobbies_1_21,
+		DisplayName	=	Model - Sailing Ship,
+		Icon	=	PZCF_model_sailingship,
+	}
+
+	item PZCF_ModelSchoolBus
+	{
+		Weight	=	0.2,
+		Type	=	Moveable,
+		WorldObjectSprite =	PZCF_hobbies_1_65,
+		DisplayName	=	Model - School Bus,
+		Icon	=	PZCF_model_schoolbus,
+	}	
+
+	item PZCF_ModelSpaceShuttle
+	{
+		Weight	=	0.2,
+		Type	=	Moveable,
+		WorldObjectSprite =	PZCF_hobbies_1_93,
+		DisplayName	=	Model - Space Shuttle,
+		Icon	=	PZCF_model_spaceshuttle,
+	}
+	
+	item PZCF_ModelSpiffoMobile
+	{
+		Weight	=	0.2,
+		Type	=	Moveable,
+		WorldObjectSprite =	PZCF_hobbies_1_53,
+		DisplayName	=	Model - Spiffo Mobile,
+		Icon	=	PZCF_model_spiffomobile,
+	}
+	
+	item PZCF_ModelSportsCar
+	{
+		Weight	=	0.2,
+		Type	=	Moveable,
+		WorldObjectSprite =	PZCF_hobbies_1_49,
+		DisplayName	=	Model - Sports Car,
+		Icon	=	PZCF_model_sportscar,
+	}	
+	
+	item PZCF_ModelSteamLocomotive
+	{
+		Weight	=	0.2,
+		Type	=	Moveable,
+		WorldObjectSprite =	PZCF_hobbies_1_1,
+		DisplayName	=	Model - Steam Locomotive,
+		Icon	=	PZCF_model_steamloco,
+	}
+	
+	item PZCF_ModelSubmarine
+	{
+		Weight	=	0.2,
+		Type	=	Moveable,
+		WorldObjectSprite =	PZCF_hobbies_1_17,
+		DisplayName	=	Model - Submarine,
+		Icon	=	PZCF_model_sub,
+	}
+	
+	item PZCF_ModelTankDesert
+	{
+		Weight	=	0.2,
+		Type	=	Moveable,
+		WorldObjectSprite =	PZCF_hobbies_1_25,
+		DisplayName	=	Model - Modern Battle Tank,
+		Icon	=	PZCF_model_deserttank,
+	}
+
+	item PZCF_ModelTankGreen
+	{
+		Weight	=	0.2,
+		Type	=	Moveable,
+		WorldObjectSprite =	PZCF_hobbies_1_29,
+		DisplayName	=	Model - World War 2 Tank,
+		Icon	=	PZCF_model_greentank,
+	}
+
+	item PZCF_ModelTransportHelicopter
+	{
+		Weight	=	0.2,
+		Type	=	Moveable,
+		WorldObjectSprite =	PZCF_hobbies_1_73,
+		DisplayName	=	Model - Transport Helicopter,
+		Icon	=	PZCF_model_transportheli,
+	}
+	
+	item PZCF_ModelSemiTruck
+	{
+		Weight	=	0.2,
+		Type	=	Moveable,
+		WorldObjectSprite =	PZCF_hobbies_1_57,
+		DisplayName	=	Model - Semi-Truck,
+		Icon	=	PZCF_model_semitruck,
+	}	
+
+	/****************************** UNBUILT MODEL KITS ******************************/	
+
+	item PZCF_KitAirliner
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Model Kit - Airliner,
+		Icon	=	PZCF_kit_airliner,
+		Tags =	ModelKit,
+	}	
+
+	item PZCF_KitAmbulance
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Model Kit - Ambulance,
+		Icon	=	PZCF_kit_ambulance,
+		Tags =	ModelKit,
+	}
+	
+	item PZCF_KitAPC
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Model Kit - Armored Personnel Carrier,
+		Icon	=	PZCF_kit_apc,
+		Tags =	ModelKit,
+	}
+	
+	item PZCF_KitAttackHelicopter
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Model Kit - Attack Helicopter,
+		Icon	=	PZCF_kit_attack_heli,
+		Tags =	ModelKit,
+	}
+	
+	item PZCF_KitBattleship
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Model Kit - Battleship,
+		Icon	=	PZCF_kit_battleship,
+		Tags =	ModelKit,
+	}	
+	
+	item PZCF_KitBiplane
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Model Kit - Biplane,
+		Icon	=	PZCF_kit_biplane,
+		Tags =	ModelKit,
+	}
+
+	item PZCF_KitDieselLocomotive
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Model Kit - Diesel Locomotive,
+		Icon	=	PZCF_kit_diesel_loco,
+		Tags =	ModelKit,
+	}	
+	
+	item PZCF_KitElectricLocomotive
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Model Kit - Electric Locomotive,
+		Icon	=	PZCF_kit_electric_loco,
+		Tags =	ModelKit,
+	}
+	
+	item PZCF_KitFireTruck
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Model Kit - Fire Truck,
+		Icon	=	PZCF_kit_firetruck,
+		Tags =	ModelKit,
+	}	
+	
+	item PZCF_KitJetFighter
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Model Kit - Jet Fighter,
+		Icon	=	PZCF_kit_jetfighter,
+		Tags =	ModelKit,
+	}
+	
+	item PZCF_KitMilitaryJeep
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Model Kit - Military Jeep,
+		Icon	=	PZCF_kit_jeep,
+		Tags =	ModelKit,
+	}
+
+	item PZCF_KitPoliceCar
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Model Kit - Police Car,
+		Icon	=	PZCF_kit_policecar,
+		Tags =	ModelKit,
+	}	
+	
+	item PZCF_KitSAMLauncher
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Model Kit - SAM Luancher,
+		Icon	=	PZCF_kit_samlauncher,
+		Tags =	ModelKit,
+	}	
+	
+	item PZCF_KitSailingShip
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Model Kit - Sailing Ship,
+		Icon	=	PZCF_kit_sailingship,
+		Tags =	ModelKit,
+	}
+
+	item PZCF_KitSchoolBus
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Model Kit - School Bus,
+		Icon	=	PZCF_kit_schoolbus,
+		Tags =	ModelKit,
+	}	
+
+	item PZCF_KitSpaceShuttle
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Model Kit - Space Shuttle,
+		Icon	=	PZCF_kit_spaceshuttle,
+		Tags =	ModelKit,
+	}
+	
+	item PZCF_KitSpiffoMobile
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Model Kit - Spiffo Mobile,
+		Icon	=	PZCF_kit_spiffomobile,
+		Tags =	ModelKit,
+	}
+	
+	item PZCF_KitSportsCar
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Model Kit - Sports Car,
+		Icon	=	PZCF_kit_sportscar,
+		Tags =	ModelKit,
+	}	
+	
+	item PZCF_KitSteamLocomotive
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Model Kit - Steam Locomotive,
+		Icon	=	PZCF_kit_steam_loco,
+		Tags =	ModelKit,
+	}
+	
+	item PZCF_KitSubmarine
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Model Kit - Submarine,
+		Icon	=	PZCF_kit_sub,
+		Tags =	ModelKit,
+	}
+	
+	item PZCF_KitTankDesert
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Model Kit - Modern Battle Tank,
+		Icon	=	PZCF_kit_tank_desert,
+		Tags =	ModelKit,
+	}
+
+	item PZCF_KitTankGreen
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Model Kit - World War 2 Tank,
+		Icon	=	PZCF_kit_tank,
+		Tags =	ModelKit,
+	}
+
+	item PZCF_KitTransportHelicopter
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Model Kit - Transport Helicopter,
+		Icon	=	PZCF_kit_transport_heli,
+		Tags =	ModelKit,
+	}
+	
+	item PZCF_KitSemiTruck
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Model Kit - Semi-Truck,
+		Icon	=	PZCF_kit_semitruck,
+		Tags =	ModelKit,
+	}	
+
+	/****************************** COLLECTABLE DIECAST FOOD TRUCK DISPLAY SHELVES ******************************/		
+
+	item PZCF_FoodTruck_Display1
+	{
+		Weight	=	4.0,
+		Type	=	Moveable,
+		DisplayName	=	Collectable Diecast Food Trucks (Truck 1 through 4),
+		WorldObjectSprite =	PZCF_hobbies_1_112,
+		Icon	=	PZCF_foodtruck_display1,
+		Tags =	DiecastFoodTruckDisplay,
+	}
+	
+	item PZCF_FoodTruck_Display2
+	{
+		Weight	=	4.0,
+		Type	=	Moveable,
+		DisplayName	=	Collectable Diecast Food Trucks (Truck 5 through 8),
+		WorldObjectSprite =	PZCF_hobbies_1_114,
+		Icon	=	PZCF_foodtruck_display2,
+		Tags =	DiecastFoodTruckDisplay,
+	}
+	
+	item PZCF_FoodTruck_Display3
+	{
+		Weight	=	4.0,
+		Type	=	Moveable,
+		DisplayName	=	Collectable Diecast Food Trucks (Truck 9 through 12),
+		WorldObjectSprite =	PZCF_hobbies_1_116,
+		Icon	=	PZCF_foodtruck_display3,
+		Tags =	DiecastFoodTruckDisplay,
+	}
+	
+	item PZCF_FoodTruck_Display4
+	{
+		Weight	=	4.0,
+		Type	=	Moveable,
+		DisplayName	=	Collectable Diecast Food Trucks (Truck 13 through 16),
+		WorldObjectSprite =	PZCF_hobbies_1_118,
+		Icon	=	PZCF_foodtruck_display4,
+		Tags =	DiecastFoodTruckDisplay,
+	}	
+	/****************************** COLLECTABLE DIECAST FOOD TRUCKS ******************************/	
+
+	item PZCF_FoodTruck_Bread
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Collectable Diecast Food Truck (1 of 16) - Bread,
+		Icon	=	PZCF_foodtruck_bread,
+		Tags =	DiecastFoodTruck,
+	}
+	
+	item PZCF_FoodTruck_Burger
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Collectable Diecast Food Truck (2 of 16) - Burger,
+		Icon	=	PZCF_foodtruck_burger,
+		Tags =	DiecastFoodTruck,
+	}	
+
+	item PZCF_FoodTruck_Chicken
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Collectable Diecast Food Truck (3 of 16) - Chicken,
+		Icon	=	PZCF_foodtruck_chicken,
+		Tags =	DiecastFoodTruck,
+	}
+
+	item PZCF_FoodTruck_Pizza
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Collectable Diecast Food Truck (4 of 16) - Pizza,
+		Icon	=	PZCF_foodtruck_pizza,
+		Tags =	DiecastFoodTruck,
+	}
+
+	item PZCF_FoodTruck_Sushi
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Collectable Diecast Food Truck (5 of 16) - Sushi,
+		Icon	=	PZCF_foodtruck_sushi,
+		Tags =	DiecastFoodTruck,
+	}
+
+	item PZCF_FoodTruck_Milk
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Collectable Diecast Food Truck (6 of 16) - Milk,
+		Icon	=	PZCF_foodtruck_milk,
+		Tags =	DiecastFoodTruck,
+	}
+
+	item PZCF_FoodTruck_Fruit
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Collectable Diecast Food Truck (7 of 16) - Fruit,
+		Icon	=	PZCF_foodtruck_fruit,
+		Tags =	DiecastFoodTruck,
+	}
+
+	item PZCF_FoodTruck_FishAndChips
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Collectable Diecast Food Truck (8 of 16) - Fish & Chips,
+		Icon	=	PZCF_foodtruck_fishandchips,
+		Tags =	DiecastFoodTruck,
+	}
+
+	item PZCF_FoodTruck_HotDog
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Collectable Diecast Food Truck (9 of 16) - Hot Dog,
+		Icon	=	PZCF_foodtruck_hotdog,
+		Tags =	DiecastFoodTruck,
+	}
+
+	item PZCF_FoodTruck_Donut
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Collectable Diecast Food Truck (10 of 16) - Donut,
+		Icon	=	PZCF_foodtruck_donut,
+		Tags =	DiecastFoodTruck,
+	}
+
+	item PZCF_FoodTruck_StirFry
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Collectable Diecast Food Truck (11 of 16) - Stir Fry,
+		Icon	=	PZCF_foodtruck_stirfry,
+		Tags =	DiecastFoodTruck,
+	}
+
+	item PZCF_FoodTruck_IceCream
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Collectable Diecast Food Truck (12 of 16) - Ice Cream,
+		Icon	=	PZCF_foodtruck_icecream,
+		Tags =	DiecastFoodTruck,
+	}
+
+	item PZCF_FoodTruck_Coffee
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Collectable Diecast Food Truck (13 of 16) - Coffee,
+		Icon	=	PZCF_foodtruck_coffee,
+		Tags =	DiecastFoodTruck,
+	}
+
+	item PZCF_FoodTruck_ShakeAndFries
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Collectable Diecast Food Truck (14 of 16) - Shake & Fries,
+		Icon	=	PZCF_foodtruck_shakeandfries,
+		Tags =	DiecastFoodTruck,
+	}
+
+	item PZCF_FoodTruck_Taco
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Collectable Diecast Food Truck (15 of 16) - Taco,
+		Icon	=	PZCF_foodtruck_taco,
+		Tags =	DiecastFoodTruck,
+	}
+
+	item PZCF_FoodTruck_BBQ
+	{
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Collectable Diecast Food Truck (16 of 16) - BBQ,
+		Icon	=	PZCF_foodtruck_bbq,
+		Tags =	DiecastFoodTruck,
+	}
+
+	/****************************** TRADING GAME CARDS ******************************/	
+
+	item PZCF_BoosterPack
+	{
+		Weight	=	0.1,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures Cards (Booster Pack),
+		Icon	=	PZCF_BoosterPack,
+		Tags =	TradingGameCard,
+	}	
+	
+	item PZCF_Gum
+	{
+        Type = Food,
+        DisplayName	= Stick of Gum,
+        Icon = PZCF_Gum,
+        Weight = 0.1,
+        HungerChange = -1,
+        UnhappyChange = -20,
+        Carbohydrates = 10,
+        Proteins = 0,
+        Lipids = 0,
+        Calories = 40,
+	}	
+	
+	item PZCF_BlueTGC_1
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Blue Card 01 of 20) - Berzerker,
+		Icon	=	PZCF_BlueTGC_1,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_BlueTGC_2
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Blue Card 02 of 20) - Lamia,
+		Icon	=	PZCF_BlueTGC_2,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_BlueTGC_3
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Blue Card 03 of 20) - Vampire,
+		Icon	=	PZCF_BlueTGC_3,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_BlueTGC_4
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Blue Card 04 of 20) - Halfling,
+		Icon	=	PZCF_BlueTGC_4,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_BlueTGC_5
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Blue Card 05 of 20) - Lava Worm,
+		Icon	=	PZCF_BlueTGC_5,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_BlueTGC_6
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Blue Card 06 of 20) - Dark Wizard,
+		Icon	=	PZCF_BlueTGC_6,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_BlueTGC_7
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Blue Card 07 of 20) - Giant Spider,
+		Icon	=	PZCF_BlueTGC_7,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_BlueTGC_8
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Blue Card 08 of 20) - Undead,
+		Icon	=	PZCF_BlueTGC_8,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_BlueTGC_9
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Blue Card 09 of 20) - Gnoll,
+		Icon	=	PZCF_BlueTGC_9,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_BlueTGC_10
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Blue Card 10 of 20) - Elf,
+		Icon	=	PZCF_BlueTGC_10,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_BlueTGC_11
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Blue Card 11 of 20) - Trickster,
+		Icon	=	PZCF_BlueTGC_11,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_BlueTGC_12
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Blue Card 12 of 20) - Griffon,
+		Icon	=	PZCF_BlueTGC_12,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_BlueTGC_13
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Blue Card 13 of 20) - Giant Bug,
+		Icon	=	PZCF_BlueTGC_13,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_BlueTGC_14
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Blue Card 14 of 20) - Minotaur,
+		Icon	=	PZCF_BlueTGC_14,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_BlueTGC_15
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Blue Card 15 of 20) - Fire Giant,
+		Icon	=	PZCF_BlueTGC_15,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_BlueTGC_16
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Blue Card 16 of 20) - Dwarf Lord,
+		Icon	=	PZCF_BlueTGC_16,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_BlueTGC_17
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Blue Card 17 of 20) - Husk Warrior,
+		Icon	=	PZCF_BlueTGC_17,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_BlueTGC_18
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Blue Card 18 of 20) - Cultist,
+		Icon	=	PZCF_BlueTGC_18,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_BlueTGC_19
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Blue Card 19 of 20) - Stone Giant,
+		Icon	=	PZCF_BlueTGC_19,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_BlueTGC_20
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Blue Card 20 of 20) - Harpy,
+		Icon	=	PZCF_BlueTGC_20,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GreenTGC_1
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Green Card 01 of 20) - High Elf,
+		Icon	=	PZCF_GreenTGC_1,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GreenTGC_2
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Green Card 02 of 20) - Orc Leader,
+		Icon	=	PZCF_GreenTGC_2,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GreenTGC_3
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Green Card 03 of 20) - Giant Scorpion,
+		Icon	=	PZCF_GreenTGC_3,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GreenTGC_4
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Green Card 04 of 20) - Tenticle Horror,
+		Icon	=	PZCF_GreenTGC_4,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GreenTGC_5
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Green Card 05 of 20) - Frost Giant,
+		Icon	=	PZCF_GreenTGC_5,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GreenTGC_6
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Green Card 06 of 20) - Gorgon,
+		Icon	=	PZCF_GreenTGC_6,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GreenTGC_7
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Green Card 07 of 20) - Lich King,
+		Icon	=	PZCF_GreenTGC_7,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GreenTGC_8
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Green Card 08 of 20) - Golden Angel,
+		Icon	=	PZCF_GreenTGC_8,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GreenTGC_9
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Green Card 09 of 20) - Ogre,
+		Icon	=	PZCF_GreenTGC_9,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GreenTGC_10
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Green Card 10 of 20) - Fire Fiend,
+		Icon	=	PZCF_GreenTGC_10,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GreenTGC_11
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Green Card 11 of 20) - Ooze,
+		Icon	=	PZCF_GreenTGC_11,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GreenTGC_12
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Green Card 12 of 20) - Kobold,
+		Icon	=	PZCF_GreenTGC_12,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GreenTGC_13
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Green Card 13 of 20) - Goblin,
+		Icon	=	PZCF_GreenTGC_13,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GreenTGC_14
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Green Card 14 of 20) - Hell Hound,
+		Icon	=	PZCF_GreenTGC_14,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GreenTGC_15
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Green Card 15 of 20) - Enchantress,
+		Icon	=	PZCF_GreenTGC_15,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GreenTGC_16
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Green Card 16 of 20) - Purple Pixie,
+		Icon	=	PZCF_GreenTGC_16,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GreenTGC_17
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Green Card 17 of 20) - Ice Maiden,
+		Icon	=	PZCF_GreenTGC_17,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GreenTGC_18
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Green Card 18 of 20) - Giant Crustacean,
+		Icon	=	PZCF_GreenTGC_18,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GreenTGC_19
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Green Card 19 of 20) - Fire Wraith,
+		Icon	=	PZCF_GreenTGC_19,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GreenTGC_20
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Green Card 20 of 20) - Skeleton,
+		Icon	=	PZCF_GreenTGC_20,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_RedTGC_1
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Red Card 01 of 20) - Wood Elf,
+		Icon	=	PZCF_RedTGC_1,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_RedTGC_2
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Red Card 02 of 20) - Rogue,
+		Icon	=	PZCF_RedTGC_2,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_RedTGC_3
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Red Card 03 of 20) - Mage,
+		Icon	=	PZCF_RedTGC_3,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_RedTGC_4
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Red Card 04 of 20) - Slender,
+		Icon	=	PZCF_RedTGC_4,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_RedTGC_5
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Red Card 05 of 20) - Templar Knight,
+		Icon	=	PZCF_RedTGC_5,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_RedTGC_6
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Red Card 06 of 20) - Draconic Warrior,
+		Icon	=	PZCF_RedTGC_6,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_RedTGC_7
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Red Card 07 of 20) - Orc,
+		Icon	=	PZCF_RedTGC_7,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_RedTGC_8
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Red Card 08 of 20) - Hydra,
+		Icon	=	PZCF_RedTGC_8,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_RedTGC_9
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Red Card 09 of 20) - Troll,
+		Icon	=	PZCF_RedTGC_9,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_RedTGC_10
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Red Card 10 of 20) - Treeman,
+		Icon	=	PZCF_RedTGC_10,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_RedTGC_11
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Red Card 11 of 20) - Death Viper,
+		Icon	=	PZCF_RedTGC_11,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_RedTGC_12
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Red Card 12 of 20) - Goblin Leader,
+		Icon	=	PZCF_RedTGC_12,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_RedTGC_13
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Red Card 13 of 20) - Cyclops,
+		Icon	=	PZCF_RedTGC_13,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_RedTGC_14
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Red Card 14 of 20) - Plains Giant,
+		Icon	=	PZCF_RedTGC_14,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_RedTGC_15
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Red Card 15 of 20) - Dark Knight,
+		Icon	=	PZCF_RedTGC_15,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_RedTGC_16
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Red Card 16 of 20) - Merfolk,
+		Icon	=	PZCF_RedTGC_16,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_RedTGC_17
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Red Card 17 of 20) - Gnoll Leader,
+		Icon	=	PZCF_RedTGC_17,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_RedTGC_18
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Red Card 18 of 20) - Giant Serpent,
+		Icon	=	PZCF_RedTGC_18,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_RedTGC_19
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Red Card 19 of 20) - Manticore,
+		Icon	=	PZCF_RedTGC_19,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_RedTGC_20
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Red Card 20 of 20) - Orc Warlord,
+		Icon	=	PZCF_RedTGC_20,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GoldTGC_1
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Gold Rare Card 01 of 20) - Elf High Lord,
+		Icon	=	PZCF_GoldTGC_1,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GoldTGC_2
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Gold Rare Card 02 of 20) - Phoenix,
+		Icon	=	PZCF_GoldTGC_2,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GoldTGC_3
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Gold Rare Card 03 of 20) - Golden Dragon,
+		Icon	=	PZCF_GoldTGC_3,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GoldTGC_4
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Gold Rare Card 04 of 20) - Fire Demon,
+		Icon	=	PZCF_GoldTGC_4,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GoldTGC_5
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Gold Rare Card 05 of 20) - Green Dragon,
+		Icon	=	PZCF_GoldTGC_5,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GoldTGC_6
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Gold Rare Card 06 of 20) - Dark Overlord,
+		Icon	=	PZCF_GoldTGC_6,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GoldTGC_7
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Gold Rare Card 07 of 20) - Angel of Death,
+		Icon	=	PZCF_GoldTGC_7,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GoldTGC_8
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Gold Rare Card 08 of 20) - Grand Dragon,
+		Icon	=	PZCF_GoldTGC_8,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GoldTGC_9
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Gold Rare Card 09 of 20) - Balroc,
+		Icon	=	PZCF_GoldTGC_9,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GoldTGC_10
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Gold Rare Card 10 of 20) - Plague Bringer,
+		Icon	=	PZCF_GoldTGC_10,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GoldTGC_11
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Gold Rare Card 11 of 20) - Ancient Wizard,
+		Icon	=	PZCF_GoldTGC_11,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GoldTGC_12
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Gold Rare Card 12 of 20) - Sphinx,
+		Icon	=	PZCF_GoldTGC_12,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GoldTGC_13
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Gold Rare Card 13 of 20) - The Despoiler,
+		Icon	=	PZCF_GoldTGC_13,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GoldTGC_14
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Gold Rare Card 14 of 20) - Eldritch,
+		Icon	=	PZCF_GoldTGC_14,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GoldTGC_15
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Gold Rare Card 15 of 20) - Undead Dragon,
+		Icon	=	PZCF_GoldTGC_15,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GoldTGC_16
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Gold Rare Card 16 of 20) - Gnome,
+		Icon	=	PZCF_GoldTGC_16,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GoldTGC_17
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Gold Rare Card 17 of 20) - Amazonian,
+		Icon	=	PZCF_GoldTGC_17,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GoldTGC_18
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Gold Rare Card 18 of 20) - Trigon,
+		Icon	=	PZCF_GoldTGC_18,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GoldTGC_19
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Gold Rare Card 19 of 20) - Hell Spawn,
+		Icon	=	PZCF_GoldTGC_19,
+		Tags =	TradingGameCard,
+	}
+
+	item PZCF_GoldTGC_20
+	{
+		Weight	=	0,
+		Type	=	Normal,
+		DisplayName	=	Castles & Creatures (Gold Rare Card 20 of 20) - Fire Dragon,
+		Icon	=	PZCF_GoldTGC_20,
+		Tags =	TradingGameCard,
+	}
+}		

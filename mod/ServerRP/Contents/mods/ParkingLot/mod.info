@@ -1,0 +1,8 @@
+name=OldPark Town
+id=ParkingLot
+description=Old Town that doesnt seem to be effected much by the outbreak.
+description=Cells 29 x 29
+require=tkTiles_01,DylansTiles,Diederiks Tile Palooza
+pack=ap_tiles
+tiledef=tiledefinitions 565
+poster=preview.png

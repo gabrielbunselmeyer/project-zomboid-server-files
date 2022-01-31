@@ -1,0 +1,406 @@
+module Base
+{	
+    
+	recipe Open Card Booster Pack
+	{
+		PZCF_BoosterPack,
+		Result:PZCF_Gum,
+		OnCreate:PZCF_HobbyRecipe.OnCreate.GenerateTradingGameCards,
+		Time:10.0,		
+	}	
+	
+	recipe Build Model Railroad Controller
+	{
+		RadioTransmitter,
+		ElectronicsScrap=2,
+		Timer,
+		Screws=4,
+		PZCF_SolderWire=2,
+		PZCF_SolderingIron=1,
+		keep [Recipe.GetItemTypes.Screwdriver],	
+		Result:PZCF_TrainController,
+		SkillRequired:Electricity=2,
+		NeedToBeLearn:true,		
+		Time:1500.0,	
+		Category:Electrical,		
+	}
+
+	recipe Build Model Railroad Benchwork
+	{	
+		Plank=8,
+		Woodglue=4,
+		Screws=8,
+		Nails=12,
+		keep [Recipe.GetItemTypes.Screwdriver],
+		keep [Recipe.GetItemTypes.Hammer],
+		keep Saw/GardenSaw,
+		Result:PZCF_TrainBenchwork,
+		SkillRequired:Woodwork=2,
+		Category:Carpentry,
+		NeedToBeLearn:true,				
+		Time:4000.0, 		
+	}
+	
+    recipe Build Model Railroad Layout
+	{	
+		destroy PZCF_TrainBenchwork,
+		Radio.ElectricWire=4,	
+		PZCF_SolderWire=2,
+		PZCF_SolderingIron=2,
+		PZCF_TrainStructure=2,
+		PZCF_Hobby_Trees=2,
+		PZCF_Hobby_Flock=4,
+		PZCF_HobbyPaints=2,
+		PZCF_TrainSet,
+		PZCF_TrainTracks=3,
+		Result:PZCF_TrainLayout,
+		SkillRequired:Electricity=2,		
+		NeedToBeLearn:true,		
+		Time:4000.0,			
+	}
+	
+	recipe Build Model Airliner
+    {
+	   PZCF_KitAirliner,
+	   PZCF_HobbyPaints=1,
+	   Glue=2,
+	   keep Scalpel,
+	   keep Tweezers,
+	   Result:PZCF_ModelAirliner,
+	   OnCreate:PZCF_HobbyRecipe.OnCreate.BuildModelKit,
+	   Time:4000.0,
+    }	
+
+	recipe Build Model Ambulance
+    {
+       PZCF_KitAmbulance,
+       PZCF_HobbyPaints=1,
+	   Glue=2,
+	   keep Scalpel,
+	   keep Tweezers,
+       Result:PZCF_ModelAmbulance,
+	   OnCreate:PZCF_HobbyRecipe.OnCreate.BuildModelKit,
+       Time:4000.0,
+    }
+	
+	recipe Build Model Armoured Personnel Carrier
+    {
+       PZCF_KitAPC,
+       PZCF_HobbyPaints=1,
+	   Glue=2,
+	   keep Scalpel,
+	   keep Tweezers,
+       Result:PZCF_ModelAPC,
+	   OnCreate:PZCF_HobbyRecipe.OnCreate.BuildModelKit,
+       Time:4000.0,
+    }
+	
+	recipe Build Model Attack Helicopter
+    {
+       PZCF_KitAttackHelicopter,
+       PZCF_HobbyPaints=1,
+	   Glue=2,
+	   keep Scalpel,
+	   keep Tweezers,
+       Result:PZCF_ModelAttackHelicopter,
+	   OnCreate:PZCF_HobbyRecipe.OnCreate.BuildModelKit,
+       Time:4000.0,
+    }
+	
+	recipe Build Model Battleship
+    {
+       PZCF_KitBattleship,
+       PZCF_HobbyPaints=1,
+	   Glue=2,
+	   keep Scalpel,
+	   keep Tweezers,
+       Result:PZCF_ModelBattleship,
+	   OnCreate:PZCF_HobbyRecipe.OnCreate.BuildModelKit,
+       Time:4000.0,
+    }
+	
+	recipe Build Model Biplane
+    {
+       PZCF_KitBiplane,
+       PZCF_HobbyPaints=1,
+	   Glue=2,
+	   keep Scalpel,
+	   keep Tweezers,
+       Result:PZCF_ModelBiplane,
+	   OnCreate:PZCF_HobbyRecipe.OnCreate.BuildModelKit,
+       Time:4000.0,
+    }
+	
+	recipe Build Model Diesel Locomotive
+    {
+       PZCF_KitDieselLocomotive,
+       PZCF_HobbyPaints=1,
+	   Glue=2,
+	   keep Scalpel,
+	   keep Tweezers,
+       Result:PZCF_ModelDieselLocomotive,
+	   OnCreate:PZCF_HobbyRecipe.OnCreate.BuildModelKit,
+       Time:4000.0,
+    }	
+	
+	recipe Build Model Electric Locomotive
+    {
+       PZCF_KitElectricLocomotive,
+       PZCF_HobbyPaints=1,
+	   Glue=2,
+	   keep Scalpel,
+	   keep Tweezers,
+       Result:PZCF_ModelElectricLocomotive,
+	   OnCreate:PZCF_HobbyRecipe.OnCreate.BuildModelKit,
+       Time:4000.0,
+    }
+
+	recipe Build Model Fire Truck
+    {
+       PZCF_KitFireTruck,
+       PZCF_HobbyPaints=1,
+	   Glue=2,
+	   keep Scalpel,
+	   keep Tweezers,
+       Result:PZCF_ModelFireTruck,
+	   OnCreate:PZCF_HobbyRecipe.OnCreate.BuildModelKit,
+       Time:4000.0,
+    }	
+	
+	recipe Build Model Jet Fighter
+    {
+       PZCF_KitJetFighter,
+       PZCF_HobbyPaints=1,
+	   Glue=2,
+	   keep Scalpel,
+	   keep Tweezers,
+       Result:PZCF_ModelJetFighter,
+	   OnCreate:PZCF_HobbyRecipe.OnCreate.BuildModelKit,
+       Time:4000.0,
+    }
+	
+	recipe Build Model Military Jeep
+    {
+       PZCF_KitMilitaryJeep,
+       PZCF_HobbyPaints=1,
+	   Glue=2,
+	   keep Scalpel,
+	   keep Tweezers,
+       Result:PZCF_ModelMilitaryJeep,
+	   OnCreate:PZCF_HobbyRecipe.OnCreate.BuildModelKit,
+       Time:4000.0,
+    }
+	
+	recipe Build Model Police Car
+    {
+       PZCF_KitPoliceCar,
+       PZCF_HobbyPaints=1,
+	   Glue=2,
+	   keep Scalpel,
+	   keep Tweezers,
+       Result:PZCF_ModelPoliceCar,
+	   OnCreate:PZCF_HobbyRecipe.OnCreate.BuildModelKit,
+       Time:4000.0,
+    }
+	
+	recipe Build Model SAM Launcher
+    {
+       PZCF_KitSAMLauncher,
+       PZCF_HobbyPaints=1,
+	   Glue=2,
+	   keep Scalpel,
+	   keep Tweezers,
+       Result:PZCF_ModelSAMLauncher,
+	   OnCreate:PZCF_HobbyRecipe.OnCreate.BuildModelKit,
+       Time:4000.0,
+    }
+	
+	recipe Build Model Sailing Ship
+    {
+       PZCF_KitSailingShip,
+       PZCF_HobbyPaints=1,
+	   Glue=2,
+	   keep Scalpel,
+	   keep Tweezers,
+       Result:PZCF_ModelSailingShip,
+	   OnCreate:PZCF_HobbyRecipe.OnCreate.BuildModelKit,
+       Time:4000.0,
+    }
+	
+	recipe Build Model School Bus
+    {
+       PZCF_KitSchoolBus,
+       PZCF_HobbyPaints=1,
+	   Glue=2,
+	   keep Scalpel,
+	   keep Tweezers,
+       Result:PZCF_ModelSchoolBus,
+	   OnCreate:PZCF_HobbyRecipe.OnCreate.BuildModelKit,
+       Time:4000.0,
+    }
+	
+	recipe Build Model Space Shuttle
+    {
+       PZCF_KitSpaceShuttle,
+       PZCF_HobbyPaints=1,
+	   Glue=2,
+	   keep Scalpel,
+	   keep Tweezers,
+       Result:PZCF_ModelSpaceShuttle,
+	   OnCreate:PZCF_HobbyRecipe.OnCreate.BuildModelKit,
+       Time:4000.0,
+    }
+	
+	recipe Build Model Spiffo Mobile
+    {
+       PZCF_KitSpiffoMobile,
+       PZCF_HobbyPaints=1,
+	   Glue=2,
+	   keep Scalpel,
+	   keep Tweezers,
+       Result:PZCF_ModelSpiffoMobile,
+	   OnCreate:PZCF_HobbyRecipe.OnCreate.BuildModelKit,
+       Time:4000.0,
+    }
+	
+	recipe Build Model Sports Car
+    {
+       PZCF_KitSportsCar,
+       PZCF_HobbyPaints=1,
+	   Glue=2,
+	   keep Scalpel,
+	   keep Tweezers,
+       Result:PZCF_ModelSportsCar,
+	   OnCreate:PZCF_HobbyRecipe.OnCreate.BuildModelKit,
+       Time:4000.0,
+    }
+	
+	recipe Build Model Steam Locomotive
+    {
+       PZCF_KitSteamLocomotive,
+       PZCF_HobbyPaints=1,
+	   Glue=2,
+	   keep Scalpel,
+	   keep Tweezers,
+       Result:PZCF_ModelSteamLocomotive,
+	   OnCreate:PZCF_HobbyRecipe.OnCreate.BuildModelKit,
+       Time:4000.0,
+    }
+	
+	recipe Build Model Submarine
+    {
+       PZCF_KitSubmarine,
+       PZCF_HobbyPaints=1,
+	   Glue=2,
+	   keep Scalpel,
+	   keep Tweezers,
+       Result:PZCF_ModelSubmarine,
+	   OnCreate:PZCF_HobbyRecipe.OnCreate.BuildModelKit,
+       Time:4000.0,
+    }
+	
+	recipe Build Model Modern Battle Tank
+    {
+       PZCF_KitTankDesert,
+       PZCF_HobbyPaints=1,
+	   Glue=2,
+	   keep Scalpel,
+	   keep Tweezers,
+       Result:PZCF_ModelTankDesert,
+	   OnCreate:PZCF_HobbyRecipe.OnCreate.BuildModelKit,
+       Time:4000.0,
+    }
+	
+	recipe Build Model World War 2 Tank
+    {
+       PZCF_KitTankGreen,
+       PZCF_HobbyPaints=1,
+	   Glue=2,
+	   keep Scalpel,
+	   keep Tweezers,
+       Result:PZCF_ModelTankGreen,
+	   OnCreate:PZCF_HobbyRecipe.OnCreate.BuildModelKit,
+       Time:4000.0,
+    }
+	
+	recipe Build Model Transport Helicopter
+    {
+       PZCF_KitTransportHelicopter,
+       PZCF_HobbyPaints=1,
+	   Glue=2,
+	   keep Scalpel,
+	   keep Tweezers,
+       Result:PZCF_ModelTransportHelicopter,
+	   OnCreate:PZCF_HobbyRecipe.OnCreate.BuildModelKit,
+       Time:4000.0,
+    }
+	
+	recipe Build Model Semi-Truck
+    {
+       PZCF_KitSemiTruck,
+       PZCF_HobbyPaints=1,
+	   Glue=2,
+	   keep Scalpel,
+	   keep Tweezers,
+       Result:PZCF_ModelSemiTruck,
+	   OnCreate:PZCF_HobbyRecipe.OnCreate.BuildModelKit,
+       Time:4000.0,
+    }
+
+	recipe Build Collector Diecast Food Truck Display (Trucks 1 through 4)
+    {
+       	Screws=4,
+		Plank=1,
+		keep [Recipe.GetItemTypes.Screwdriver],   
+		PZCF_FoodTruck_Bread,
+		PZCF_FoodTruck_Burger,
+		PZCF_FoodTruck_Chicken,
+		PZCF_FoodTruck_Pizza,
+		Result:PZCF_FoodTruck_Display1,
+		OnCreate:PZCF_HobbyRecipe.OnCreate.BuildFoodTruckDisplay,
+		Time:200.0,
+    }
+
+	recipe Build Collector Diecast Food Truck Display (Trucks 5 through 8)
+    {
+       	Screws=4,
+		Plank=1,
+		keep [Recipe.GetItemTypes.Screwdriver],   
+		PZCF_FoodTruck_Sushi,
+		PZCF_FoodTruck_Milk,
+		PZCF_FoodTruck_Fruit,
+		PZCF_FoodTruck_FishAndChips,
+		Result:PZCF_FoodTruck_Display2,
+		OnCreate:PZCF_HobbyRecipe.OnCreate.BuildFoodTruckDisplay,
+		Time:200.0,
+    }
+	
+	recipe Build Collector Diecast Food Truck Display (Trucks 9 through 12)
+    {
+       	Screws=4,
+		Plank=1,
+		keep [Recipe.GetItemTypes.Screwdriver],   
+		PZCF_FoodTruck_HotDog,
+		PZCF_FoodTruck_Donut,
+		PZCF_FoodTruck_StirFry,
+		PZCF_FoodTruck_IceCream,
+		Result:PZCF_FoodTruck_Display3,
+		OnCreate:PZCF_HobbyRecipe.OnCreate.BuildFoodTruckDisplay,
+		Time:200.0,
+    }	
+	
+	recipe Build Collector Diecast Food Truck Display (Trucks 13 through 16)
+    {
+       	Screws=4,
+		Plank=1,
+		keep [Recipe.GetItemTypes.Screwdriver],   
+		PZCF_FoodTruck_Coffee,
+		PZCF_FoodTruck_ShakeAndFries,
+		PZCF_FoodTruck_Taco,
+		PZCF_FoodTruck_BBQ,
+		Result:PZCF_FoodTruck_Display4,
+		OnCreate:PZCF_HobbyRecipe.OnCreate.BuildFoodTruckDisplay,
+		Time:200.0,
+    }
+
+}

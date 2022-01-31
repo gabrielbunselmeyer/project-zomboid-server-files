@@ -1,0 +1,14 @@
+IGUI_EN = {
+	IGUI_PlayerText_Hobby_OperateTrainLayout1 = "Toot toot baby...yeah",
+	IGUI_PlayerText_Hobby_OperateTrainLayout2 = "Hmmm...those handrails don't look to scale on that Dash-8",
+	IGUI_PlayerText_Hobby_OperateTrainLayout3 = "Makes you wonder, is HO more superior than N scale?",
+	IGUI_PlayerText_Hobby_OperateTrainLayout4 = "I guess well never know if DCC catches on",
+	IGUI_PlayerText_Hobby_OperateTrainLayout5 = "I've been working on the railroad, Just to pass the time away",
+	IGUI_PlayerText_Hobby_OperateTrainLayout6 = "Choo Choo",
+	IGUI_PlayerText_Hobby_OperateTrainLayout7 = "S scale is far superior in choices",
+	IGUI_PlayerText_Hobby_OperateTrainLayout8 = "Reminds we of that flyer train set I got for Christmas as a kid",
+	IGUI_PlayerText_Hobby_OperateTrainLayout9 = "Ding ding.....All Aboard",
+	IGUI_PlayerText_Hobby_OperateTrainLayout10 = "It only took an apocalypse to finish my layout!",
+	IGUI_PlayerText_Hobby_OperateTrainLayout11 = "(*Annoyed Grunt*) That make of locomotive never had radiator covers in that spot!",
+	IGUI_PlayerText_Hobby_OperateTrainLayout12 = "Reminds me of my dad's layout",
+}

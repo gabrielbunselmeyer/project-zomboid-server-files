@@ -1,6 +1,6 @@
 version=1
 id=2722310627
-title=RPSemNome
+title=Knox County RP Brasileiro
 description=Modpack for our heavy RP server. All credits go to the actual mod creators.
 description=Once the issues with updating mods have been fixed this won't be needed anymore.
 tags=Build 41;Multiplayer
