@@ -1,6 +1,8 @@
 function SpawnRegions()
         return {
-                { name = "Muldraugh, KY", file = "media/maps/Muldraugh, KY/spawnpoints.lua" },
+                { name = "Riverside, KY", file = "media/maps/Riverside, KY/spawnpoints.lua" },
                 { name = "Rosewood, KY", file = "media/maps/Rosewood, KY/spawnpoints.lua" },
+                { name = "li_township", file = "media/maps/li_township/spawnpoints.lua" },
+                { name = "NewEkron", file = "media/maps/NewEkron/spawnpoints.lua" },
         }
 end
