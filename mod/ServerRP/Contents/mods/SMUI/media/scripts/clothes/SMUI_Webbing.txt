@@ -1,0 +1,75 @@
+module SMUIClothing 
+{
+
+	item MilitaryWebbing
+	{
+		DisplayCategory = Webbing,
+		Type = Container,
+		DisplayName = Military Webbing,
+		ClothingItem = MilitaryWebbing,
+		BodyLocation = SMUIWebbingPlus,
+		CanBeEquipped = SMUIWebbingPlus,
+		Capacity = 5,
+		WeightReduction	=	40,
+		RunSpeedModifier = 1,
+		ClothingItemExtra = MilitaryWebbingTightened,
+        ClothingItemExtraOption = Fasten,
+		Icon = MilitaryWebbing,
+		WorldStaticModel = MilitaryWebbing_WorldItem,
+		AttachmentsProvided  	= 	SMUIWebbingLeft;SMUIWebbingRight,
+	}
+
+		item MilitaryWebbingTightened
+	{
+		DisplayCategory = Webbing,
+		Type = Container,
+		DisplayName = Military Webbing (Tightened),
+		ClothingItem = MilitaryWebbingTightened,
+		BodyLocation = SMUIWebbingPlus,
+		CanBeEquipped = SMUIWebbingPlus,
+		Capacity = 5,
+		WeightReduction	=	40,
+		RunSpeedModifier = 1,
+		ClothingItemExtra = MilitaryWebbing,
+        ClothingItemExtraOption = Unfasten,
+		Icon = MilitaryWebbing,
+		WorldStaticModel = MilitaryWebbing_WorldItem,
+		AttachmentsProvided  	= 	SMUIWebbingLeft;SMUIWebbingRight,
+	}
+
+		item MilitaryWebbingBag
+	{
+		DisplayCategory = Webbing,
+		Type = Container,
+		DisplayName = Military Webbing /w Pack,
+		ClothingItem = MilitaryWebbingBag,
+		BodyLocation = SMUIWebbingPlus,
+		CanBeEquipped = SMUIWebbingPlus,
+		Capacity = 8,
+		WeightReduction	=	60,
+		RunSpeedModifier = 1.2,
+		ClothingItemExtra = MilitaryWebbingBagTightened,
+        ClothingItemExtraOption = Fasten,
+		Icon = MilitaryWebbingBag, 
+		WorldStaticModel = MilitaryWebbing_WorldItem,
+		AttachmentsProvided  	= 	SMUIWebbingLeft;SMUIWebbingRight,	
+	}
+
+		item MilitaryWebbingBagTightened
+	{
+		DisplayCategory = Webbing,
+		Type = Container,
+		DisplayName = Military Webbing /w Pack (Tightened),
+		ClothingItem = MilitaryWebbingBagTightened,
+		BodyLocation = SMUIWebbingPlus,
+		CanBeEquipped = SMUIWebbingPlus,
+		Capacity = 8,
+		WeightReduction	=	60,
+		RunSpeedModifier = 1.2,
+		ClothingItemExtra = MilitaryWebbingBag,
+        ClothingItemExtraOption = Unfasten,
+		Icon = MilitaryWebbingBag,
+		WorldStaticModel = MilitaryWebbing_WorldItem,
+		AttachmentsProvided  	= 	SMUIWebbingLeft;SMUIWebbingRight,
+	}
+}

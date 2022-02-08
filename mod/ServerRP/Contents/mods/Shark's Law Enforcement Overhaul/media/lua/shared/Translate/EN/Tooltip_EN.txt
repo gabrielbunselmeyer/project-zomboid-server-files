@@ -1,0 +1,6 @@
+Tooltip_EN = {
+    Tooltip_PoliceM17 = "Military gas mask reissued to police departments",
+    Tooltip_RiotHelmet = "Retractable riot helmet; ineffective against bullets",
+    Tooltip_PoliceTacticalVest = "Body armor designed for police units",
+    Tooltip_PoliceDutyBelt = "Police utility belt with a holster",
+}

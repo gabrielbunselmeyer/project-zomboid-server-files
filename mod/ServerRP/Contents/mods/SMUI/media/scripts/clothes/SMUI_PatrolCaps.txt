@@ -1,0 +1,140 @@
+module SMUIClothing 
+{
+
+
+    item Hat_PatrolCap
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Green Camo Patrol Cap,
+        ClothingItem = Hat_PatrolCap,
+        BodyLocation = Hat,
+        Icon = PatrolCapWoodland,
+        CanHaveHoles = false,
+        ClothingItemExtra = Hat_PatrolCapReversed,
+        ClothingItemExtraOption = ReverseCap,
+        ChanceToFall = 80,
+        Insulation = 0.10,
+        Weight = 0.5,
+        WorldStaticModel = PatrolCapWoodland_WorldItem,
+    }
+
+        item Hat_PatrolCapReversed
+    {
+        DisplayCategory = Clothing,
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Green Camo Patrol Cap (Reversed),
+        ClothingItem = Hat_PatrolCapReversed,
+        BodyLocation = Hat,
+        Icon = PatrolCapWoodland,
+        CanHaveHoles = false,
+        ClothingItemExtra = Hat_PatrolCap,
+        ClothingItemExtraOption = ForwardCap,
+        ChanceToFall = 80,
+        Insulation = 0.10,
+        Weight = 0.5,
+        WorldStaticModel = PatrolCapWoodland_WorldItem,
+    }
+
+        item Hat_PatrolCapDesert
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Desert Camo Patrol Cap,
+        ClothingItem = Hat_PatrolCapDesert,
+        BodyLocation = Hat,
+        Icon = PatrolCapDesert,
+        CanHaveHoles = false,
+        ClothingItemExtra = Hat_PatrolCapDesertReversed,
+        ClothingItemExtraOption = ReverseCap,
+        ChanceToFall = 80,
+        Insulation = 0.10,
+        Weight = 0.5,
+        WorldStaticModel = PatrolCapDesert_WorldItem,
+    }
+
+        item Hat_PatrolCapDesertReversed
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Desert Camo Patrol Cap (Reversed),
+        ClothingItem = Hat_PatrolCapDesertReversed,
+        BodyLocation = Hat,
+        Icon = PatrolCapDesert,
+        CanHaveHoles = false,
+        ClothingItemExtra = Hat_PatrolCapDesert,
+        ClothingItemExtraOption = ForwardCap,
+        ChanceToFall = 80,
+        Insulation = 0.10,
+        Weight = 0.5,
+        WorldStaticModel = PatrolCapDesert_WorldItem,
+    }
+
+        item Hat_PatrolCapUrban
+    {   
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Urban Camo Patrol Cap,
+        ClothingItem = Hat_PatrolCapUrban,
+        BodyLocation = Hat,
+        Icon = PatrolCapUrban,
+        CanHaveHoles = false,
+        ClothingItemExtra = Hat_PatrolCapUrbanReversed,
+        ClothingItemExtraOption = ReverseCap,
+        ChanceToFall = 80,
+        Insulation = 0.10,
+        Weight = 0.5,
+        WorldStaticModel = PatrolCapUrban_WorldItem,
+    }
+
+        item Hat_PatrolCapUrbanReversed
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Urban Patrol Cap (Reversed),
+        ClothingItem = Hat_PatrolCapUrbanReversed,
+        BodyLocation = Hat,
+        Icon = PatrolCapUrban,
+        CanHaveHoles = false,
+        ClothingItemExtra = Hat_PatrolCapUrban,
+        ClothingItemExtraOption = ForwardCap,
+        ChanceToFall = 80,
+        Insulation = 0.10,
+        Weight = 0.5,
+        WorldStaticModel = PatrolCapUrban_WorldItem,
+    }
+
+        item Hat_PatrolCapWinter
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Green Camo Winter Patrol Cap,
+        ClothingItem = Hat_PatrolCapWinter,
+        BodyLocation = Hat,
+        Icon = PatrolCapWinter,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Insulation = 0.60,
+        WindResistance = 0.50,
+        Weight = 0.5,
+        WorldStaticModel = PatrolCapWoodland_WorldItem,
+    }
+
+        item Hat_PatrolCapWinterDesert
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Desert Camo Winter Patrol Cap,
+        ClothingItem = Hat_PatrolCapWinterDesert,
+        BodyLocation = Hat,
+        Icon = PatrolCapWinterDesert,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Insulation = 0.60,
+        WindResistance = 0.50,
+        Weight = 0.5,
+        WorldStaticModel = PatrolCapDesert_WorldItem,
+    }
+
+}

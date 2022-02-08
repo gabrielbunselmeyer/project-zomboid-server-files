@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>skinned\clothes\M_PoliceTacticalVest</m_MaleModel>
+	<m_FemaleModel>skinned\clothes\F_PoliceTacticalVest</m_FemaleModel>
+	<m_GUID>598dcf33-b888-4c6c-b70d-48fb7e312c5e</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<textureChoices>clothes\vest\PoliceTacticalVestPouchless</textureChoices>
+</clothingItem>

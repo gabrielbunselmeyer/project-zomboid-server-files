@@ -1,0 +1,79 @@
+module SMUIClothing
+{
+
+		item NightVisionGoggles
+	{
+		DisplayCategory = Accessory,
+		Weight = 0.3,
+		Type = Normal,
+		WorldStaticModel = NVG_WorldItem,
+		DisplayName = Night Vision Goggles,
+		Tooltip = Tooltip_NightVisionGoggles,
+		Icon = NightVisionGoggles,
+	}
+
+		item NightVisionMount
+	{
+		DisplayCategory = Accessory,
+		Weight = 0.1,
+		Type = Normal,
+		WorldStaticModel = NVGStrap_WorldItem,
+		DisplayName = Night Vision Mount,
+		Tooltip = Tooltip_NVGMount,
+		Icon = NVGMount,
+	}
+
+		item M17Hood
+	{
+		DisplayCategory = Accessory,
+		Weight = 0.1,
+		Type = Normal,
+		WorldStaticModel = M17Hood_WorldItem,
+		DisplayName = Doff Hood (M17),
+		Tooltip = Tooltip_DoffHood,
+		Icon = DoffHoodM17,
+	}
+
+		item M40Hood
+	{
+		DisplayCategory = Accessory,
+		Weight = 0.1,
+		Type = Normal,
+		WorldStaticModel = M40Hood_WorldItem,
+		DisplayName = Doff Hood (M40),
+		Tooltip = Tooltip_DoffHoodM40,
+		Icon = DoffHoodM40,
+	}
+
+		item MOPPPackageTop
+	{
+		DisplayCategory = Accessory,
+		Weight = 0.5,
+		Type = Normal,
+		WorldStaticModel = MOPPPackageTop_WorldItem,
+		DisplayName = MOPP Top Package,
+		Tooltip = Tooltip_PackageTop,
+		Icon = MOPPPackage,
+	}
+
+		item MOPPPackageBottom
+	{
+		DisplayCategory = Accessory,
+		Weight = 0.5,
+		Type = Normal,
+		WorldStaticModel = MOPPPackageBottom_WorldItem,
+		DisplayName = MOPP Bottom Package,
+		Tooltip = Tooltip_PackageBottom,
+		Icon = MOPPPackage,
+	}
+
+		item MOPPPackageWrapper
+	{
+		DisplayCategory = Accessory,
+		Weight = 0.1,
+		Type = Normal,
+		WorldStaticModel = MOPPPackageWrapper_WorldItem,
+		DisplayName = MOPP Package Wrapper,
+		Icon = MOPPPackage,
+	}
+}

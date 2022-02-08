@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<outfitManager>
+
+	<m_MaleOutfits>
+		<m_Name>SharkBlueSWAT</m_Name>
+		<m_Guid>50ef789b-54a6-4021-b817-78e1e417bd91</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>
+		<m_AllowTopTint>false</m_AllowTopTint>
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+		<m_items> <!-- Police Helmet -->
+			<itemGUID>190fc58e-1a69-4afa-a0c8-0dbb580e0bcd</itemGUID>
+		</m_items>
+		<m_items> <!-- Police Helmet w/ Goggles -->
+			<itemGUID>35e1ded4-e03a-47f3-84ca-0d371404dcf5</itemGUID>
+		</m_items>
+		<m_items> <!-- Police Balaclava -->
+		<probability>0.7</probability>
+			<itemGUID>ae87be21-bc5b-499c-b929-36bb4fd817b8</itemGUID>
+		</m_items>
+		<m_items> <!-- Police Duty Belt -->
+		<probability>0.5</probability>
+			<itemGUID>9c61e13a-3da8-4738-af82-d69fdb441de9</itemGUID>
+		</m_items>
+		<m_items> <!-- Long Socks -->
+			<itemGUID>fb86bd5f-1931-4b24-a5d7-bd6a43769991</itemGUID>
+		</m_items>	
+		<m_items> <!-- Tactical Gloves -->
+			<itemGUID>10f14b07-86b0-4379-8107-973a7ff1bcd2</itemGUID>
+		</m_items>
+		<m_items> <!-- Tactical Boots -->
+			<itemGUID>a1edcd54-a7bd-453d-a546-ab8836ad13d3</itemGUID>
+		</m_items>
+		<m_items> <!-- White Police T-Shirt -->
+			<itemGUID>1a355b1d-3b97-4a11-a244-2b80aad8c009</itemGUID>
+		</m_items>
+		<m_items> <!-- Police Tactical Vest -->
+			<itemGUID>a6e99959-5334-429f-a1d6-87f6638da9f6</itemGUID>
+		</m_items>
+		<m_items> <!-- SWAT Blue Pants (Tucked) -->
+			<itemGUID>8b81fe47-1766-46fc-b242-713edfa1130f</itemGUID>
+		</m_items>
+		<m_items> <!-- SWAT Blue Jacket -->
+			<itemGUID>6bea5023-6aea-4404-8c82-ff68b768d5ed</itemGUID>
+		</m_items>
+		<m_items> <!-- SWAT Blue Jacket (Rolled) -->
+		<probability>0.1</probability>
+			<itemGUID>85d9753b-ca0a-4379-986b-e9bc74233818</itemGUID>
+		</m_items>
+			<m_items> <!-- Black Utility Bag -->
+		<probability>0.2</probability>
+			<itemGUID>06f585e6-ee5e-406b-bcc4-203c7d02cac7</itemGUID>
+		</m_items>
+	</m_MaleOutfits>
+
+	<m_MaleOutfits>
+		<m_Name>SharkBlueSWATGasMask</m_Name>
+		<m_Guid>6e23713e-79d6-49f0-b469-f148ae29c936</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>
+		<m_AllowTopTint>false</m_AllowTopTint>
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+		<m_items> <!-- Police Helmet -->
+			<itemGUID>190fc58e-1a69-4afa-a0c8-0dbb580e0bcd</itemGUID>
+		</m_items>
+		<m_items> <!-- M17 Gas Mask -->
+			<itemGUID>f5c63975-e213-4f59-adf5-c61117cc1aa4</itemGUID>
+		</m_items>
+		<m_items> <!-- Police Duty Belt -->
+		<probability>0.5</probability>
+			<itemGUID>9c61e13a-3da8-4738-af82-d69fdb441de9</itemGUID>
+		</m_items>
+		<m_items> <!-- Long Socks -->
+			<itemGUID>fb86bd5f-1931-4b24-a5d7-bd6a43769991</itemGUID>
+		</m_items>	
+		<m_items> <!-- Tactical Boots -->
+			<itemGUID>a1edcd54-a7bd-453d-a546-ab8836ad13d3</itemGUID>
+		</m_items>
+		<m_items> <!-- Tactical Gloves -->
+			<itemGUID>10f14b07-86b0-4379-8107-973a7ff1bcd2</itemGUID>
+		</m_items>
+		<m_items> <!-- White Police T-Shirt -->
+			<itemGUID>1a355b1d-3b97-4a11-a244-2b80aad8c009</itemGUID>
+		</m_items>
+		<m_items> <!-- Police Tactical Vest -->
+			<itemGUID>a6e99959-5334-429f-a1d6-87f6638da9f6</itemGUID>
+		</m_items>
+		<m_items> <!-- SWAT Blue Pants (Tucked) -->
+			<itemGUID>8b81fe47-1766-46fc-b242-713edfa1130f</itemGUID>
+		</m_items>
+		<m_items> <!-- SWAT Blue Jacket -->
+			<itemGUID>6bea5023-6aea-4404-8c82-ff68b768d5ed</itemGUID>
+		</m_items>
+		<m_items> <!-- SWAT Blue Jacket (Rolled) -->
+		<probability>0.1</probability>
+			<itemGUID>85d9753b-ca0a-4379-986b-e9bc74233818</itemGUID>
+		</m_items>
+			<m_items> <!-- Black Utility Bag -->
+		<probability>0.2</probability>
+			<itemGUID>06f585e6-ee5e-406b-bcc4-203c7d02cac7</itemGUID>
+		</m_items>
+	</m_MaleOutfits>
+
+	<m_MaleOutfits>
+		<m_Name>SharkBlueSWATRiot</m_Name>
+		<m_Guid>44881778-f7fe-4c24-95b3-0d9c6fbcafa1</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>
+		<m_AllowTopTint>false</m_AllowTopTint>
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+		<m_items> <!-- Riot Helmet -->
+			<itemGUID>32919323-42f7-4601-a98a-836b923875a5</itemGUID>
+		</m_items>
+		<m_items> <!-- Riot Helmet (Up) -->
+			<itemGUID>e07c2d90-7cf6-442f-8acd-536e0e9836a4</itemGUID>
+		</m_items>
+		<m_items> <!-- M17 Gas Mask -->
+		<probability>0.5</probability>
+			<itemGUID>f5c63975-e213-4f59-adf5-c61117cc1aa4</itemGUID>
+		</m_items>
+		<m_items> <!-- Police Duty Belt -->
+		<probability>0.5</probability>
+			<itemGUID>9c61e13a-3da8-4738-af82-d69fdb441de9</itemGUID>
+		</m_items>
+		<m_items> <!-- Long Socks -->
+			<itemGUID>fb86bd5f-1931-4b24-a5d7-bd6a43769991</itemGUID>
+		</m_items>
+		<m_items> <!-- Tactical Gloves -->
+			<itemGUID>10f14b07-86b0-4379-8107-973a7ff1bcd2</itemGUID>
+		</m_items>	
+		<m_items> <!-- Tactical Boots -->
+			<itemGUID>a1edcd54-a7bd-453d-a546-ab8836ad13d3</itemGUID>
+		</m_items>
+		<m_items> <!-- White Police T-Shirt -->
+			<itemGUID>1a355b1d-3b97-4a11-a244-2b80aad8c009</itemGUID>
+		</m_items>
+		<m_items> <!-- Police Tactical Vest -->
+			<itemGUID>a6e99959-5334-429f-a1d6-87f6638da9f6</itemGUID>
+		</m_items>
+		<m_items> <!-- SWAT Blue Pants (Tucked) -->
+			<itemGUID>8b81fe47-1766-46fc-b242-713edfa1130f</itemGUID>
+		</m_items>
+		<m_items> <!-- SWAT Blue Jacket -->
+			<itemGUID>6bea5023-6aea-4404-8c82-ff68b768d5ed</itemGUID>
+		</m_items>
+		<m_items> <!-- SWAT Blue Jacket (Rolled) -->
+		<probability>0.1</probability>
+			<itemGUID>85d9753b-ca0a-4379-986b-e9bc74233818</itemGUID>
+		</m_items>
+			<m_items> <!-- Black Utility Bag -->
+		<probability>0.2</probability>
+			<itemGUID>06f585e6-ee5e-406b-bcc4-203c7d02cac7</itemGUID>
+		</m_items>
+	</m_MaleOutfits>
+	
+	
+	<m_MaleOutfits>
+		<m_Name>SharkBlueSWATBelt</m_Name>
+		<m_Guid>25e5bf57-57f9-4d9b-acba-61da42f073ab</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>
+		<m_AllowTopTint>false</m_AllowTopTint>
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+		<m_items> <!-- Blue Police Patrol Cap-->
+			<itemGUID>c2c16f9b-4948-4308-8a20-bec08ca1aad3</itemGUID>
+		</m_items>
+		<m_items> <!-- Police Baseball Cap-->
+		<probability>0.2</probability>
+			<itemGUID>9bfe7fbd-1744-4b9f-a6b1-b4cecf35ad91</itemGUID>
+		</m_items>
+			<m_items> <!-- Aviators -->
+		<probability>0.5</probability>
+			<itemGUID>6b01e5b3-860d-4361-b43f-7b8ea152f1bf</itemGUID>
+		</m_items>
+		<m_items> <!-- Long Socks -->
+			<itemGUID>fb86bd5f-1931-4b24-a5d7-bd6a43769991</itemGUID>
+		</m_items>	
+		<m_items> <!-- Police Duty Belt -->
+			<itemGUID>9c61e13a-3da8-4738-af82-d69fdb441de9</itemGUID>
+		</m_items>
+		<m_items> <!-- Tactical Gloves -->
+			<itemGUID>10f14b07-86b0-4379-8107-973a7ff1bcd2</itemGUID>
+		</m_items>
+		<m_items> <!-- Tactical Boots -->
+			<itemGUID>a1edcd54-a7bd-453d-a546-ab8836ad13d3</itemGUID>
+		</m_items>
+		<m_items> <!-- White Police T-Shirt -->
+			<itemGUID>1a355b1d-3b97-4a11-a244-2b80aad8c009</itemGUID>
+		</m_items>
+		<m_items> <!-- Police DuffelBag -->
+		<probability>0.2</probability>
+			<itemGUID>38329994-c2a7-43b8-b5d1-60897c434390</itemGUID>
+		</m_items>
+		<m_items> <!-- SWAT Blue Pants (Tucked) -->
+			<itemGUID>8b81fe47-1766-46fc-b242-713edfa1130f</itemGUID>
+		</m_items>
+		<m_items> <!-- SWAT Blue Jacket -->
+			<itemGUID>6bea5023-6aea-4404-8c82-ff68b768d5ed</itemGUID>
+		</m_items>
+		<m_items> <!-- SWAT Blue Jacket (Rolled) -->
+		<probability>0.5</probability>
+			<itemGUID>85d9753b-ca0a-4379-986b-e9bc74233818</itemGUID>
+		</m_items>
+			<m_items> <!-- Black Utility Bag -->
+		<probability>0.5</probability>
+			<itemGUID>06f585e6-ee5e-406b-bcc4-203c7d02cac7</itemGUID>
+		</m_items>
+	</m_MaleOutfits>
+
+	<m_MaleOutfits>
+		<m_Name>SharkGreenSWATGasMask</m_Name>
+		<m_Guid>3a220eae-b9f9-4b25-9525-e9116ec677a0</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>
+		<m_AllowTopTint>false</m_AllowTopTint>
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+	    <m_items> <!-- Riot Helmet -->
+			<itemGUID>32919323-42f7-4601-a98a-836b923875a5</itemGUID>
+		</m_items>
+		<m_items> <!-- Riot Helmet (Up) -->
+			<itemGUID>e07c2d90-7cf6-442f-8acd-536e0e9836a4</itemGUID>
+		</m_items>
+		<m_items> <!-- M17 Gas Mask -->
+		<probability>0.5</probability>
+			<itemGUID>f5c63975-e213-4f59-adf5-c61117cc1aa4</itemGUID>
+		</m_items>
+		<m_items> <!-- Police Duty Belt -->
+		<probability>0.5</probability>
+			<itemGUID>9c61e13a-3da8-4738-af82-d69fdb441de9</itemGUID>
+		</m_items>
+		<m_items> <!-- Long Socks -->
+			<itemGUID>fb86bd5f-1931-4b24-a5d7-bd6a43769991</itemGUID>
+		</m_items>	
+		<m_items> <!-- Tactical Gloves -->
+			<itemGUID>10f14b07-86b0-4379-8107-973a7ff1bcd2</itemGUID>
+		</m_items>
+		<m_items> <!-- Tactical Boots -->
+			<itemGUID>a1edcd54-a7bd-453d-a546-ab8836ad13d3</itemGUID>
+		</m_items>
+		<m_items> <!-- White Police T-Shirt -->
+			<itemGUID>1a355b1d-3b97-4a11-a244-2b80aad8c009</itemGUID>
+		</m_items>
+		<m_items> <!-- Police Tactical Vest -->
+			<itemGUID>a6e99959-5334-429f-a1d6-87f6638da9f6</itemGUID>
+		</m_items>
+		<m_items> <!-- SWAT Green Pants (Tucked) -->
+			<itemGUID>9e2c66f2-5ccd-45a1-a0a4-345f20e4ab4f</itemGUID>
+		</m_items>
+		<m_items> <!-- SWAT Green Jacket -->
+			<itemGUID>4f8fc63e-85f6-4191-831b-d44c347d0b6b</itemGUID>
+		</m_items>
+		<m_items> <!-- SWAT Green Jacket (Rolled) -->
+		<probability>0.1</probability>
+			<itemGUID>aaeba9fb-557b-4d5e-9183-26b200e614be</itemGUID>
+		</m_items>
+			<m_items> <!-- Green Utility Bag -->
+		<probability>0.2</probability>
+			<itemGUID>2c16942f-f1dd-4cc0-aa31-b3d1ebd34a13</itemGUID>
+		</m_items>
+	</m_MaleOutfits>
+
+		<m_MaleOutfits>
+		<m_Name>SharkGreenSWATRiot</m_Name>
+		<m_Guid>b6a8ce6b-7a8a-4b66-8328-00fca8701a1e</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>
+		<m_AllowTopTint>false</m_AllowTopTint>
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+		<m_items> <!-- Police Helmet -->
+			<itemGUID>190fc58e-1a69-4afa-a0c8-0dbb580e0bcd</itemGUID>
+		</m_items>
+		<m_items> <!-- M17 Gas Mask -->
+			<itemGUID>f5c63975-e213-4f59-adf5-c61117cc1aa4</itemGUID>
+		</m_items>
+		<m_items> <!-- Police Duty Belt -->
+		<probability>0.5</probability>
+			<itemGUID>9c61e13a-3da8-4738-af82-d69fdb441de9</itemGUID>
+		</m_items>
+		<m_items> <!-- Long Socks -->
+			<itemGUID>fb86bd5f-1931-4b24-a5d7-bd6a43769991</itemGUID>
+		</m_items>	
+		<m_items> <!-- Tactical Gloves -->
+			<itemGUID>10f14b07-86b0-4379-8107-973a7ff1bcd2</itemGUID>
+		</m_items>
+		<m_items> <!-- Tactical Boots -->
+			<itemGUID>a1edcd54-a7bd-453d-a546-ab8836ad13d3</itemGUID>
+		</m_items>
+		<m_items> <!-- White Police T-Shirt -->
+			<itemGUID>1a355b1d-3b97-4a11-a244-2b80aad8c009</itemGUID>
+		</m_items>
+		<m_items> <!-- Police Tactical Vest -->
+			<itemGUID>a6e99959-5334-429f-a1d6-87f6638da9f6</itemGUID>
+		</m_items>
+		<m_items> <!-- SWAT Green Pants (Tucked) -->
+			<itemGUID>9e2c66f2-5ccd-45a1-a0a4-345f20e4ab4f</itemGUID>
+		</m_items>
+		<m_items> <!-- SWAT Green Jacket -->
+			<itemGUID>4f8fc63e-85f6-4191-831b-d44c347d0b6b</itemGUID>
+		</m_items>
+		<m_items> <!-- SWAT Green Jacket (Rolled) -->
+		<probability>0.1</probability>
+			<itemGUID>aaeba9fb-557b-4d5e-9183-26b200e614be</itemGUID>
+		</m_items>
+			<m_items> <!-- Green Utility Bag -->
+		<probability>0.2</probability>
+			<itemGUID>2c16942f-f1dd-4cc0-aa31-b3d1ebd34a13</itemGUID>
+		</m_items>
+	</m_MaleOutfits>
+
+	<m_MaleOutfits>
+		<m_Name>SharkGreenSWAT</m_Name>
+		<m_Guid>04953f5f-dd64-4d3d-9976-face4ef8c34d</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>
+		<m_AllowTopTint>false</m_AllowTopTint>
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+		<m_items> <!-- Police Helmet -->
+			<itemGUID>190fc58e-1a69-4afa-a0c8-0dbb580e0bcd</itemGUID>
+		</m_items>
+		<m_items> <!-- Police Helmet w/ Goggles -->
+			<itemGUID>35e1ded4-e03a-47f3-84ca-0d371404dcf5</itemGUID>
+		</m_items>
+		<m_items> <!-- Police Duty Belt -->
+		<probability>0.5</probability>
+			<itemGUID>9c61e13a-3da8-4738-af82-d69fdb441de9</itemGUID>
+		</m_items>
+		<m_items> <!-- Long Socks -->
+			<itemGUID>fb86bd5f-1931-4b24-a5d7-bd6a43769991</itemGUID>
+		</m_items>	
+		<m_items> <!-- Tactical Gloves -->
+			<itemGUID>10f14b07-86b0-4379-8107-973a7ff1bcd2</itemGUID>
+		</m_items>
+		<m_items> <!-- Tactical Boots -->
+			<itemGUID>a1edcd54-a7bd-453d-a546-ab8836ad13d3</itemGUID>
+		</m_items>
+		<m_items> <!-- White Police T-Shirt -->
+			<itemGUID>1a355b1d-3b97-4a11-a244-2b80aad8c009</itemGUID>
+		</m_items>
+		<m_items> <!-- Police Tactical Vest -->
+			<itemGUID>a6e99959-5334-429f-a1d6-87f6638da9f6</itemGUID>
+		</m_items>
+		<m_items> <!-- SWAT Green Pants (Tucked) -->
+			<itemGUID>9e2c66f2-5ccd-45a1-a0a4-345f20e4ab4f</itemGUID>
+		</m_items>
+		<m_items> <!-- SWAT Green Jacket -->
+			<itemGUID>4f8fc63e-85f6-4191-831b-d44c347d0b6b</itemGUID>
+		</m_items>
+		<m_items> <!-- SWAT Green Jacket (Rolled) -->
+		<probability>0.1</probability>
+			<itemGUID>aaeba9fb-557b-4d5e-9183-26b200e614be</itemGUID>
+		</m_items>
+			<m_items> <!-- Green Utility Bag -->
+		<probability>0.2</probability>
+			<itemGUID>2c16942f-f1dd-4cc0-aa31-b3d1ebd34a13</itemGUID>
+		</m_items>
+	</m_MaleOutfits>
+	
+	<m_MaleOutfits>
+		<m_Name>SharkGreenSWATBelt</m_Name>
+		<m_Guid>c62e57bc-2a85-4725-be90-81c4bc0cac97</m_Guid>
+		<m_Top>false</m_Top>-
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>
+		<m_AllowTopTint>false</m_AllowTopTint>
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+		<m_items> <!-- Green Sheriff Patrol Cap-->
+			<itemGUID>fcbfb33b-2640-4fa6-a5d0-2afdfdc09ca9</itemGUID>
+		</m_items>
+		<m_items> <!-- Sheriff Baseball Cap-->
+		<probability>0.2</probability>
+			<itemGUID>2be9459e-1e4c-430c-ac9b-ad41acbee36d</itemGUID>
+		</m_items>
+			<m_items> <!-- Aviators -->
+		<probability>0.5</probability>
+			<itemGUID>6b01e5b3-860d-4361-b43f-7b8ea152f1bf</itemGUID>
+		</m_items>
+	    <m_items> <!-- Police Duty Belt -->
+			<itemGUID>9c61e13a-3da8-4738-af82-d69fdb441de9</itemGUID>
+		</m_items>
+		<m_items> <!-- Long Socks -->
+			<itemGUID>fb86bd5f-1931-4b24-a5d7-bd6a43769991</itemGUID>
+		</m_items>	
+		<m_items> <!-- Tactical Gloves -->
+			<itemGUID>10f14b07-86b0-4379-8107-973a7ff1bcd2</itemGUID>
+		</m_items>
+		<m_items> <!-- Tactical Boots -->
+			<itemGUID>a1edcd54-a7bd-453d-a546-ab8836ad13d3</itemGUID>
+		</m_items>
+		<m_items> <!-- White Police T-Shirt -->
+			<itemGUID>1a355b1d-3b97-4a11-a244-2b80aad8c009</itemGUID>
+		</m_items>
+		<m_items> <!-- SWAT Green Pants (Tucked) -->
+			<itemGUID>9e2c66f2-5ccd-45a1-a0a4-345f20e4ab4f</itemGUID>
+		</m_items>
+		<m_items> <!-- SWAT Green Jacket -->
+			<itemGUID>4f8fc63e-85f6-4191-831b-d44c347d0b6b</itemGUID>
+		</m_items>
+		<m_items> <!-- SWAT Green Jacket (Rolled) -->
+		<probability>0.1</probability>
+			<itemGUID>aaeba9fb-557b-4d5e-9183-26b200e614be</itemGUID>
+		</m_items>
+			<m_items> <!-- Green Utility Bag -->
+		<probability>0.5</probability>
+			<itemGUID>2c16942f-f1dd-4cc0-aa31-b3d1ebd34a13</itemGUID>
+		</m_items>
+	</m_MaleOutfits>
+	
+</outfitManager>

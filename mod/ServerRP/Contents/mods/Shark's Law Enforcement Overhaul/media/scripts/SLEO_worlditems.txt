@@ -1,0 +1,73 @@
+module Base
+{
+
+	    model PoliceHelmet_WorldItem
+	{
+		mesh = WorldItems/PoliceHelmetGoggles_WorldItem,
+		texture = WorldItems/PoliceHelmet,
+		scale = 0.5,
+	}
+
+		model PoliceHelmetGoggles_WorldItem
+	{
+		mesh = WorldItems/PoliceHelmetGoggles_WorldItem,
+		texture = WorldItems/PoliceHelmetGoggles,
+		scale = 0.5,
+	}
+
+		model PoliceUtilityBag_WorldItem
+	{
+		mesh = WorldItems/PoliceUtilityBag_WorldItem,
+		texture = WorldItems/PoliceUtilityBag,
+		scale = 0.5,
+	}
+
+		model PoliceUtilityBagGreen_WorldItem
+	{
+		mesh = WorldItems/PoliceUtilityBag_WorldItem,
+		texture = WorldItems/PoliceUtilityBagGreen,
+		scale = 0.5,
+	}
+
+		model DustGoggles_WorldItem
+	{
+		mesh = WorldItems/DustGoggles_WorldItem,
+		texture = WorldItems/DustGoggles,
+		scale = 0.5,
+	}
+
+		model PoliceM17_WorldItem
+	{
+		mesh = WorldItems/PoliceM17_WorldItem,
+		texture = WorldItems/M17,
+		scale = 0.5,
+	}
+
+	    model PoliceTacticalVest_WorldItem
+	{
+		mesh = WorldItems/PoliceTacticalVest_WorldItem,
+		texture = WorldItems/PoliceTacticalVest,
+		scale = 0.5,
+	}
+
+		model PoliceBalaclava_WorldItem
+	{
+		mesh = WorldItems/BalaclavaFull_Ground,
+		texture = WorldItems/PoliceBalaclava,
+		scale = 0.5,
+	}
+
+		model PoliceDutyBelt_WorldItem
+	{
+		mesh = WorldItems/PoliceDutyBelt_WorldItem,
+		texture = WorldItems/PoliceDutyBelt,
+		scale = 0.5,
+	}
+
+		model TacticalVestPouches_WorldItem
+	{
+		mesh = WorldItems/TacticalVestPouches_WorldItem,
+		texture = WorldItems/PoliceTacticalVest,
+		scale = 0.5,
+	}
+}

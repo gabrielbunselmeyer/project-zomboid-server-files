@@ -1,0 +1,294 @@
+module SMUIClothing 
+{
+
+        item Hat_Army
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Military Helmet,
+		ClothingItem = Hat_MilitaryHelmet,
+		BodyLocation = Hat,
+		Icon = MilitaryHelmet,
+		CanHaveHoles = false,
+		BloodLocation = Head,
+		BiteDefense = 100,
+		ScratchDefense = 100,
+		BulletDefense = 100,
+		ClothingItemExtra = Hat_MilitaryHelmetStrapless,
+        ClothingItemExtraOption = Unstrap,
+		Insulation = 0.25,
+		WaterResistance = 0.2,
+		WorldStaticModel = MilitaryHelmet_WorldItem,
+	}
+
+        item Hat_ArmyHelmetStrapless
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Military Helmet,
+		ClothingItem = Hat_MilitaryHelmetStrapless,
+		BodyLocation = Hat,
+		Icon = MilitaryHelmet,
+		CanHaveHoles = false,
+		BloodLocation = Head,
+		BiteDefense = 100,
+		ScratchDefense = 100,
+		BulletDefense = 100,
+		ChanceToFall = 10,
+		ClothingItemExtra = Hat_MilitaryHelmet,
+        ClothingItemExtraOption = Strap,
+		Insulation = 0.25,
+		WaterResistance = 0.2,
+		WorldStaticModel = MilitaryHelmet_WorldItem,
+	}
+
+        item Hat_MilitaryHelmet
+    {
+        DisplayCategory = Helmet,
+        Type = Clothing,
+        DisplayName = Military Helmet,
+        ClothingItem = Hat_MilitaryHelmet,
+        BodyLocation = Hat,
+        Icon = MilitaryHelmet,
+		BloodLocation = Head,
+        BiteDefense = 100,
+		ScratchDefense = 100,
+        BulletDefense = 100,
+        CanHaveHoles = false,
+        ClothingItemExtra = Hat_MilitaryHelmetStrapless,
+        ClothingItemExtraOption = Unstrap,
+        Insulation = 0.10,
+        Weight = 1,
+		WorldStaticModel = MilitaryHelmet_WorldItem,
+    }
+
+        item Hat_MilitaryHelmetStrapless
+    {
+        DisplayCategory = Helmet,
+        Type = Clothing,
+        DisplayName = Strapless Military Helmet,
+        ClothingItem = Hat_MilitaryHelmetStrapless,
+        BodyLocation = Hat,
+        Icon = MilitaryHelmetStrapless,
+		BloodLocation = Head,
+        BiteDefense = 100,
+		ScratchDefense = 100,
+        BulletDefense = 100,
+        CanHaveHoles = false,
+        ClothingItemExtra = Hat_MilitaryHelmet,
+        ClothingItemExtraOption = Strap,
+        ChanceToFall = 80,
+        Insulation = 0.10,
+        Weight = 1,
+		WorldStaticModel = MilitaryHelmet_WorldItem,
+    }
+
+	    item Hat_MilitaryHelmetGoggles
+    {
+        DisplayCategory = Helmet,
+        Type = Clothing,
+        DisplayName = Military Helmet w/ Goggles,
+        ClothingItem = Hat_MilitaryHelmetGoggles,
+        BodyLocation = Hat,
+        Icon = MilitaryHelmetGoggles,
+		BloodLocation = Head,
+        BiteDefense = 100,
+		ScratchDefense = 100,
+        BulletDefense = 100,
+        CanHaveHoles = false,
+        ClothingItemExtra = Hat_MilitaryHelmetGogglesStrapless,
+        ClothingItemExtraOption = Unstrap,
+        Insulation = 0.10,
+        Weight = 1,
+        WorldStaticModel = MilitaryHelmetGoggles_WorldItem,
+    }
+
+        item Hat_MilitaryHelmetGogglesStrapless
+    {
+        DisplayCategory = Helmet,
+        Type = Clothing,
+        DisplayName = Strapless Military Helmet w/ Goggles,
+        ClothingItem = Hat_MilitaryHelmetGogglesStrapless,
+        BodyLocation = Hat,
+        Icon = MilitaryHelmetGogglesStrapless,
+		BloodLocation = Head,
+        BiteDefense = 100,
+		ScratchDefense = 100,
+        BulletDefense = 100,
+        CanHaveHoles = false,
+        ClothingItemExtra = Hat_MilitaryHelmetGoggles,
+        ClothingItemExtraOption = Strap,
+        ChanceToFall = 80,
+        Insulation = 0.10,
+        Weight = 1,
+		WorldStaticModel = MilitaryHelmetGoggles_WorldItem,
+    }
+
+	    item Hat_MilitaryHelmetNVGMount
+	{
+        DisplayCategory = Helmet,
+		Type = Clothing,
+		DisplayName = Military Helmet w/ NVG Mount,
+		ClothingItem = Hat_MilitaryHelmetNVGMount,
+		BodyLocation = Hat,
+		Icon = MilitaryHelmet,
+        BiteDefense = 100,
+		ScratchDefense = 100,
+        BulletDefense = 100,
+		CanHaveHoles = false,
+		BloodLocation = Head,
+		BiteDefense = 100,
+		ScratchDefense = 100,
+		Insulation = 0.25,
+		WaterResistance = 0.2,
+        Weight = 1,
+		WorldStaticModel = MilitaryHelmetNVGMount_WorldItem,
+	}
+
+        item Hat_MilitaryHelmetDesert
+    {
+        DisplayCategory = Helmet,
+        Type = Clothing,
+        DisplayName = Desert Military Helmet,
+        ClothingItem = Hat_MilitaryHelmetDesert,
+        BodyLocation = Hat,
+        Icon = DesertMilitaryHelmet,
+		BloodLocation = Head,
+        BiteDefense = 100,
+		ScratchDefense = 100,
+        BulletDefense = 100,
+        CanHaveHoles = false,
+        ClothingItemExtra = Hat_MilitaryHelmetDesertStrapless,
+        ClothingItemExtraOption = Unstrap,
+        Insulation = 0.10,
+        Weight = 1,
+		WorldStaticModel = MilitaryHelmetDesert_WorldItem,
+    }
+
+        item Hat_MilitaryHelmetDesertStrapless
+    {
+        DisplayCategory = Helmet,
+        Type = Clothing,
+        DisplayName =  Desert Military Helmet (Strapless),
+        ClothingItem = Hat_MilitaryHelmetDesertStrapless,
+        BodyLocation = Hat,
+        Icon = DesertMilitaryHelmetStrapless,
+		BloodLocation = Head,
+        BiteDefense = 100,
+		ScratchDefense = 100,
+        BulletDefense = 100,
+        CanHaveHoles = false,
+        ClothingItemExtra = Hat_MilitaryHelmetDesert,
+        ClothingItemExtraOption = Strap,
+        ChanceToFall = 80,
+        Insulation = 0.10,
+        Weight = 1,
+		WorldStaticModel = MilitaryHelmetDesert_WorldItem,
+    }
+
+	    item Hat_MilitaryHelmetDesertGoggles
+    {
+        DisplayCategory = Helmet,
+        Type = Clothing,
+        DisplayName = Desert Military Helmet /w Goggles,
+        ClothingItem = Hat_MilitaryHelmetDesertGoggles,
+        BodyLocation = Hat,
+        Icon = MilitaryHelmetDesertGoggles,
+		BloodLocation = Head,
+        BiteDefense = 100,
+		ScratchDefense = 100,
+        BulletDefense = 100,
+        CanHaveHoles = false,
+        ClothingItemExtra = Hat_MilitaryHelmetDesertGogglesStrapless,
+        ClothingItemExtraOption = Unstrap,
+        Insulation = 0.10,
+        Weight = 1,
+		WorldStaticModel = MilitaryHelmetDesertGoggles_WorldItem,
+    }
+
+        item Hat_MilitaryHelmetDesertGogglesStrapless
+    {
+        DisplayCategory = Helmet,
+        Type = Clothing,
+        DisplayName =  Strapless Desert Military Helmet w/ Goggles,
+        ClothingItem = Hat_MilitaryHelmetDesertGogglesStrapless,
+        BodyLocation = Hat,
+        Icon = MilitaryHelmetDesertGogglesStrapless,
+		BloodLocation = Head,
+        BiteDefense = 100,
+		ScratchDefense = 100,
+        BulletDefense = 100,
+        CanHaveHoles = false,
+        ClothingItemExtra = Hat_MilitaryHelmetDesertGoggles,
+        ClothingItemExtraOption = Strap,
+        ChanceToFall = 80,
+        Insulation = 0.10,
+        Weight = 1,
+		WorldStaticModel = MilitaryHelmetDesertGoggles_WorldItem,
+    }
+
+    	item Hat_MilitaryHelmetDesertNVGMount
+	{
+        DisplayCategory = Helmet,
+		Type = Clothing,
+		DisplayName = Desert Military Helmet w/ NVG Mount,
+		ClothingItem = Hat_MilitaryHelmetDesertNVGMount,
+		BodyLocation = Hat,
+		Icon = DesertMilitaryHelmet,
+        BiteDefense = 100,
+		ScratchDefense = 100,
+        BulletDefense = 100,
+		CanHaveHoles = false,
+		BloodLocation = Head,
+		BiteDefense = 100,
+		ScratchDefense = 100,
+		Insulation = 0.25,
+		WaterResistance = 0.2,
+        Weight = 1,
+		WorldStaticModel = MilitaryHelmetDesertNVGMount_WorldItem,
+	}
+
+        item Hat_MilitaryHelmetRiot
+    {
+        DisplayCategory = Helmet,
+        Type = Clothing,
+        DisplayName = Military Helmet w/ Riot Visor,
+        ClothingItem = Hat_MilitaryHelmetRiot,
+        BodyLocation = Hat,
+        Icon = MilitaryHelmetRiot,
+		BloodLocation = Head,
+        BiteDefense = 100,
+		ScratchDefense = 100,
+        BulletDefense = 100,
+        CanHaveHoles = false,
+        ClothingItemExtra = Hat_MilitaryHelmetRiotUP,
+        ClothingItemExtraOption = VisorUp,
+        Insulation = 0.10,
+        WaterResistance = 0.2,
+        Weight = 1,
+		WorldStaticModel = MilitaryHelmetRiot_WorldItem,
+    }
+
+        item Hat_MilitaryHelmetRiotUP
+    {
+        DisplayCategory = Helmet,
+        Type = Clothing,
+        DisplayName = Military Helmet w/ Riot Visor (Up),
+        ClothingItem = Hat_MilitaryHelmetRiotUP,
+        BodyLocation = Hat,
+        Icon = MilitaryHelmetRiotUP,
+		BloodLocation = Head,
+        BiteDefense = 100,
+		ScratchDefense = 100,
+        BulletDefense = 100,
+        CanHaveHoles = false,
+        ClothingItemExtra = Hat_MilitaryHelmetRiot,
+        ClothingItemExtraOption = VisorDown,
+        ChanceToFall = 80,
+        Insulation = 0.10,
+        WaterResistance = 0.2,
+        Weight = 1,
+		WorldStaticModel = MilitaryHelmetRiot_WorldItem,
+    }
+	
+}

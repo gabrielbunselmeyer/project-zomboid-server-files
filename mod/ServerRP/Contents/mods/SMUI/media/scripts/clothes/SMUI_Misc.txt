@@ -1,0 +1,298 @@
+module SMUIClothing 
+{
+    
+
+        item Hat_DH132
+	{
+	    DisplayCategory = Helmet,
+		Type = Clothing,
+		DisplayName = DH-132 Helmet,
+		ClothingItem = Hat_DH132,
+		BodyLocation = Hat,
+		Icon = DH132,
+		CanHaveHoles = false,
+		BloodLocation = Head,
+		BiteDefense = 100,
+		ScratchDefense = 100,
+		BulletDefense = 100,
+		Insulation = 0.45,
+		WaterResistance = 0.4,
+		WorldStaticModel = DH132_WorldItem,
+	}
+    
+        item Hat_M17
+    {
+        DisplayCategory = GasMask,
+        Type = Clothing,
+        DisplayName = M17 Gas Mask,
+        ClothingItem = Hat_M17,
+        BodyLocation = MaskEyes,
+        BloodLocation = Head,
+        Icon = M17,
+        CanHaveHoles = false,
+        BiteDefense = 5,
+        ScratchDefense = 10,
+        Weight = 0.5,
+        Insulation = 0.75,
+        WindResistance = 0.45,
+		AttachmentType  = GasMask,	
+		StaticModel 	= GasMaskM17NotWorn,
+        WorldStaticModel = M17_WorldItem,
+		Tags 			= GasMask,			
+    }
+
+        item Hat_M40
+    {
+        DisplayCategory = GasMask,
+        Type = Clothing,
+        DisplayName = M40 Gas Mask,
+        ClothingItem = Hat_M40,
+        BodyLocation = MaskEyes,
+        BloodLocation = Head,
+        Icon = M40,
+        CanHaveHoles = false,
+        BiteDefense = 5,
+        ScratchDefense = 10,
+        Weight = 0.5,
+        Insulation = 0.75, 
+        WindResistance = 0.45,
+		AttachmentType  = GasMask,	
+		StaticModel 	= GasMaskM17NotWorn,
+        WorldStaticModel = M40_WorldItem,
+		Tags 			= GasMask,			
+    }
+
+        item Hat_Shemagh
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Shemagh,
+        ClothingItem = Hat_Shemagh,
+        BodyLocation = Mask,
+        BloodLocation = Head,
+        Icon = Shemagh,
+        CanHaveHoles = false,
+        ScratchDefense = 10,
+        ClothingItemExtra = Hat_ShemaghDown,
+        ClothingItemExtraOption = PullDown,
+        Weight = 0.3,
+        Insulation = 0.75,
+        WindResistance = 0.70,
+        WorldStaticModel = Shemagh_WorldItem,	
+    }
+
+        item Hat_ShemaghDown
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Shemagh (Down),
+        ClothingItem = Hat_ShemaghDown,
+        BodyLocation = Mask,
+        BloodLocation = Head,
+        Icon = Shemagh,
+        ClothingItemExtra = Hat_Shemagh,
+        ClothingItemExtraOption = PullUp,
+        CanHaveHoles = false,
+        ScratchDefense = 10,
+        Weight = 0.3,
+        Insulation = 0.75,
+        WindResistance = 0.70,
+        WorldStaticModel = Shemagh_WorldItem,	
+    }
+
+    	item Glasses_MilitaryGoggles
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Dust Goggles,
+		ClothingItem = Glasses_MilitaryGoggles,
+		BodyLocation = Eyes,
+        BloodLocation = Head,
+        ScratchDefense = 10,
+		Icon= MilitaryGoggles,
+		Weight = 0.1,
+		Cosmetic = TRUE,
+        WorldStaticModel = MilitaryGoggles_WorldItem,
+	}
+
+        item Hat_ShemaghWoodland
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Woodland Pattern Shemagh,
+        ClothingItem = Hat_ShemaghWoodland,
+        BodyLocation = Mask,
+        BloodLocation = Head,
+        Icon = ShemaghWoodland,
+        ClothingItemExtra = Hat_ShemaghWoodlandDown,
+        ClothingItemExtraOption = PullDown,
+        CanHaveHoles = false,
+        ScratchDefense = 10,
+        Weight = 0.3,
+        Insulation = 0.75,
+        WindResistance = 0.70,
+        WorldStaticModel = ShemaghWoodland_WorldItem,	
+    }
+
+        item Hat_ShemaghWoodlandDown
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Woodland Pattern Shemagh (Down),
+        ClothingItem = Hat_ShemaghWoodlandDown,
+        BodyLocation = Mask,
+        BloodLocation = Head,
+        Icon = ShemaghWoodland,
+        ClothingItemExtra = Hat_ShemaghWoodland,
+        ClothingItemExtraOption = PullUp,
+        CanHaveHoles = false,
+        ScratchDefense = 10,
+        Weight = 0.3,
+        Insulation = 0.75,
+        WindResistance = 0.70,
+        WorldStaticModel = ShemaghWoodland_WorldItem,	
+    }
+    
+        item Hat_ShemaghDesert
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Desert Pattern Shemagh,
+        ClothingItem = Hat_ShemaghDesert,
+        BodyLocation = Mask,
+        BloodLocation = Head,
+        Icon = ShemaghDesert,
+        ClothingItemExtra = Hat_ShemaghDesertDown,
+        ClothingItemExtraOption = PullDown,
+        CanHaveHoles = false,
+        ScratchDefense = 10,
+        Weight = 0.3,
+        Insulation = 0.75,
+        WindResistance = 0.70,
+        WorldStaticModel = ShemaghDesert_WorldItem,	
+    }
+
+        item Hat_ShemaghDesertDown
+    {
+        DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Desert Pattern Shemagh (Down),
+        ClothingItem = Hat_ShemaghDesertDown,
+        BodyLocation = Mask,
+        BloodLocation = Head,
+        Icon = ShemaghDesert,
+        ClothingItemExtra = Hat_ShemaghDesert,
+        ClothingItemExtraOption = PullUp,
+        CanHaveHoles = false,
+        ScratchDefense = 10,
+        Weight = 0.3,
+        Insulation = 0.75,
+        WindResistance = 0.70,
+        WorldStaticModel = ShemaghDesert_WorldItem,	
+    }
+
+        item Hat_CavalryHat
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Cavalry Hat,
+        ClothingItem = Hat_CavalryHat,
+        BodyLocation = Hat,
+        Icon = CavalryHat,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        WindResistance = 0.20,
+        Insulation = 0.10,
+        Weight = 0.5,
+    }
+
+        item Hat_BeretSpecial
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Red Military Beret,
+        ClothingItem = Hat_BeretSpecial,
+        BodyLocation = Hat,
+        Icon = BeretSpecial,
+        CanHaveHoles = false,
+        ChanceToFall = 80,
+        Insulation = 0.10,
+        Weight = 0.5,
+    }
+
+    	item Bag_MilitaryMedicalBag
+    {
+        Type	=	Container,
+        WeightReduction	=	50,
+        Weight	=	0.5,
+        Capacity	=	15,
+        DisplayName	= Military Medical Bag,
+        Icon = MilitaryMedicalBag,
+        CanBeEquipped = Back,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        ClothingItem = Bag_MilitaryMedicalBag,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.96,
+        AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_MilitaryMedicalBag_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_MilitaryMedicalBag_RHand holdingbagright,
+        WorldStaticModel = MilitaryMedicalBag_WorldItem,
+    }
+
+    	item Bag_CFP90PatrolPack
+    {
+        Type	=	Container,
+        WeightReduction	=	75,
+        Weight	=	0.5,
+        Capacity	=	17,
+        DisplayName	= CFP-90 Patrol Pack,
+        Icon = PatrolPack,
+        CanBeEquipped = Back,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        ClothingItem = Bag_CFP90PatrolPack,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.96,
+        AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_CFP90PatrolPack_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_CFP90PatrolPack_RHand holdingbagright,
+        WorldStaticModel = PatrolPack_WorldItem,
+    }
+
+        item GasMaskBag
+    {
+        DisplayCategory = Container,
+        Type	=	Container,
+        WeightReduction	=	30,
+        Weight	=	0.5,
+        Capacity	=	3,
+        DisplayName	= Military Gas Mask Bag,
+        ClothingItemExtra = GasMaskBag,
+        ClothingItemExtraOption = Wear,
+        Icon = GasMaskBag,
+        CanBeEquipped = AmmoStrap,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        ClothingItem = GasMaskBag,
+        BloodLocation = Bag,
+        BodyLocation = SMUITorsoRigPlus,
+        WorldStaticModel = GasMaskBag_WorldItem,
+    }
+
+        item MPBrassard
+	{
+	    DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Military Police Brassard,
+		ClothingItem = MPBrassard,
+		BodyLocation = SMUIRightArmPlus,
+		Icon = MPBrassard,
+		CanHaveHoles = false,
+		WorldStaticModel = MPBrassard_WorldItem,
+	}
+    
+}

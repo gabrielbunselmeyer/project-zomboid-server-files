@@ -1,0 +1,13 @@
+Tooltip_EN = {
+    Tooltip_M17Doff = "M17 fitted with a protective NBC hood",
+    Tooltip_DoffHood = "Protective NBC hood designed for the M17",
+    Tooltip_PackageTop = "Contains an NBC suit top and protective gloves",
+    Tooltip_PackageBottom = "Contains an NBC suit bottom and protective boots",
+    Tooltip_MilitaryWebbing = "Standard US Infantry Webbing",
+    Tooltip_MilitaryWebbingBag = "Standard US Infantry Webbing w/ a buttpack",
+    Tooltip_MilitaryTacticalVest = "Soft body armor designed for special units",
+    Tooltip_ODGreen = "Older military vest usually issued to reservists",
+    Tooltip_NightVisionGoggles = "Must be attached to a mount for use",
+    Tooltip_NVGBroken = "Currently inoperable. Yell at the other modders.",
+    Tooltip_NVGMount = "Used to mount night vision onto helmets",
+}

@@ -1,0 +1,10 @@
+IGUI_ES = {
+
+	IGUI_HotbarAttachment_SMUIWebbingLeft = "Arnés - Espacio izquierdo",
+	IGUI_HotbarAttachment_SMUIWebbingRight = "Arnés - Espacio derecho",
+
+    IGUI_ItemCat_Helmet = "Casco",
+	IGUI_ItemCat_Webbing = "Arnés",
+	IGUI_ItemCat_GasMask = "Máscara de gas",
+
+}

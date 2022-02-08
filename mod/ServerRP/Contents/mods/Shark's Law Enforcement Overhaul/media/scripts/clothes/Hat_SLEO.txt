@@ -1,0 +1,316 @@
+module SLEOClothing
+{		
+	
+		item Hat_PatrolCapPolice
+
+	{
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Police Patrol Cap,
+		ClothingItem = Hat_PatrolCapPolice,
+		BodyLocation = Hat,
+		Icon = PolicePatrolCap,
+		BloodLocation = FullHelmet,
+		ClothingItemExtra = Hat_PatrolCapPoliceReversed,
+        ClothingItemExtraOption = ReverseCap,
+		ChanceToFall = 80,
+		Insulation = 0.10,
+		WaterResistance = 0,
+        Weight = 0.5,
+    }
+
+		item Hat_PatrolCapPoliceReversed
+
+	{
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Police Patrol Cap (Reversed),
+		ClothingItem = Hat_PatrolCapPoliceReversed,
+		BodyLocation = Hat,
+		Icon = PolicePatrolCap,
+		BloodLocation = FullHelmet,
+		ClothingItemExtra = Hat_PatrolCapPolice,
+        ClothingItemExtraOption = ForwardCap,
+		ChanceToFall = 80,
+		Insulation = 0.10,
+		WaterResistance = 0,
+        Weight = 0.5,
+    }
+	
+		item Hat_PatrolCapSheriff
+
+	{
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Sheriff Patrol Cap,
+		ClothingItem = Hat_PatrolCapSheriff,
+		BodyLocation = Hat,
+		Icon = SheriffPatrolCap,
+		BloodLocation = FullHelmet,
+		ClothingItemExtra = Hat_PatrolCapSheriffReversed,
+        ClothingItemExtraOption = ReverseCap,
+		ChanceToFall = 80,
+		Insulation = 0.10,
+		WaterResistance = 0,
+        Weight = 0.5,
+    }
+
+		item Hat_PatrolCapSheriffReversed
+
+	{
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Sheriff Patrol Cap (Reversed),
+		ClothingItem = Hat_PatrolCapSheriffReversed,
+		BodyLocation = Hat,
+		Icon = SheriffPatrolCap,
+		BloodLocation = FullHelmet,
+		ClothingItemExtra = Hat_PatrolCapSheriff,
+        ClothingItemExtraOption = ForwardCap,
+		ChanceToFall = 80,
+		Insulation = 0.10,
+		WaterResistance = 0,
+        Weight = 0.5,
+    }
+
+		item Hat_PoliceBaseballCap
+
+	{
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Police Baseball Cap,
+		ClothingItem = Hat_PoliceBaseballCap,
+		BodyLocation = Hat,
+		Icon = PoliceBaseballCap,
+		BloodLocation = FullHelmet,
+		ClothingItemExtra = Hat_PoliceBaseballCapReversed,
+        ClothingItemExtraOption = ReverseCap,
+		ChanceToFall = 80,
+		Insulation = 0.10,
+		WaterResistance = 0,
+        Weight = 0.5,
+    }
+
+		item Hat_PoliceBaseballCapReversed
+
+	{
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Police Baseball Cap (Reversed),
+		ClothingItem = Hat_PoliceBaseballCapReversed,
+		BodyLocation = Hat,
+		IconsForTexture = PoliceBaseballCap;PoliceBaseballCapBlack,
+		BloodLocation = FullHelmet,
+		ClothingItemExtra = Hat_PoliceBaseballCap,
+        ClothingItemExtraOption = ForwardCap,
+		ChanceToFall = 80,
+		Insulation = 0.10,
+		WaterResistance = 0,
+        Weight = 0.5,
+    }
+
+		item Hat_SheriffBaseballCap
+
+	{
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Sheriff Baseball Cap,
+		ClothingItem = Hat_SheriffBaseballCap,
+		BodyLocation = Hat,
+		IconsForTexture = SheriffBaseballCap;SheriffBaseballCapBlack,
+		BloodLocation = FullHelmet,
+		ClothingItemExtra = Hat_SheriffBaseballCapReversed,
+        ClothingItemExtraOption = ReverseCap,
+		ChanceToFall = 80,
+		Insulation = 0.10,
+		WaterResistance = 0,
+        Weight = 0.5,
+    }
+
+		item Hat_SheriffBaseballCapReversed
+
+	{
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Sheriff Baseball Cap (Reversed),
+		ClothingItem = Hat_SheriffBaseballCapReversed,
+		BodyLocation = Hat,
+		IconsForTexture = SheriffBaseballCap;SheriffBaseballCapBlack,
+		BloodLocation = FullHelmet,
+		ClothingItemExtra = Hat_SheriffBaseballCap,
+        ClothingItemExtraOption = ForwardCap,
+		ChanceToFall = 80,
+		Insulation = 0.10,
+		WaterResistance = 0,
+        Weight = 0.5,
+    }
+
+        item Hat_PoliceHelmet
+
+	{
+		DisplayCategory = Helmet,
+		Type = Clothing,
+		DisplayName = Police Helmet,
+		ClothingItem = Hat_PoliceHelmet,
+		BodyLocation = Hat,
+		Icon = PoliceHelmet,
+        ClothingItemExtra = Hat_PoliceHelmetStrapless,
+        ClothingItemExtraOption = Unstrap,
+		BloodLocation = Head,
+		BiteDefense = 100,
+		ScratchDefense = 100,
+		BulletDefense = 100,
+		Insulation = 0.25,
+		WaterResistance = 0.2,
+		WorldStaticModel = PoliceHelmet_WorldItem,
+	}
+
+	   item Hat_PoliceHelmetStrapless
+
+    {
+        DisplayCategory = Helmet,
+		Type = Clothing,
+        DisplayName = Police Helmet (Strapless),
+        ClothingItem = Hat_PoliceHelmetStrapless,
+        BodyLocation = Hat,
+		BloodLocation = Head,
+        Icon = PoliceHelmet,
+        ClothingItemExtra = Hat_PoliceHelmet,
+        ClothingItemExtraOption = Strap,
+        ChanceToFall = 80,
+		BiteDefense = 100,
+		ScratchDefense = 100,
+		BulletDefense = 100,
+		ScratchDefense = 100,
+        Insulation = 0.10,
+        Weight = 0.2,
+		WorldStaticModel = PoliceHelmet_WorldItem,
+    }
+
+	    item Hat_PoliceHelmetGoggles
+
+	{
+		DisplayCategory = Helmet,
+		Type = Clothing,
+		DisplayName = Police Helmet w/ Goggles,
+		ClothingItem = Hat_PoliceHelmetGoggles,
+		BodyLocation = Hat,
+		BloodLocation = Head,
+		Icon = PoliceHelmetGoggles,
+        ClothingItemExtra = Hat_PoliceHelmetGogglesStrapless,
+        ClothingItemExtraOption = Unstrap,
+		BiteDefense = 100,
+		ScratchDefense = 100,
+		BulletDefense = 100,
+		Insulation = 0.25,
+		WaterResistance = 0.2,
+		WorldStaticModel = PoliceHelmetGoggles_WorldItem,
+	}
+
+	   item Hat_PoliceHelmetGogglesStrapless
+
+    {
+        DisplayCategory = Helmet,
+		Type = Clothing,
+        DisplayName = Police Helmet /w Goggles (Strapless),
+        ClothingItem = Hat_PoliceHelmetGogglesStrapless,
+        BodyLocation = Hat,
+		BloodLocation = Head,
+        Icon = PoliceHelmetGogglesStrapless,
+        CanHaveHoles = false,
+        ClothingItemExtra = Hat_PoliceHelmetGoggles,
+        ClothingItemExtraOption = Strap,
+		BiteDefense = 100,
+		ScratchDefense = 100,
+		BulletDefense = 100,
+		Insulation = 0.25,
+		WaterResistance = 0.2,
+		WorldStaticModel = PoliceHelmetGoggles_WorldItem,
+    }
+
+		item Hat_PoliceBalaclava
+		
+	{
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Police Balaclava,
+		ClothingItem = Hat_PoliceBalaclava,
+		BodyLocation = Mask,
+		BloodLocation = Head,
+		ScratchDefense = 10,
+		Icon = PoliceBalaclava,
+        Insulation = 0.5,
+        WindResistance = 1.0,
+        WaterResistance = 0.2,
+        WorldStaticModel = PoliceBalaclava_WorldItem,
+	}
+
+		item TacticalGoggles
+	{
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Dust Goggles,
+		ClothingItem = TacticalGoggles,
+		BodyLocation = Eyes,
+		BloodLocation = Head,
+		ScratchDefense = 10,
+		Icon = PoliceGoggles,
+		Weight = 0.1,
+		Cosmetic = TRUE,
+		ChanceToFall = 20,
+		WorldStaticModel = DustGoggles_WorldItem,
+	}
+
+	    item Hat_PoliceM17
+    {
+		DisplayCategory = GasMask,
+		Type = Clothing,
+        DisplayName = M17 Gas Mask,
+        ClothingItem = Hat_PoliceM17,
+        BodyLocation = MaskEyes,
+		BloodLocation = Head,
+        Icon = PoliceM17,
+        CanHaveHoles = false,
+        BiteDefense = 5,
+        ScratchDefense = 10,
+        Weight = 0.3,
+        Insulation = 0.75,
+        WindResistance = 0.45,
+		WorldStaticModel = PoliceM17_WorldItem,
+    }
+
+        item Hat_PoliceRiotHelmet
+	{
+		DisplayCategory = Helmet,
+		Type = Clothing,
+		DisplayName = Riot Helmet,
+		ClothingItem = Hat_PoliceRiotHelmet,
+		BodyLocation = Hat,
+		Icon = PoliceRiotHelmet,
+        ClothingItemExtra = Hat_PoliceRiotHelmetUP,
+        ClothingItemExtraOption = VisorUp,
+		BloodLocation = Head,
+		BiteDefense = 100,
+		ScratchDefense = 100,
+		Insulation = 0.25,
+		WaterResistance = 0.5,
+	}
+
+	    item Hat_PoliceRiotHelmetUP
+	{
+		DisplayCategory = Helmet,
+		Type = Clothing,
+		DisplayName = Riot Helmet (Up),
+		ClothingItem = Hat_PoliceRiotHelmetUP,
+		BodyLocation = Hat,
+		Icon = PoliceRiotHelmetVisorUp,
+        ClothingItemExtra = Hat_PoliceRiotHelmet,
+        ClothingItemExtraOption = VisorDown,
+		BloodLocation = Head,
+		BiteDefense = 75,
+		ScratchDefense = 85,
+		Insulation = 0.25,
+		WaterResistance = 0.5,
+	}
+
+}

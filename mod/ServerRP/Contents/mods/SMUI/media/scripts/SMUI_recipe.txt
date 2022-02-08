@@ -1,0 +1,213 @@
+module SMUIClothing{
+
+  imports {
+      Base
+  }
+
+recipe Tuck In
+  	{
+   	   Trousers_CamoUrban,
+
+   	   Result:Trousers_CamoUrbanTucked,
+	   Time:0,
+  	}
+
+recipe Tuck In
+  	{
+   	   Trousers_CamoDesert,
+
+   	   Result:Trousers_CamoDesertTucked,
+	   Time:0,
+  	}
+
+recipe Tuck In
+  	{
+   	   Trousers_CamoGreen,
+
+   	   Result:Trousers_CamoGreenTucked,
+	   Time:0,
+  	}
+
+recipe Roll Up
+  	{
+   	   Jacket_ArmyCamoGreen,
+
+   	   Result:Jacket_ArmyCamoGreenRolled,
+	   Time:0,
+  	}
+
+recipe Roll Up
+  	{
+   	   Jacket_ArmyCamoDesert,
+
+   	   Result:Jacket_ArmyCamoDesertRolled,
+	   Time:0,
+  	}
+
+recipe Roll Up
+  	{
+   	   Jacket_ArmyCamoUrban,
+
+   	   Result:Jacket_ArmyCamoUrbanRolled,
+	   Time:0,
+  	}
+
+recipe Attach NVG mount
+  	{
+   	   Hat_MilitaryHelmet,
+	   NightVisionMount,
+
+   	   Result:Hat_MilitaryHelmetNVGMount,
+	   Time:60,
+  	}
+	  
+recipe Attach NVG mount
+  	{
+   	   Hat_MilitaryHelmetDesert,
+	   NightVisionMount,
+
+   	   Result:Hat_MilitaryHelmetDesertNVGMount,
+	   Time:60,
+  	}
+
+recipe Attach Night Vision
+  	{
+   	   Hat_MilitaryHelmetNVGMount,
+	   NightVisionGoggles,
+
+   	   Result:Hat_MilitaryHelmetNVGUP,
+	   Time:60,
+  	}
+
+ recipe Attach Night Vision
+  	{
+   	   Hat_MilitaryHelmetDesertNVGMount,
+	   NightVisionGoggles,
+
+   	   Result:Hat_MilitaryHelmetDesertNVGUP,
+	   Time:60,
+  	}
+
+recipe Attach goggles to helmet
+  	{
+   	   Hat_MilitaryHelmet,
+	   Glasses_MilitaryGoggles,
+
+   	   Result:Hat_MilitaryHelmetGoggles,
+	   Time:20,
+  	}
+
+recipe Attach goggles to helmet
+  	{
+   	   Hat_MilitaryHelmet,
+	   Glasses_MilitaryGoggles,
+
+   	   Result:Hat_MilitaryHelmetGoggles,
+	   Time:20,
+  	}
+
+recipe Attach goggles to helmet
+  	{
+   	   Hat_MilitaryHelmetStrapless,
+	   Glasses_MilitaryGoggles,
+
+   	   Result:Hat_MilitaryHelmetGogglesStrapless,
+	   Time:20,
+  	}
+
+recipe Attach goggles to helmet
+  	{
+   	   Hat_MilitaryHelmetDesert,
+	   Glasses_MilitaryGoggles,
+
+   	   Result:Hat_MilitaryHelmetDesertGoggles,
+	   Time:20,
+  	}
+
+recipe Attach goggles to helmet
+  	{
+   	   Hat_MilitaryHelmetDesertStrapless,
+	   Glasses_MilitaryGoggles,
+
+   	   Result:Hat_MilitaryHelmetDesertGogglesStrapless,
+	   Time:20,
+  	}
+
+recipe Attach doff hood
+  	{
+   	   Hat_M40,
+	   M40Hood,
+
+   	   Result:Hat_M40Doff,
+	   Time:60,
+  	}
+
+recipe Attach doff hood
+  	{
+   	   Hat_M17,
+	   M17Hood,
+
+   	   Result:Hat_M17Doff,
+	   Time:60,
+  	}
+
+recipe Attach doff hood
+  	{
+   	   Hat_PoliceM17,
+	   M17Hood,
+
+   	   Result:Hat_M17Doff,
+	   Time:60,
+  	}
+
+recipe Remove doff hood
+  	{
+   	   Hat_M17Doff,
+	   OnCreate: SMUI_Recipe.M17HOOD,
+   	   Result:Hat_M17,
+	   Time:60,
+  	}
+
+recipe Remove doff hood
+  	{
+   	   Hat_M40Doff,
+	   OnCreate: SMUI_Recipe.M40HOOD,
+   	   Result:Hat_M40,
+	   Time:60,
+  	}
+
+recipe Remove goggles
+  	{
+   	   Hat_MilitaryHelmetGoggles,
+	   OnCreate: SMUI_Recipe.GOGGLES,
+   	   Result:Hat_MilitaryHelmet,
+	   Time:60,
+  	}
+
+recipe Remove goggles
+  	{
+   	   Hat_MilitaryHelmetGogglesStrapless,
+	   OnCreate: SMUI_Recipe.GOGGLES,
+   	   Result:Hat_MilitaryHelmetStrapless,
+	   Time:60,
+  	}
+
+recipe Remove goggles
+  	{
+   	   Hat_MilitaryHelmetDesertGoggles,
+	   OnCreate: SMUI_Recipe.GOGGLES,
+   	   Result:Hat_MilitaryHelmetDesert,
+	   Time:60,
+  	}
+
+recipe Remove goggles
+  	{
+   	   Hat_MilitaryHelmetDesertGogglesStrapless,
+	   OnCreate: SMUI_Recipe.GOGGLES,
+   	   Result:Hat_MilitaryHelmetDesertStrapless,
+	   Time:60,
+  	}
+
+
+
+}		

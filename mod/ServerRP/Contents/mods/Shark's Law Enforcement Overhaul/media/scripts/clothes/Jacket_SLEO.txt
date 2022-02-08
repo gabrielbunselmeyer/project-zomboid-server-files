@@ -1,0 +1,98 @@
+module SLEOClothing
+  {
+
+    item Jacket_PoliceTactical
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Blue Tactical Jacket,
+        ClothingItem = Jacket_PoliceTactical,
+        BodyLocation = Jacket,
+        Icon = PoliceTacticalJacket,
+        BloodLocation = Jacket,
+        RunSpeedModifier = 0.89,
+        CombatSpeedModifier = 0.96,
+        BiteDefense = 20,
+        ScratchDefense = 30,
+        Insulation = 0.4,
+        WindResistance = 0.3,
+        WaterResistance = 0.4,
+        ClothingItemExtra = Jacket_PoliceTacticalRolled,
+        ClothingItemExtraOption = RollUp,
+        WindResistance = 0.95,
+        WaterResistance = 0.60,
+        Weight = 1,
+        FabricType = Cotton,
+        WorldStaticModel = JacketCoat_Ground,
+    }
+
+        item Jacket_PoliceTacticalRolled
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Blue Tactical Jacket (Rolled),
+        ClothingItem = Jacket_PoliceTacticalRolled,
+        BodyLocation = Jacket,
+        Icon = PoliceTacticalJacketRolled,
+        BloodLocation = Jacket,
+        RunSpeedModifier = 0.89,
+        CombatSpeedModifier = 0.96,
+        BiteDefense = 20,
+        ScratchDefense = 30,
+        Insulation = 0.4,
+        WindResistance = 0.3,
+        WaterResistance = 0.4,
+        ClothingItemExtra = Jacket_PoliceTactical,
+        ClothingItemExtraOption = RollDown,
+        Weight = 1,
+        FabricType = Cotton,
+        WorldStaticModel = JacketCoat_Ground,
+    }
+
+    item Jacket_SheriffTactical
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Green Tactical Jacket,
+        ClothingItem = Jacket_SheriffTactical,
+        BodyLocation = Jacket,
+        Icon = SheriffTacticalJacket,
+        BloodLocation = Jacket,
+        RunSpeedModifier = 0.89,
+        CombatSpeedModifier = 0.96,
+        BiteDefense = 20,
+        ScratchDefense = 30,
+        Insulation = 0.4,
+        WindResistance = 0.3,
+        WaterResistance = 0.4,
+        ClothingItemExtra = Jacket_SheriffTacticalRolled,
+        ClothingItemExtraOption = RollUp,
+        Weight = 1,
+        FabricType = Cotton,
+        WorldStaticModel = JacketCoat_Ground,
+    }
+
+        item Jacket_SheriffTacticalRolled
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Green Tactical Jacket (Rolled),
+        ClothingItem = Jacket_SheriffTacticalRolled,
+        BodyLocation = Jacket,
+        Icon = SheriffTacticalJacketRolled,
+        BloodLocation = Jacket,
+        RunSpeedModifier = 0.89,
+        CombatSpeedModifier = 0.96,
+        BiteDefense = 20,
+        ScratchDefense = 30,
+        Insulation = 0.4,
+        WindResistance = 0.3,
+        WaterResistance = 0.4,
+        ClothingItemExtra = Jacket_SheriffTactical,
+        ClothingItemExtraOption = RollDown,
+        Weight = 1,
+        FabricType = Cotton,
+        WorldStaticModel = JacketCoat_Ground,
+    }
+  }
+

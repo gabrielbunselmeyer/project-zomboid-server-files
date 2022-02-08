@@ -1,0 +1,77 @@
+module SLEOClothing
+  { 
+    
+    item PoliceTacticalVest
+    
+  {
+    DisplayCategory = Clothing,
+    Type = Clothing,
+    DisplayName = Police Tactical Vest,
+    ClothingItem = PoliceTacticalVest,
+    BodyLocation = TorsoExtra,
+    Icon = PoliceTacticalVest,
+    BloodLocation = ShirtNoSleeves,
+    CanHaveHoles = False,
+    Insulation = 0.65,
+    WindResistance = 0.30,
+    BiteDefense = 30,
+    ScratchDefense = 55,
+    BulletDefense = 100,
+    WorldStaticModel = PoliceTacticalVest_WorldItem,
+  }
+
+  	item Gloves_TacticalGloves
+	{
+	  DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Tactical Gloves,
+		ClothingItem = Gloves_TacticalGloves,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = GlovesLeatherBlackpng,
+		ScratchDefense = 60,
+    BiteDefense = 20,
+    Weight = 0.1,
+    Insulation = 0.80,
+    WindResistance = 0.75,
+    FabricType = Cloth,
+    WorldStaticModel = Gloves_Ground,
+	}
+
+    item Shoes_TacticalBoots
+  {
+    DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Tactical Boots,
+		ClothingItem = Shoes_TacticalBoots,
+		BodyLocation = Shoes,
+		BloodLocation = Shoes,
+		Icon = BootsARmy,
+		StompPower = 2.5,
+    ConditionMax = 30,
+    RunSpeedModifier = 1.5,
+    RemoveOnBroken = false,
+    ScratchDefense = 100,
+    BiteDefense = 100,
+    Insulation = 1.0,
+    WindResistance = 1.0,
+    WaterResistance = 0.8,
+    WorldStaticModel = Boots_Ground,
+  }
+
+    item PoliceDutyBelt
+	{
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Police Duty Belt,
+		ClothingItem = PoliceDutyBelt,
+		BodyLocation = BeltExtra,
+    Weight	=	0.5,
+		Icon = PoliceDutyBelt,
+		AttachmentsProvided = HolsterLeft;HolsterRight,
+		Tooltip = Tooltip_PoliceDutyBelt,
+		WorldStaticModel = PoliceDutyBelt_WorldItem,
+	}
+
+}
+

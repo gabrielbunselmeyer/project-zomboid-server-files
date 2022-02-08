@@ -1,0 +1,173 @@
+module SMUIClothing 
+{
+
+        item Trousers_CamoGreen
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Military Green Camo Pants,
+        ClothingItem = Trousers_CamoGreen,
+        BodyLocation = Pants,
+        Icon = TrousersCamoGreen,
+        BloodLocation = Trousers,
+        BiteDefense = 10,
+        ScratchDefense = 20,
+        Insulation = 0.4,
+        ClothingItemExtra = Trousers_CamoGreenTucked,
+        ClothingItemExtraOption = TuckIn,
+        WindResistance = 0.3,
+        WaterResistance = 0.4,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+        
+    }
+
+        item Trousers_CamoGreenTucked
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Military Green Camo Pants (Tucked),
+        ClothingItem = Trousers_CamoGreenTucked,
+        BodyLocation = Pants,
+        Icon = TrousersCamoGreen,
+        BloodLocation = Trousers,
+        BiteDefense = 10,
+        ScratchDefense = 20,
+        Insulation = 0.4,
+        ClothingItemExtra = Trousers_CamoGreen,
+        ClothingItemExtraOption = TuckOut,
+        WindResistance = 0.3,
+        WaterResistance = 0.4,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+        item Trousers_CamoDesert
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Military Desert Camo Pants,
+        ClothingItem = Trousers_CamoDesert,
+        BodyLocation = Pants,
+        Icon = TrousersCamoSand,
+        BloodLocation = Trousers,
+        BiteDefense = 10,
+        ScratchDefense = 20,
+        Insulation = 0.4,
+        ClothingItemExtra = Trousers_CamoDesertTucked,
+        ClothingItemExtraOption = TuckIn,
+        WindResistance = 0.3,
+        WaterResistance = 0.4,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+        item Trousers_CamoDesertTucked
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Military Desert Camo Pants (Tucked),
+        ClothingItem = Trousers_CamoDesertTucked,
+        BodyLocation = Pants,
+        Icon = TrousersCamoSand,
+        BloodLocation = Trousers,
+        BiteDefense = 10,
+        ScratchDefense = 20,
+        Insulation = 0.4,
+        ClothingItemExtra = Trousers_CamoDesert,
+        ClothingItemExtraOption = TuckIn,
+        Insulation = 0.4,
+        WindResistance = 0.3,
+        WaterResistance = 0.4,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+         item Trousers_CamoUrban
+    
+    {   
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Military Urban Camo Pants,
+        ClothingItem = Trousers_CamoUrban,
+        BodyLocation = Pants,
+        Icon = TrousersCamoGrey,
+        BloodLocation = Trousers,
+        BiteDefense = 10,
+        ScratchDefense = 20,
+        Insulation = 0.4,
+        WindResistance = 0.3,
+        WaterResistance = 0.4,
+        ClothingItemExtra = Trousers_CamoUrbanTucked,
+        ClothingItemExtraOption = TuckIn,
+        WindResistance = 0.3,
+        WaterResistance = 0.4,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+        item Trousers_CamoUrbanTucked
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Military Urban Camo Pants (Tucked),
+        ClothingItem = Trousers_CamoUrbanTucked,
+        BodyLocation = Pants,
+        Icon = TrousersCamoGrey,
+        BloodLocation = Trousers,
+        BiteDefense = 10,
+        ScratchDefense = 20,
+        Insulation = 0.4,
+        ClothingItemExtra = Trousers_CamoUrban,
+        ClothingItemExtraOption = TuckOut,
+        WindResistance = 0.3,
+        WaterResistance = 0.4,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+        item Trousers_ODGreen
+    
+    {   
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Military Olive Drab Pants,
+        ClothingItem = Trousers_ODGreen,
+        BodyLocation = Pants,
+        Icon = ODGreenPants,
+        BloodLocation = Trousers,
+        BiteDefense = 10,
+        ScratchDefense = 20,
+        Insulation = 0.4,
+        WindResistance = 0.3,
+        WaterResistance = 0.4,
+        ClothingItemExtra = Trousers_ODGreenTucked,
+        ClothingItemExtraOption = TuckIn,
+        WindResistance = 0.3,
+        WaterResistance = 0.4,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+        item Trousers_ODGreenTucked
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Military Olive Drab Pants (Tucked),
+        ClothingItem = Trousers_ODGreenTucked,
+        BodyLocation = Pants,
+        Icon = ODGreenPants,
+        BloodLocation = Trousers,
+        BiteDefense = 10,
+        ScratchDefense = 20,
+        Insulation = 0.4,
+        ClothingItemExtra = Trousers_ODGreen,
+        ClothingItemExtraOption = TuckOut,
+        WindResistance = 0.3,
+        WaterResistance = 0.4,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+}
+    
+   

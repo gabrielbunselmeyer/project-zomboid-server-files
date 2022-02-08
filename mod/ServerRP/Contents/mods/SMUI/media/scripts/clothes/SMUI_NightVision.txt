@@ -1,0 +1,97 @@
+module SMUIClothing
+{
+
+		item Hat_MilitaryHelmetNVGUP
+
+	{
+		DisplayCategory = Helmet,
+		Type = Clothing,
+		DisplayName = Military Helmet /w Night Vision (Up),
+		ClothingItem = Hat_MilitaryHelmetNVGUP,
+		BodyLocation = Hat,
+		Icon = MilitaryHelmetNVG,
+		BloodLocation = FullHelmet,
+        BiteDefense = 100,
+		ScratchDefense = 100,
+        BulletDefense = 100,
+		Insulation = 0.25,
+		WaterResistance = 0.2,
+		CanHaveHoles = false,
+		ClothingItemExtra = Hat_MilitaryHelmetNVGDOWN,
+        ClothingItemExtraOption = FlipDown,
+		ChanceToFall = 0,
+		Tooltip = Tooltip_NVGBroken,
+        Weight = 1.7,
+		WorldStaticModel = MilitaryHelmetNVGUP_WorldItem,
+    }
+
+		item Hat_MilitaryHelmetNVGDOWN
+
+	{
+		DisplayCategory = Helmet,
+		Type = Clothing,
+		DisplayName = Military Helmet /w Night Vision (Down),
+		ClothingItem = Hat_MilitaryHelmetNVGDOWN,
+		BodyLocation = Hat,
+		BloodLocation = FullHelmet,
+        BiteDefense = 100,
+		ScratchDefense = 100,
+        BulletDefense = 100,
+		Insulation = 0.25,
+        Icon = MilitaryHelmetNVG,
+		CanHaveHoles = false,
+		ClothingItemExtra = Hat_MilitaryHelmetNVGUP,
+        ClothingItemExtraOption = FlipUp,
+		ChanceToFall = 0,
+		Tooltip = Tooltip_NVGBroken,
+        Weight = 1.7,
+		WorldStaticModel = MilitaryHelmetNVGUP_WorldItem,
+    }
+	
+		item Hat_MilitaryHelmetDesertNVGUP
+
+	{
+		DisplayCategory = Helmet,
+		Type = Clothing,
+		DisplayName = Desert Military Helmet /w Night Vision (Up),
+		ClothingItem = Hat_MilitaryHelmetDesertNVGUP,
+		BodyLocation = Hat,
+		Icon = DesertMilitaryHelmetNVG,
+		BloodLocation = FullHelmet,
+        BiteDefense = 100,
+		ScratchDefense = 100,
+        BulletDefense = 100,
+		Insulation = 0.25,
+		WaterResistance = 0.2,
+		CanHaveHoles = false,
+		ClothingItemExtra = Hat_MilitaryHelmetDesertNVGDOWN,
+        ClothingItemExtraOption = FlipDown,
+		ChanceToFall = 0,
+		Tooltip = Tooltip_NVGBroken,
+        Weight = 1.7,
+		WorldStaticModel = MilitaryHelmetDesertNVGUP_WorldItem,
+    }
+
+		item Hat_MilitaryHelmetDesertNVGDOWN
+
+	{
+		DisplayCategory = Helmet,
+		Type = Clothing,
+		DisplayName = Desert Military Helmet /w Night Vision (Down),
+		ClothingItem = Hat_MilitaryHelmetDesertNVGDOWN,
+		BodyLocation = Hat,
+		BloodLocation = FullHelmet,
+        BiteDefense = 100,
+		ScratchDefense = 100,
+        BulletDefense = 100,
+		Insulation = 0.25,
+        Icon = DesertMilitaryHelmetNVG,
+		CanHaveHoles = false,
+		ClothingItemExtra = Hat_MilitaryHelmetDesertNVGUP,
+        ClothingItemExtraOption = FlipUp,
+		ChanceToFall = 0,
+		Tooltip = Tooltip_NVGBroken,
+        Weight = 1.7,
+		WorldStaticModel = MilitaryHelmetDesertNVGUP_WorldItem,
+    }
+}

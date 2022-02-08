@@ -1,0 +1,59 @@
+module SMUIClothing 
+{
+
+	item Vest_ODGreen
+	{   
+
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Olive Drab Military Vest,
+        ClothingItem = Vest_ODGreen,
+        BodyLocation = TorsoExtra,
+        Icon = ODGreenVest,
+        BloodLocation = ShirtNoSleeves,
+		BiteDefense = 75,
+		ScratchDefense = 75,
+		BulletDefense = 100,
+		Insulation = 0.75,
+        WindResistance = 0.45,
+		WeightReduction	=	50,
+		RunSpeedModifier = 1,
+        WorldStaticModel = BulletVest_Ground,
+	}
+
+    	item Vest_MilitaryTacticalVest
+	{
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Military Tactical Vest,
+		ClothingItem = Vest_MilitaryTacticalVest,
+		BodyLocation = TorsoExtra,
+		BloodLocation = ShirtNoSleeves,
+		BiteDefense = 75,
+		ScratchDefense = 75,
+		BulletDefense = 100,
+		Insulation = 0.75,
+        WindResistance = 0.45,
+		WeightReduction	=	65,
+		Icon = MilitaryTacticalVest,
+		WorldStaticModel = MilitaryTacticalVest_WorldItem,
+	}
+
+	    item Vest_MilitaryTankerVest
+	{
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Military Crewman Vest,
+		ClothingItem = Vest_MilitaryTankerVest,
+		BodyLocation = TorsoExtra,
+		BloodLocation = ShirtNoSleeves,
+		BiteDefense = 65,
+		ScratchDefense = 65,
+		BulletDefense = 100,
+		Insulation = 0.75,
+        WindResistance = 0.45,
+		WeightReduction	=	50,
+		Icon = MilitaryTankerVest,
+		WorldStaticModel = MilitaryTankerVest_WorldItem,
+	}
+}

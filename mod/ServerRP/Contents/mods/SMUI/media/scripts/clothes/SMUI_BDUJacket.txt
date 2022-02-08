@@ -1,0 +1,201 @@
+module SMUIClothing 
+{
+
+
+        item Jacket_ArmyCamoGreen   
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Military Green Camo Jacket,
+        ClothingItem = Jacket_ArmyCamoGreen,
+        BodyLocation = Jacket,
+        Icon = ShirtCamoGreen,
+        BloodLocation = Jacket,
+        RunSpeedModifier = 0.94,
+        CombatSpeedModifier = 0.97,
+        ClothingItemExtra = Jacket_ArmyCamoGreenRolled,
+        ClothingItemExtraOption = RollUp,
+        BiteDefense = 20,
+        ScratchDefense = 30,
+        Insulation = 0.4,
+        WindResistance = 0.3,
+        WaterResistance = 0.4,
+        Weight = 1,
+        FabricType = Cotton,
+        WorldStaticModel = JacketCoat_Ground,
+        
+    }
+
+        item Jacket_ArmyCamoGreenRolled
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Military Green Camo Jacket (Rolled),
+        ClothingItem = Jacket_ArmyCamoGreenRolled,
+        BodyLocation = Jacket,
+        Icon = TShirtCamoGreen,
+        BloodLocation = Jacket,
+        RunSpeedModifier = 0.94,
+        CombatSpeedModifier = 0.97,
+        ClothingItemExtra = Jacket_ArmyCamoGreen,
+        ClothingItemExtraOption = RollDown,
+        BiteDefense = 15,
+        ScratchDefense = 20,
+        Insulation = 0.4,
+        WindResistance = 0.3,
+        WaterResistance = 0.4,
+        Weight = 1,
+        FabricType = Cotton,
+        WorldStaticModel = JacketCoat_Ground,
+
+    }
+
+      item Jacket_ArmyCamoDesert
+
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Military Desert Camo Jacket,
+        ClothingItem = Jacket_ArmyCamoDesert,
+        BodyLocation = Jacket,
+        BloodLocation = Jacket,
+        Icon = ShirtCamoSand,
+        RunSpeedModifier = 0.94,
+        CombatSpeedModifier = 0.97,
+        ClothingItemExtra = Jacket_ArmyCamoDesertRolled,
+        ClothingItemExtraOption = RollUp,
+        BiteDefense = 20,
+        ScratchDefense = 30,
+        Insulation = 0.4,
+        WindResistance = 0.3,
+        WaterResistance = 0.4,
+        Weight = 1,
+        FabricType = Cotton,
+        WorldStaticModel = JacketCoat_Ground,
+    }
+
+    item Jacket_ArmyCamoDesertRolled
+
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Military Desert Camo Jacket (Rolled),
+        ClothingItem = Jacket_ArmyCamoDesertRolled,
+        BodyLocation = Jacket,
+        BloodLocation = Jacket,
+        Icon = TShirtCamoSand,
+        RunSpeedModifier = 0.94,
+        CombatSpeedModifier = 0.97,
+        ClothingItemExtra = Jacket_ArmyCamoDesert,
+        ClothingItemExtraOption = RollDown,
+        BiteDefense = 15,
+        ScratchDefense = 20,
+        Insulation = 0.4,
+        WindResistance = 0.3,
+        WaterResistance = 0.4,
+        Weight = 1,
+        FabricType = Cotton,
+        WorldStaticModel = JacketCoat_Ground,
+    }
+
+          item Jacket_ArmyCamoUrban
+        
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Military Urban Camo Jacket,
+        ClothingItem = Jacket_ArmyCamoUrban,
+        BodyLocation = Jacket,
+        Icon = ShirtCamoGrey,
+        BloodLocation = Jacket,
+        RunSpeedModifier = 0.94,
+        CombatSpeedModifier = 0.97,
+        ClothingItemExtra = Jacket_ArmyCamoUrbanRolled,
+        ClothingItemExtraOption = RollUp,
+        BiteDefense = 20,
+        ScratchDefense = 30,
+        Insulation = 0.4,
+        WindResistance = 0.3,
+        WaterResistance = 0.4,
+        Weight = 1,
+        FabricType = Cotton,
+        WorldStaticModel = JacketCoat_Ground,
+        
+    }
+
+        item Jacket_ArmyCamoUrbanRolled
+
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Military Urban Camo Jacket (Rolled),
+        ClothingItem = Jacket_ArmyCamoUrbanRolled,
+        BodyLocation = Jacket,
+        Icon = TShirtCamoGrey,
+        BloodLocation = Jacket,
+        RunSpeedModifier = 0.94,
+        CombatSpeedModifier = 0.97,
+        ClothingItemExtra = Jacket_ArmyCamoUrban,
+        ClothingItemExtraOption = RollDown,
+        BiteDefense = 15,
+        ScratchDefense = 20,
+        Insulation = 0.4,
+        WindResistance = 0.3,
+        WaterResistance = 0.4,
+        Weight = 1,
+        FabricType = Cotton,
+        WorldStaticModel = JacketCoat_Ground,
+
+    }
+
+        item Jacket_ODGreen
+        
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Military Olive Drab Jacket,
+        ClothingItem = Jacket_ODGreen,
+        BodyLocation = Jacket,
+        Icon = ODGreen,
+        BloodLocation = Jacket,
+        RunSpeedModifier = 0.94,
+        CombatSpeedModifier = 0.97,
+        ClothingItemExtra = Jacket_ODGreenRolled,
+        ClothingItemExtraOption = RollUp,
+        BiteDefense = 20,
+        ScratchDefense = 30,
+        Insulation = 0.4,
+        WindResistance = 0.3,
+        WaterResistance = 0.4,
+        Weight = 1,
+        FabricType = Cotton,
+        WorldStaticModel = JacketCoat_Ground,
+        
+    }
+
+        item Jacket_ODGreenRolled
+
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Military Olive Drab Jacket (Rolled),
+        ClothingItem = Jacket_ODGreenRolled,
+        BodyLocation = Jacket,
+        Icon = ODGreenJacketRolled,
+        BloodLocation = Jacket,
+        RunSpeedModifier = 0.94,
+        CombatSpeedModifier = 0.97,
+        ClothingItemExtra = Jacket_ODGreen,
+        ClothingItemExtraOption = RollDown,
+        BiteDefense = 15,
+        ScratchDefense = 20,
+        Insulation = 0.4,
+        WindResistance = 0.3,
+        WaterResistance = 0.4,
+        Weight = 1,
+        FabricType = Cotton,
+        WorldStaticModel = JacketCoat_Ground,
+
+    }
+
+  }

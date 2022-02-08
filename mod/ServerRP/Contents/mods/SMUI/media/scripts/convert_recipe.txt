@@ -1,0 +1,56 @@
+module SMUI{
+
+  imports {
+      Base
+  }
+
+recipe Tuck In
+  	{
+   	   Trousers_CamoUrban,
+
+   	   Result:Trousers_CamoUrbanTucked,
+	   Time:0,
+  	}
+
+recipe Tuck In
+  	{
+   	   Trousers_CamoDesert,
+
+   	   Result:Trousers_CamoDesertTucked,
+	   Time:0,
+  	}
+
+recipe Tuck In
+  	{
+   	   Trousers_CamoGreen,
+
+   	   Result:Trousers_CamoGreenTucked,
+	   Time:0,
+  	}
+
+recipe Roll Up
+  	{
+   	   Jacket_ArmyCamoGreen,
+
+   	   Result:Jacket_ArmyCamoGreenRolled,
+	   Time:0,
+  	}
+
+recipe Roll Up
+  	{
+   	   Jacket_ArmyCamoDesert,
+
+   	   Result:Jacket_ArmyCamoDesertRolled,
+	   Time:0,
+  	}
+
+recipe Refit helmet
+  	{
+   	   Hat_Army,
+
+   	   Result:Hat_MilitaryHelmet,
+	   Time:0,
+  	}
+	  
+
+}		

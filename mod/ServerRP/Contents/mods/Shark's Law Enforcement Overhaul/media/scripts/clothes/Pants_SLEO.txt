@@ -1,0 +1,86 @@
+ module SLEOClothing
+
+    {
+        item Trousers_PoliceTactical
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Blue Tactical Pants,
+        ClothingItem = Trousers_PoliceTactical,
+        BodyLocation = Pants,
+        Icon = PoliceTacticalPants,
+        BloodLocation = Trousers,
+        BiteDefense = 10,
+        ScratchDefense = 20,
+        Insulation = 0.4,
+        ClothingItemExtra = Trousers_PoliceTacticalTucked,
+        ClothingItemExtraOption = TuckIn,
+        WindResistance = 0.3,
+        WaterResistance = 0.4,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+        item Trousers_PoliceTacticalTucked
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Blue Tactical Pants (Tucked),
+        ClothingItem = Trousers_PoliceTacticalTucked,
+        BodyLocation = Pants,
+        Icon = PoliceTacticalPants,
+        BloodLocation = Trousers,
+        BiteDefense = 10,
+        ScratchDefense = 20,
+        Insulation = 0.4,
+        ClothingItemExtra = Trousers_PoliceTactical,
+        ClothingItemExtraOption = TuckOut,
+        WindResistance = 0.3,
+        WaterResistance = 0.4,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+
+        item Trousers_SheriffTactical
+    {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Green Tactical Pants,
+        ClothingItem = Trousers_SheriffTactical,
+        BodyLocation = Pants,
+        Icon = SheriffTacticalPants,
+        BloodLocation = Trousers,
+        BiteDefense = 30,
+        ScratchDefense = 50,
+        Insulation = 0.45,
+        ClothingItemExtra = Trousers_SheriffTacticalTucked,
+        ClothingItemExtraOption = TuckIn,
+        WindResistance = 0.3,
+        WaterResistance = 0.45,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+        
+    }
+
+        item Trousers_SheriffTacticalTucked
+    {
+        DisplayCategory = Clothing, 
+        Type = Clothing,
+        DisplayName = Green Tactical Pants (Tucked),
+        ClothingItem = Trousers_SheriffTacticalTucked,
+        BodyLocation = Pants,
+        Icon = SheriffTacticalPants,
+        BloodLocation = Trousers,
+        BiteDefense = 30,
+        ScratchDefense = 50,
+        ClothingItemExtra = Trousers_SheriffTactical,
+        ClothingItemExtraOption = TuckOut,
+        Insulation = 0.45,
+        WindResistance = 0.3,
+        WaterResistance = 0.45,
+        FabricType = Cotton,
+        WorldStaticModel = Trousers_Ground,
+    }
+}
+    
+   

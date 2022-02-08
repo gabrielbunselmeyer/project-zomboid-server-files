@@ -1,0 +1,146 @@
+module SMUIClothing 
+{
+
+    item NBCSuit
+    {
+    
+    DisplayCategory = Clothing,
+    Type = Clothing,
+    ClothingItem = Suit_NBCSuit,
+    BodyLocation = Jacket,
+    Icon = NBCSuit,
+    BloodLocation = Jacket,
+    RunSpeedModifier = 0.89,
+    CombatSpeedModifier = 0.96,
+    ScratchDefense = 30,
+    Insulation = 0.90,
+    Weight = 0.0,
+    ClothingItemExtra = NBCSuitHood,
+    ClothingItemExtraOption = UpHoodie,
+    ClothingExtraSubmenu = DownHoodie,
+    WindResistance = 0.90,
+    WorldStaticModel = Jumper_Ground,
+    }
+
+    item NBCSuitHood
+    {
+    
+    DisplayCategory = Clothing,
+    Type = Clothing,
+    ClothingItem = Suit_NBCSuitHood,
+    BodyLocation = Jacket,
+    Icon = NBCSuit,
+    BloodLocation = Jacket,
+    RunSpeedModifier = 0.89,
+    CombatSpeedModifier = 0.96,
+    ScratchDefense = 30,
+    Insulation = 0.90,
+    Weight = 0.0,
+    ClothingItemExtra = NBCSuit,
+    ClothingItemExtraOption = DownHoodie,
+    ClothingExtraSubmenu = UpHoodie,
+    WindResistance = 0.90,
+    RemoveOnBroken = true,
+    WorldStaticModel = Hoodie_Ground,
+    }
+
+    item Trousers_NBCPants
+    {
+
+    DisplayCategory = Clothing,
+    Type = Clothing,
+    ClothingItem = Trousers_MOPPPants,
+    BodyLocation = Pants,
+    BloodLocation = Trousers,
+    Icon = NBCSuit,
+    ScratchDefense = 10,
+    RunSpeedModifier = 0.89,
+    Insulation = 0.90,
+    Weight = 0.0,
+    WindResistance = 0.5,
+    WindResistance = 0.65,
+    WaterResistance = 1.0,
+    RemoveOnBroken = true,
+    WorldStaticModel = Trousers_Ground,
+    }
+
+    item Hat_M17Doff
+    {
+    
+    DisplayCategory = GasMask,
+    Type = Clothing,
+    DisplayName = M17 w/ Doff Hood,
+    ClothingItem = Hat_M17Doff,
+    BodyLocation = MaskEyes,
+    BloodLocation = Head,
+    Icon = M17Doff,
+    CanHaveHoles = false,
+    Weight = 0.0,
+    ScratchDefense = 20,
+    BiteDefense = 5,
+    Insulation = 0.90,
+    WindResistance = 0.65,
+    WaterResistance = 1.0,
+    WorldStaticModel = M17Doff_WorldItem,
+    }
+
+    item Hat_M40Doff
+    {
+    
+    DisplayCategory = GasMask,
+    Type = Clothing,
+    DisplayName = M40 w/ Doff Hood,
+    ClothingItem = Hat_M40Doff,
+    BodyLocation = MaskEyes,
+    BloodLocation = Head,
+    Icon = M40Doff,
+    CanHaveHoles = false,
+    Weight = 0.0,
+    ScratchDefense = 20,
+    BiteDefense = 5,
+    Insulation = 0.90,
+    WindResistance = 0.65,
+    WaterResistance = 1.0,
+    WorldStaticModel = M40Doff_WorldItem,
+    }
+
+    item Gloves_HazmatGloves
+	{
+
+	DisplayCategory = Clothing,
+	Type = Clothing,
+	DisplayName = NBC Gloves,
+	ClothingItem = Gloves_HazmatGloves,
+    BodyLocation = Hands,
+	BloodLocation = Hands,
+	Icon = HazmatGloves,
+	ScratchDefense = 40,
+    BiteDefense = 10,
+    Weight = 0.0,
+    Insulation = 0.75,
+    WindResistance = 0.75,
+    WorldStaticModel = GlovesLong_Ground,
+	}
+
+    item Shoes_HazmatBoots
+	{   
+
+    DisplayCategory = Clothing,
+	Type = Clothing,
+	DisplayName = NBC Boots,
+	ClothingItem = Shoes_HazmatBoots,
+	BodyLocation = Shoes,
+	BloodLocation = Shoes,
+	Icon = HazmatBoots,
+	Weight = 0,
+    RunSpeedModifier = 0.9,
+    RemoveOnBroken = true,
+    ScratchDefense = 40,
+    BiteDefense = 10,
+    Insulation = 0.9,
+    WindResistance = 0.65,
+    WaterResistance = 0.65,
+    WorldStaticModel = Boots_Ground,
+	}
+
+}

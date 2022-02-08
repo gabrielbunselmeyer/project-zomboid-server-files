@@ -1,0 +1,59 @@
+module SLEOClothing{
+
+  imports {
+      Base
+  }
+
+recipe Attach goggles to helmet
+  	{
+   	   Hat_PoliceHelmet,
+	   TacticalGoggles,
+
+   	   Result:Hat_PoliceHelmetGoggles,
+	   Time:20,
+  	}
+
+recipe Attach goggles to helmet
+  	{
+   	   Hat_PoliceHelmet,
+	   Glasses_MilitaryGoggles,
+
+   	   Result:Hat_PoliceHelmetGoggles,
+	   Time:20,
+  	}
+
+recipe Attach goggles to helmet
+  	{
+   	   Hat_PoliceHelmetStrapless,
+	   TacticalGoggles,
+
+   	   Result:Hat_PoliceHelmetGogglesStrapless,
+	   Time:20,
+  	}
+
+recipe Attach goggles to helmet
+  	{
+   	   Hat_PoliceHelmetStrapless,
+	   Glasses_MilitaryGoggles,
+
+   	   Result:Hat_PoliceHelmetGogglesStrapless,
+	   Time:20,
+  	}
+
+recipe Remove goggles
+  	{
+   	   Hat_PoliceHelmetGoggles,
+	   OnCreate: SLEO_Recipe.POLICEGOGGLES,
+   	   Result:Hat_PoliceHelmet,
+	   Time:20,
+  	}
+
+recipe Remove goggles
+  	{
+   	   Hat_PoliceHelmetGogglesStrapless,
+	   OnCreate: SLEO_Recipe.POLICEGOGGLES,
+   	   Result:Hat_PoliceHelmetStrapless,
+	   Time:20,
+  	}
+
+}		
